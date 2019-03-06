@@ -1,0 +1,148 @@
+#mixes{
+  position: relative;
+  height: 100vh;
+  color: azure;
+  background-color: #00ffff1f;
+
+  background: url("../../img/sankhadeep-barman-558514-unsplash.jpg") no-repeat center fixed;
+  background-size: cover;
+
+
+  @media only screen and(min-width: 768px) {
+    overflow-y: hidden;
+
+  }
+
+
+  animation: fadein 3.2s;
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+   .wrapper{
+     //overflow-y: hidden;
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     width: 100%;
+     text-align: center;
+     //border: 1px solid #50d8d2;
+     z-index: 1;
+
+
+     font-family: Alcubierre;
+     color: #FFFFFF;
+
+
+     &:before{
+       content: '';
+       position: absolute;
+       top: 0;
+       left:0;
+       height: 100%;
+       width: 100%;
+       //background-color: #0000008c;
+       background-color: rgba(12, 12, 12, 0.55);
+       z-index: 0;
+
+     }
+
+
+     .title-right{
+       position: absolute;
+       letter-spacing: 12px;
+       top: 100px;
+       width: 100vw;
+       margin: 0 auto;
+
+       font-size: 2em;
+
+
+       @media only screen and(min-width: 768px) {
+         font-size: 3em;
+         right: -20%;
+       }
+
+       //right: 125px;
+       //border: 1px red solid;
+     }
+
+
+     .text{
+       display: flex;
+       flex-direction: column;
+       //border: 1px solid lime;
+       //transform: translateY(20%);
+       z-index: 9;
+       justify-content: center;
+       //align-items: center;
+       padding: 32px;
+
+
+
+       text-align: justify;
+
+       position: relative;
+       top: 10em;
+
+       h3{
+         color: #14ffe9;
+         opacity: 0.9;
+       }
+
+       p{
+         opacity: 0.9;
+       }
+
+       @media only screen and (min-width: 768px){
+         position: initial;
+         top: 0;
+         width: 37%;
+
+       }
+
+     }
+
+
+     .tracks{
+       //border: 1px solid yellow;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       z-index: 9;
+       overflow: hidden;
+       padding: 16px;
+       margin: auto;
+
+       position: relative;
+       top: 10rem;
+
+       @media only screen and(min-width: 768px) {
+         padding: 33px;
+         top: 2rem;
+       }
+
+       //THINGS TO PLAY WITH BELOW
+       //align-items: center;
+       //border: 1px solid yellow;
+       //flex-grow: 1;
+       //justify-content: flex-end;
+     }
+
+
+     //#wrapper
+     @media only screen and(min-width: 768px) {
+       overflow-y: hidden;
+       border: 1px solid #50d8d2;
+       height: 100vh;
+       flex-wrap: nowrap;
+     }
+
+
+
+   }
+
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>| Prolet Dev |</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../public/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="../style/sass/index.scss">-->
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+
+
+    <!--AOS Lib-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body id="body" onscroll="scrollToTop()">
+
+
+<nav class="nav-bar">
+    <div class="logo">
+        <img src="../img/kisspng-wu-tang-wu-tang-clan-logo-wu-tang-forever-tang-5ae0345013fd09.9009980915246428960819.png" alt="">
+    </div>
+
+   <ul>
+       <li>Home</li>
+       <li>Story</li>
+       <li>About</li>
+       <li>Contact</li>
+   </ul>
+</nav>
+
+    <section id="main"  >
+        <!--Desired Img @ ScrollPos 0 needs to come after img > ScrollPos 0 -->
+        <img class="bottom" src="../img/full-black-wallpaper.jpg" alt=""/>
+        <img class="not-top" src="../img/pawel-czerwinski-1311900-unsplash.jpg" alt=""/>
+
+        <!--<h1 class="title">Portfolio Projects</h1>-->
+
+
+        <p class="title">Welcome to ProletDev</p>
+
+
+        <div class="subTitle">
+            <h1>
+                Section Areas
+            </h1>
+        </div>
+
+        <section class="rectangle-01">
+
+            <section id="loader-wrapper">
+                <figure id="story-icon">
+
+                    <a href="http://localhost:8080/">
+                        <div class="loader-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+
+                        <div id="story-loader" class="loader" >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <h3>Story</h3>
+                    </a>
+
+                </figure>
+
+
+                <figure  onclick="handleClickAbout()">
+                    <a id="about-icon" href="http://localhost:8080/about">
+                        <div class="loader-icon">
+                            <i class="fab fa-earlybirds"></i>
+                        </div>
+
+                        <div id="about-loader" class="loader">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h3>About</h3>
+                    </a>
+
+                </figure>
+
+
+                <figure id="portfolio-icon">
+
+                    <a href="http://localhost:8080/">
+                        <div class="loader-icon">
+                            <i class="far fa-address-book"></i>
+                        </div>
+
+                        <div id="portfolio-loader" class="loader" >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+
+                    <h3>Portfolio</h3>
+                </figure>
+
+
+
+                <figure id="contact-icon">
+
+                    <a href="http://localhost:8080/">
+                        <div class="loader-icon">
+                            <i class="fas fa-phone-square"></i>
+                        </div>
+
+                        <div id="contact-loader" class="loader">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h3>Contact</h3>
+                    </a>
+                </figure>
+
+            </section>
+
+        </section>
+
+    </section>
+
+
+    <script src="../scripts/index.js"></script>
+
+
+    <!--SCROLL TOP IN MODERN BROWSERS -->
+    <!--https://github.com/nuxt/nuxt.js/issues/2512#issuecomment-358215583-->
+    <script>
+
+        function scrollToTop() {
+            $(document).ready(function(){
+
+                //---------- Scroll Position ----------
+                const yPosition =
+                    Math.max(window.pageYOffset,
+                        document.documentElement.scrollTop,
+                        document.body.scrollTop);
+                console.log(yPosition);
+                //-------------------------------------
+
+
+                //---------- cross-fade background ----------
+                if(yPosition < 50 ){
+                    $('.not-top').removeClass('top');
+                    console.log('test1')
+                }
+
+                if(yPosition > 50 ){
+                    console.log('start animation');
+                    $('.not-top').addClass('top');
+
+                }
+                //-------------------------------------
+
+
+                //---------- cross-fade Welcome ----------
+                if(yPosition > 50){
+                    $('.title').addClass('top');
+                    $('.subTitle').addClass('subTitleSlideRight');
+                    $('.rectangle-01').addClass('slideInFromRight');
+
+                }
+                if(yPosition < 50){
+                    $('.title').removeClass('top').addClass('not-top');
+                    $('.subTitle').removeClass('subTitleSlideRight');
+                    $('.rectangle-01').removeClass('slideInFromRight');
+                }
+                //-------------------------------------
+
+
+            })
+        }
+    </script>
+
+</body>
+</html>

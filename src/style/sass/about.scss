@@ -1,0 +1,111 @@
+#about{
+  background-color: black;
+  height: 110vh;
+
+  img{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+  }
+
+
+
+  .tim{
+    position: absolute;
+    top: 178px;
+    width: 44%;
+    right: 40px;
+    opacity: 0;
+  }
+
+  .fadeInTim{
+    animation: fadeInTim;
+    animation-duration: 4s; /* or: Xms */
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; //prevents reseting
+  }
+
+  @keyframes fadeInTim {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .tim-bio{
+
+    p {
+      font-size: 1em;
+      line-height: 1.25em;
+      margin: 1.25em 0;
+      text-align: justify;
+    }
+
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-family: Alcubierre;
+    top: 440px;
+    color: azure;
+    left: 50px;
+    width: 43%;
+    opacity: 0;
+
+
+    .rectangle-01{
+      opacity: 1;
+      top: 0;
+      transform: translate(0 , 0);
+      width: 100%;
+    }
+
+
+
+  }
+
+
+
+  .fadeInTimBio{
+    animation: fadeInTimBio;
+    animation-duration: 5s; /* or: Xms */
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; //prevents reseting
+  }
+
+  @keyframes fadeInTimBio {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  .about-nav{
+    background-color: #89e2de;
+    height: 20vh;
+    width: 40vw;
+    bottom: 0;
+  }
+
+
+
+}

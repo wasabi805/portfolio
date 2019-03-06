@@ -1,0 +1,124 @@
+.player{
+  position: relative;
+  //right: 10%;
+  //bottom: 10%;
+
+
+  border: 1px red solid;
+
+  //----------------
+}
+
+.track-01-title{
+  background-color: #676d6c2b;
+
+
+}
+
+.track-02-title{
+  background-color: #676d6c2b;
+
+}
+
+
+
+
+
+.audio-player{
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  //border: 1px solid lime;
+  border-radius: 3px;
+  margin: 6px 0;
+
+
+  @media only screen and(min-width: 768px) {
+    padding: 2em;
+
+  }
+
+  p{
+    position: absolute;
+    z-index: 50;
+    width: 200px;
+    margin: 0 50%;
+    transform: translate(-50%, -100%);
+  }
+
+
+
+  //&:after{
+  //  content: "\01 - Hip Pop MIx March 2019 - \0020";
+  //  position: relative;
+  //  top: 20px;
+  //  left: -318px;
+  //  width: 200px;
+  //  height: 20px;
+  //  //border: 1px solid yellow;
+  //
+  //  //moving content
+  //  //https://stackoverflow.com/questions/7880053/proper-way-to-position-before-pseudo-elements
+  //}
+
+
+
+
+
+
+  #play-01 , #play-02{
+    display: block;
+    min-width: 80px;
+    height: 80px;
+    border: 0;
+    font-size: 30px;
+    background-color: #b217ff;
+    z-index: 1;
+
+    color: #FFFFFF;
+    border-radius: 100000px;
+  }
+
+  //total track area
+  #seek-bar-01, #seek-bar-02{
+    display: flex;
+    margin: 10px;
+    width: 400px;
+    background-color: #9a8ea769;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10000000px;
+
+    //elapsed track progression indicator
+    .fill-01 , .fill-02{
+      height: 10px;
+
+      background: linear-gradient(105.25802520026593deg, rgba(231, 244, 245,1) 5.083148558758316%,rgba(78, 240, 250,1) 97.54434589800442%);
+      border-radius: 10000000px;
+    }
+
+
+    //current point in track marker
+    .handle{
+      width: 10px;
+      height: 10px;
+      background-color: #630460;
+      border-radius: 10000000px;
+
+      //align center of marker w/edge of .fill then increase size of circle
+      margin-left: -5px;
+      transform: scale(2);
+
+      &:hover{
+        background-color: lighten(#630460 , 10%);
+        transform: scale(2);
+        transition: all 0.1s;
+      }
+
+    }
+  }
+
+
+}
+
