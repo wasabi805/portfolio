@@ -10,6 +10,55 @@ body{
 
 
 #main{
+  h1{
+    font-family: Inter;
+  }
+
+  #title-index{
+    position: fixed;
+    top: 25%;
+
+    font-size: 3em;
+    left: 1em;
+    color: white;
+    background: tomato;
+    z-index: 100;
+  }
+
+  #title-index.title-index-initial{
+    left: 1em;
+  }
+
+  .slideLeft{
+    animation: 1s ease-in-out slideLeft;;
+    animation-fill-mode: forwards;
+  }
+
+  .slideRight{
+    animation: 1s ease-in-out slideRight;;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slideLeft {
+    0%{
+      left: 0;
+    }
+
+    100%{
+      left: -520px;
+    }
+  }
+
+  @keyframes slideRight{
+    0%{
+      left: -520px;
+    }
+
+    100%{
+      left: 1em;
+    }
+  }
+
 
   font-family: Alcubierre;
   color: azure;
@@ -29,10 +78,33 @@ body{
     object-fit: cover;
   }
 
-  //PASTE BACK HERE
-
-
   //-------------------------------
+
+  #main-bg-img{
+    transition: 1.75s all ease-in-out;
+    position: fixed;
+  }
+
+  #black-bg{
+    transition: 1.75s all ease-in-out;
+    position: fixed;
+  }
+
+  #main-bg-img.showIndexBg{
+    opacity: 1;
+  }
+
+  #main-bg-img.hideIndexBg{
+    opacity: 0;
+  }
+
+
+
+
+
+
+
+
 
 
 
@@ -56,158 +128,10 @@ body{
 
 //END MAIN
 
-.not-top {
-  animation-name: reveal;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-direction: alternate;
-
-}
-
-.top {
-  animation-name: fade;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-direction: alternate;
-
-  animation-fill-mode: forwards; //prevents reseting
-
-}
-
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
-@keyframes reveal {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 
 ///FOR ALL PAGES
 
-.title{
-
-  //animation-name: title;
-  font-family: Alcubierre;
-  font-size: 20px;
-  position: absolute;
-  color: #FFFFFF;
-  top: 300px;
-  left: 75px;
-
-  transition: opacity 1s;
-  opacity: 0.9;
-
-
-}
-
-.reveal-title {
-  animation-name: title;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-direction: alternate;
-
-}
-
-.test1{
-  background-color: #89e2de;
-  height: 30px;
-  color: #FFFFFF;
-  width: 50vw;
-}
-
-
-
-//-------------------------------
-
-.subTitle{
-  //position: absolute;
-  //background: lime;
-  font-family: Alcubierre;
-  letter-spacing: 3px;
-  font-size: 2.19em;
-  padding: 30px;
-  color: #FFFFFF;
-
-}
-
-.subTitleSlideRight{
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-  animation-fill-mode: forwards;
-  position: absolute;
-  top: 300px;
-  opacity: 0.8;
-}
-
-.removeTestMe{
-  animation: 1s ease-out 0s 1 slideOutToLeft;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideOutToLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(200%);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-}
-
-@keyframes resetSlideInFromRight {
-  0% {
-    transform: translateX(200%);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-}
 
 
 
@@ -399,6 +323,8 @@ body{
 @import "audio-player";
 @import "analyser-bars";
 @import "mixes";
+@import "travel";
+@import "gallery";
 
 
 

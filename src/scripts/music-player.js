@@ -196,9 +196,6 @@ seekBar02.addEventListener('mousemove', function (e) {
 seekBar02.addEventListener('mouseup' , function (e) {
 
     if(!mouseDown) return;
-
-
-
     mouseDown = false;
 
     let p = (e.clientX - seekBar02.offsetLeft) / seekBar02.clientWidth;

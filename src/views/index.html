@@ -22,7 +22,7 @@
 
 </head>
 
-<body id="body" onscroll="scrollToTop()">
+<body>
 
 
 <nav class="nav-bar">
@@ -40,13 +40,13 @@
 
     <section id="main"  >
         <!--Desired Img @ ScrollPos 0 needs to come after img > ScrollPos 0 -->
-        <img class="bottom" src="../img/full-black-wallpaper.jpg" alt=""/>
-        <img class="not-top" src="../img/pawel-czerwinski-1311900-unsplash.jpg" alt=""/>
+        <img id="black-bg" src="../img/full-black-wallpaper.jpg" alt=""/>
+        <img id="main-bg-img" src="../img/pawel-czerwinski-1311900-unsplash.jpg" alt=""/>
 
         <!--<h1 class="title">Portfolio Projects</h1>-->
 
 
-        <p class="title">Welcome to ProletDev</p>
+        <h1 id="title-index">Welcome to ProletDev</h1>
 
 
         <div class="subTitle">
@@ -147,49 +147,6 @@
     <!--https://github.com/nuxt/nuxt.js/issues/2512#issuecomment-358215583-->
     <script>
 
-        function scrollToTop() {
-            $(document).ready(function(){
-
-                //---------- Scroll Position ----------
-                const yPosition =
-                    Math.max(window.pageYOffset,
-                        document.documentElement.scrollTop,
-                        document.body.scrollTop);
-                console.log(yPosition);
-                //-------------------------------------
-
-
-                //---------- cross-fade background ----------
-                if(yPosition < 50 ){
-                    $('.not-top').removeClass('top');
-                    console.log('test1')
-                }
-
-                if(yPosition > 50 ){
-                    console.log('start animation');
-                    $('.not-top').addClass('top');
-
-                }
-                //-------------------------------------
-
-
-                //---------- cross-fade Welcome ----------
-                if(yPosition > 50){
-                    $('.title').addClass('top');
-                    $('.subTitle').addClass('subTitleSlideRight');
-                    $('.rectangle-01').addClass('slideInFromRight');
-
-                }
-                if(yPosition < 50){
-                    $('.title').removeClass('top').addClass('not-top');
-                    $('.subTitle').removeClass('subTitleSlideRight');
-                    $('.rectangle-01').removeClass('slideInFromRight');
-                }
-                //-------------------------------------
-
-
-            })
-        }
     </script>
 
 </body>

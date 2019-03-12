@@ -1,68 +1,56 @@
 console.log('hello bro');
 
-// AOS.init({
-//     duration:1200
-// });
 
+var mainWindow = document.getElementById('main');
 
+var mainBgImg = document.getElementById('main-bg-img');
+var blackBg = document.getElementById('black-bg');
 
-function handleClickAbout(){
-    console.log('will route to about')
+var landingTitle = document.getElementById('title-index');
 
-}
+//Initial State for landing bg image background
+mainBgImg.classList.add('showIndexBg');
+blackBg.classList.add('hideIndexBg');
 
+//Title INITIAL
+landingTitle.classList.add('title-index-initial');
 
-$(document).ready(function(){
+window.addEventListener('scroll', function () {
+    const scrollYIndex = window.scrollY;
+    console.log(scrollYIndex);
 
-    //      Make Relative Parent Height Larger than Absolute/ Fixed Children
-   // https://stackoverflow.com/questions/9061520/auto-height-on-parent-container-with-absolute-fixed-children
-   // var MainContainerHeight = 0;
-   //
-   //  $("#main").each(function(){
-   //      // If this elements height is bigger than the biggestHeight
-   //      if ($(this).height() > MainContainerHeight ) {
-   //          // Set the biggestHeight to this Height
-   //          MainContainerHeight = $(this).height('100vh');
-   //      }
-   //  });
-   //
-   //
-   //
-   //  // Set the container height
-   //  $("#main").height(MainContainerHeight);
-   //
-   //
-   //  var rect01ContainerHeight = 0;
-   //
-   //  $(".rectangle-01-container *").each(function(){
-   //      // If this elements height is bigger than the biggestHeight
-   //      if ($(this).height() > rect01ContainerHeight ) {
-   //          // Set the biggestHeight to this Height
-   //          rect01ContainerHeight = $(this).height();
-   //      }
-   //  });
-   //
-   //  // Set the container height
-   //  $(".rectangle-01-container").height(rect01ContainerHeight);
+    if(scrollYIndex > 50){
+        console.log('scroll me');
+
+        //Crossfade Img
+        mainBgImg.classList.add('hideIndexBg');
+        mainBgImg.classList.remove('showIndexBg');
+
+        //Title 01 of 04
+        landingTitle.classList.remove('title-index-initial');
+        landingTitle.classList.add('slideLeft')
+    }
+
+    //Title 02 of 04
+    if(scrollYIndex<50){
+        mainBgImg.classList.add('showIndexBg');
+        mainBgImg.classList.remove('hideIndexBg');
+    }
+
+    //Title 03 of 04
+    if(landingTitle.className === 'slideLeft' && scrollYIndex<50){
+        console.log('trigger the correct function now');
+        landingTitle.classList.add('slideRight');
+        landingTitle.classList.remove('slideLeft');
+    }
+
+    //Title 04 of 04
+    if(landingTitle.className === 'slideRight slideLeft' && scrollYIndex>50){
+        landingTitle.classList.remove('slideRight');
+    }
 
 });
 
-function findChange() {
-    let num = 59;
-
-    let a = Math.floor(num /20);  //2
-
-    console.log(a);
-
-    if (a>0) num -= 20;
 
 
 
-    let b = num /10; //
-    let c = num /5;
-    let d = num / 1;
-
-
-}
-
-findChange();

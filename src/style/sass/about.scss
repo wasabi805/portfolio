@@ -44,14 +44,6 @@
 
   .tim-bio{
 
-    p {
-      font-size: 1em;
-      line-height: 1.25em;
-      margin: 1.25em 0;
-      text-align: justify;
-    }
-
-
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -61,6 +53,30 @@
     left: 50px;
     width: 43%;
     opacity: 0;
+
+    h1{
+      font-size: 1.7rem;
+      color: aqua;
+      letter-spacing: 1px;
+      text-indent: -4px;
+    }
+
+
+    h4{
+      font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.25em;
+      margin: 1.25em 0;
+      text-align: justify;
+      font-family: Alcubierre;
+    }
+
+
+
 
 
     .rectangle-01{

@@ -34,6 +34,10 @@ app.get('/about/mixes', (req, res)=>{
     res.sendFile(__dirname +'/src' + '/views'+'/mixes.html')
 });
 
+app.get('/about/travel', (req, res)=>{
+    res.sendFile(__dirname +'/src' + '/views'+'/travel.html')
+});
+
 const port = 8080;
 app.listen(port, ()=>{
     console.log( `Server running on port ${port}` );

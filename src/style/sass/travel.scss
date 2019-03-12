@@ -1,0 +1,259 @@
+#travel{
+  .background{
+    position: absolute;
+  }
+
+
+
+  img{
+    width: 100%;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    //background-color: #0000008c;
+    background-color: rgba(12, 12, 12, 0.55);
+    z-index: 0;
+  }
+
+  position: relative;
+  color: azure;
+  background-color: #00ffff1f;
+
+  //background: url("../../img/kevin-laminto-574456-unsplash.jpg") no-repeat  fixed;
+  background-size: cover;
+
+  border: 1px solid #50d8d2;
+  //overflow-y: hidden;
+
+
+
+
+  .title-travel{
+    font-size: 23px;
+    position :absolute;
+
+  }
+
+
+  .wrapper{
+    font-family: Alcubierre;
+
+    position: relative;
+    //display: flex;
+    //justify-content: space-evenly;
+    height: 100vh;
+
+
+
+    section:nth-child(5){
+      flex-basis: 100%;
+    }
+
+    width: 100%;
+    text-align: center;
+    //border: blue 1px solid;
+
+    .modal-travel{
+      margin: auto;
+      height: 74vh;
+
+
+      img{
+        width : 100%
+      }
+
+    }
+
+
+    #animate-img-a{
+      opacity:1;
+      transition: all 1s;
+      position: absolute;
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    #animate-img-b{
+      opacity:1;
+      transition: all 1s;
+      position: absolute;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    #animate-img-a.isHidden{
+      opacity:0;
+    }
+
+    #animate-img-b.isHidden{
+      opacity:0;
+    }
+
+    #animate-img-b.isShowing{
+      opacity:1;
+    }
+
+    #animate-img-a.isShowing{
+      opacity:1;
+    }
+
+
+
+
+
+
+    #text-travel{
+      font-family: Alcubierre;
+      font-size: 10px;
+      align-self: center;
+      position: absolute;
+      bottom: 40px;
+      color: #FFFFFF;
+      right: 74px;
+      z-index: 10;
+      width: 33%;
+      text-align: justify;
+      //border: 1px solid yellow;
+
+
+      h3{
+        color: cyan;
+      }
+
+      p{
+
+      }
+    }
+
+
+  }
+
+.test{
+  position: relative;
+  left: 2px; //adjust the width specific to image
+  border: 1px orange dotted;
+  height: 99%; //adjust the height specific to image
+}
+
+
+}
+
+.testMe{
+  background-color: #630460;
+  color: #FFFFFF;
+}
+
+
+#tap-menu{
+  background-color: #39b54a;
+  position: fixed;
+  display: contents;
+  border: 1px yellow solid;
+  margin-top: 6em;
+  width: 25%;
+  max-height: 70vh;
+  z-index: 90;
+}
+
+
+#gallery-travel{
+  position: fixed;
+  margin-top: 6em;
+
+
+  background-color: #f0ffff17;
+  width: 25%;
+  max-height: 70vh;
+  overflow: scroll;
+  z-index: 90;
+
+
+  left: -267px;
+  transition: all 0.5s ease-in-out;
+
+
+
+  .row{
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+    transform: rotateY(48deg);
+
+    .column{
+      flex: 25%;
+      padding: 0 4px;
+
+
+      img{
+        max-width: 20%;
+        margin-top: 8px;
+        vertical-align: middle;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+
+
+      @media screen and (max-width: 800px) {
+
+
+        flex: 50%;
+        max-width: 50%;
+
+      }
+
+      @media screen and (max-width: 600px) {
+
+
+        flex: 100%;
+        max-width: 100%;
+
+      }
+
+    }
+
+
+
+  }
+}
+
+#gallery-travel.showMeTheMoney{
+  opacity: 1;
+  left: 0px;
+}
+
+
+
+
+.title-travel{
+  font-family: Alcubierre;
+  top: 10em;
+  color: #FFFFFF;
+  z-index: 10;
+  height: 8%;
+  width: 100%;
+  display: block;
+  font-size: 3rem;
+  letter-spacing: 12px;
+
+}
+
+
+
+
+
+
+
