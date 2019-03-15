@@ -38,6 +38,11 @@ app.get('/about/travel', (req, res)=>{
     res.sendFile(__dirname +'/src' + '/views'+'/travel.html')
 });
 
+app.get('/portfolio', (req, res)=>{
+    res.sendFile(__dirname +'/src' + '/views'+'/portfolio.html')
+});
+
+
 const port = 8080;
 app.listen(port, ()=>{
     console.log( `Server running on port ${port}` );

@@ -34,18 +34,18 @@
 </nav>
 
     <section id="about">
-        <img class="bottom" src="../img/full-black-wallpaper.jpg" alt=""/>
+
         <img class="not-top" src="../img/pawel-czerwinski-1020731-unsplash.jpg" alt="">
 
 
 
         <p class="title">About Me</p>
 
-        <!--<div class="subTitle">-->
-            <!--<h1>-->
-                <!--Developer Profile | Tim Ocampo |-->
-            <!--</h1>-->
-        <!--</div>-->
+        <div class="subTitle">
+            <h1>
+                Developer Profile | Tim Ocampo |
+            </h1>
+        </div>
 
         <div class="subTitle">
 
@@ -2291,57 +2291,59 @@
 
     </section>
 
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/keyboard-map/keyboard-map.js"></script>
+
+    <!--<script src="../scripts/index.js"></script>-->
 
 
 <script>
 
-    function scrollToTopAbout() {
-        $(document).ready(function(){
-
-            //---------- Scroll Position ----------
-            const yPosition =
-                Math.max(window.pageYOffset,
-                    document.documentElement.scrollTop,
-                    document.body.scrollTop);
-            console.log(yPosition);
-            //-------------------------------------
-
-
-            //---------- cross-fade background ----------
-            if(yPosition < 50 ){
-                $('.landingBg01').removeClass('hide-element-index');
-                console.log('test1')
-            }
-
-            if(yPosition > 50 ){
-                console.log('start animation');
-                $('.landingBg01').addClass('hide-element-index');
-
-            }
-            //-------------------------------------
-
-
-            //---------- cross-fade Welcome ----------
-            if(yPosition > 50){
-                $('.title-index').addClass('hide-element-index');
-                $('.subTitle').addClass('subTitleSlideRight');
-                $('.tim').addClass('fadeInTim');
-                $('.tim-bio').addClass('fadeInTimBio');
-
-
-            }
-            if(yPosition < 50){
-                $('.title-index').removeClass('hide-element-index').addClass('landingBg01');
-                $('.subTitle').removeClass('subTitleSlideRight');
-                $('.tim').removeClass('fadeInTim');
-                $('.tim-bio').removeClass('fadeInTimBio');
-            }
-            //-------------------------------------
-
-
-        })
-    }
+    // function scrollToTopAbout() {
+    //     $(document).ready(function(){
+    //
+    //         //---------- Scroll Position ----------
+    //         const yPosition =
+    //             Math.max(window.pageYOffset,
+    //                 document.documentElement.scrollTop,
+    //                 document.body.scrollTop);
+    //         console.log(yPosition);
+    //         //-------------------------------------
+    //
+    //
+    //         //---------- cross-fade background ----------
+    //         if(yPosition < 50 ){
+    //             $('.landingBg01').removeClass('hide-element-index');
+    //             console.log('test1')
+    //         }
+    //
+    //         if(yPosition > 50 ){
+    //             console.log('start animation');
+    //             $('.landingBg01').addClass('hide-element-index');
+    //
+    //         }
+    //         //-------------------------------------
+    //
+    //
+    //         //---------- cross-fade Welcome ----------
+    //         if(yPosition > 50){
+    //             $('.title-index').addClass('hide-element-index');
+    //             $('.subTitle').addClass('subTitleSlideRight');
+    //             $('.tim').addClass('fadeInTim');
+    //             $('.tim-bio').addClass('fadeInTimBio');
+    //
+    //
+    //         }
+    //         if(yPosition < 50){
+    //             $('.title-index').removeClass('hide-element-index').addClass('landingBg01');
+    //             $('.subTitle').removeClass('subTitleSlideRight');
+    //             $('.tim').removeClass('fadeInTim');
+    //             $('.tim-bio').removeClass('fadeInTimBio');
+    //         }
+    //         //-------------------------------------
+    //
+    //
+    //     })
+    // }
 </script>
 
 </body>

@@ -1,0 +1,292 @@
+
+//<=====  SNES CONTROLLER CONTAINER  =====>
+#controller-container{
+  //Match A of 1 of 2
+  left: 0px;
+  bottom: 0px;
+  position: fixed;
+
+  width: 65%;
+  height: 100%;
+  z-index: 20;
+  //background: #14ffe940;
+
+
+
+
+
+
+
+  @media  only screen and(min-width: 1024px){
+    left: 100px;
+    bottom: 100px;
+  }
+
+
+
+  //Part I
+  //<=====  SNES CONTROLLER IMAGE  =====>
+  img{
+    position: absolute;
+
+    //Match B of 1 of 3
+    //background-color: #630460;
+
+    width: 700px;
+    bottom: 0;
+    //border: 1px red solid;
+  }
+
+
+  .controller-btn-container{
+    //Match A of 2 of 2
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    height: 460px;
+    z-index: 100;
+
+    @media  only screen and(min-width: 1024px){
+      left: 100px;
+      bottom: 100px;
+    }
+
+
+    //Match B of 2 of 3
+    width: 700px;
+    //background: #14ffe940;
+
+
+    //Part II
+
+    //<=====  CONTROLLER BUTTONS  =====>
+    .btn{
+      position: absolute;
+      height: 10%;
+      width: 7%;
+      z-index: 100;
+      transform: scale(1.1);
+      border-radius: 50%;
+
+      &:hover{
+        transform: scale(1.0);
+      }
+    }
+
+    .y{
+      right: 231px;
+      bottom: 199px;
+      background-color: red;
+    }
+
+    .x{
+      right: 158px;
+      bottom: 227px;
+      background-color: blue;
+    }
+
+    .b{
+      right: 186px;
+      bottom: 142px;
+      background-color: green;
+    }
+
+    .a{
+      right: 113px;
+      bottom: 172px;
+      background-color: yellow;
+    }
+  }
+
+
+  //  PART III
+  .lasers{
+    color: white;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    width: 700px;
+    height: 450px;
+    //background-color: #39b54a2b;
+
+
+    //BEAM ONE
+
+
+    .beam-one{
+      position: absolute;
+      top: -23px;
+      left: 442px;
+      //background-color: #630460;
+      height: 225px;
+      width: calc(54vw - 40%);
+      border-left: 1px dotted cyan;
+      border-top: 1px dotted cyan;
+
+      .text-one{
+        font-size: 33px;
+        top: -23px;
+        left: calc(92% + 1vw);
+        position: absolute;
+        line-height: 32px;
+        height: 32px;
+        width: 103px;
+        border-radius: 2px;
+        background-color: #494a4a;
+        padding: 3px;
+
+        p{
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+
+    //BEAM TWO
+
+    .beam-two{
+      position: absolute;
+      top: 50px;
+      left: 528px;
+      //background-color: #630460;
+      height: 100px;
+      width: calc(54vw - 40%);
+      border-left: 1px dotted cyan;
+      border-top: 1px dotted cyan;
+
+      .text-two{
+        font-size: 33px;
+        top: -23px;
+        left: calc(92% + 1vw);
+        position: absolute;
+        line-height: 32px;
+        height: 32px;
+        width: 105px;
+        border-radius: 2px;
+        background-color: #494a4a;
+        padding: 3px;
+        //background-color: lime;
+
+        p{
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+    //BEAM THREE
+
+    .beam-three{
+      position: absolute;
+      top: 193px;
+      left: 562px;
+      //background-color: #630460;
+      height: 36px;
+      width: calc(54vw - 52%);
+      border-left: 1px dotted cyan;
+      border-top: 1px dotted cyan;
+
+      .text-three{
+        font-size: 33px;
+        top: -23px;
+        left: calc(92% + 1vw);
+        position: absolute;
+        line-height: 32px;
+        height: 32px;
+        width: 138px;
+        border-radius: 2px;
+        background-color: #494a4a;
+        padding: 3px;
+        //background-color: lime;
+
+        p{
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+    //BEAM FOUR
+    .beam-four{
+      position: absolute;
+      top: 310px;
+      left: 488px;
+      //background-color: #630460;
+      height: 36px;
+      width: calc(54vw - 40%);
+      border-left: 1px dotted cyan;
+      border-bottom: 1px dotted cyan;
+
+      .text-four{
+        font-size: 33px;
+        top: 11px;
+        left: calc(92% + 1vw);
+        position: absolute;
+        line-height: 32px;
+        height: 32px;
+        width: 132px;
+        border-radius: 2px;
+        background-color: #494a4a;
+        padding: 3px;
+        //background-color: lime;
+
+        p{
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+
+  }
+}
+
+#controller-shadow{
+  height: 300px;
+  position: fixed;
+  bottom: 0;
+  width: 900px;
+  left: 100px;
+
+  background: radial-gradient(white, black);
+  clip-path: ellipse(33% 14px at 35% 71%);
+}
+
+
+
+//GET STARTED HEADER ANIMATION
+.hide-get-started-start{
+  opacity: 0;
+
+}
+
+.hide-get-started{
+  opacity: 0;
+}
+
+.show-get-started{
+  opacity: 1;
+
+  transition: ease-in-out 1s;
+  transform: scale(1);
+
+};
+
+
+//CONTROLLER ANIMATIONS
+
+.hide-controller-group-start{
+  opacity: 0;
+}
+
+.hide-controller-group{
+  opacity: 0;
+  transition: 0.65s ease-in-out;
+}
+
+.show-controller-group{
+  opacity: 0.85;
+  transition: 2s ease-in-out;
+}
+
+
+
+
+

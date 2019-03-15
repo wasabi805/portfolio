@@ -5,20 +5,20 @@
     <title>| Prolet Dev |</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../public/index.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--<link rel="stylesheet" type="text/css" href="../style/sass/index.scss">-->
 
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-    </script>
+
+    <!--<script-->
+            <!--src="https://code.jquery.com/jquery-3.3.1.js"-->
+            <!--integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="-->
+            <!--crossorigin="anonymous">-->
+    <!--</script>-->
 
 
     <!--AOS Lib-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+    <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
 
 </head>
 
@@ -38,109 +38,183 @@
    </ul>
 </nav>
 
+<div id="blue-lines">
+    <!--<img src="../img/anna-goncharova-73258-unsplash%20copy.jpg" alt="">-->
+</div>
+
     <section id="main"  >
         <!--Desired Img @ ScrollPos 0 needs to come after img > ScrollPos 0 -->
-        <img id="black-bg" src="../img/full-black-wallpaper.jpg" alt=""/>
+
+
+
+        <!--DO NOT DELETE THESE!!!!!-->
+        <div id="black-bg"></div>
         <img id="main-bg-img" src="../img/pawel-czerwinski-1311900-unsplash.jpg" alt=""/>
+
+
+
 
         <!--<h1 class="title">Portfolio Projects</h1>-->
 
 
         <h1 id="title-index">Welcome to ProletDev</h1>
 
+        <div id="get-started">
 
-        <div class="subTitle">
-            <h1>
-                Section Areas
-            </h1>
+           <div class="bars">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+
+           </div>
+
+            <h1>Get Started</h1>
         </div>
 
-        <section class="rectangle-01">
 
-            <section id="loader-wrapper">
-                <figure id="story-icon">
+        <div id="controller-container">
 
-                    <a href="http://localhost:8080/">
-                        <div class="loader-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
+            <!--Part I -->
+            <img src="../img/SNES_controller-removed-font3-holes.png" alt="">
 
-                        <div id="story-loader" class="loader" >
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+            <!--Part II -->
+            <div class="controller-btn-container">
+                <div id="y" class="btn y" ></div>
+                <div id="x" class="btn x" onclick="snesRedirect(this.id)"></div>
+                <div id="b" class="btn b" ></div>
+                <div id="a" class="btn a" onclick="snesRedirect(this.id)"></div>
+            </div>
 
-                        <h3>Story</h3>
-                    </a>
+            <!--Part III -->
+            <div class="lasers">
 
-                </figure>
-
-
-                <figure  onclick="handleClickAbout()">
-                    <a id="about-icon" href="http://localhost:8080/about">
-                        <div class="loader-icon">
-                            <i class="fab fa-earlybirds"></i>
-                        </div>
-
-                        <div id="about-loader" class="loader">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <h3>About</h3>
-                    </a>
-
-                </figure>
+                <div class="beam-one">
+                    <div class="text-one">
+                        <p>Profile</p>
+                    </div>
+                </div>
 
 
-                <figure id="portfolio-icon">
+                <div class="beam-two">
+                    <div class="text-two">
+                        <p>About</p>
+                    </div>
+                </div>
 
-                    <a href="http://localhost:8080/">
-                        <div class="loader-icon">
-                            <i class="far fa-address-book"></i>
-                        </div>
+                <div class="beam-three">
+                    <div class="text-three">
+                        <p>Portfolio</p>
+                    </div>
+                </div>
 
-                        <div id="portfolio-loader" class="loader" >
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-
-                    <h3>Portfolio</h3>
-                </figure>
+                <div class="beam-four">
+                    <div class="text-four">
+                        <p>Contact</p>
+                    </div>
+                </div>
 
 
 
-                <figure id="contact-icon">
+            </div>
 
-                    <a href="http://localhost:8080/">
-                        <div class="loader-icon">
-                            <i class="fas fa-phone-square"></i>
-                        </div>
 
-                        <div id="contact-loader" class="loader">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <h3>Contact</h3>
-                    </a>
-                </figure>
 
-            </section>
 
-        </section>
+
+
+        </div>
+
+        <div id="controller-shadow"></div>
+
+
+
+
+
+
+        <!--<div id="tiles">-->
+                    <!--<section class="loader-wrapper">-->
+                        <!--<figure id="portfolio-icon" >-->
+
+                            <!--<div class="loader-icon">-->
+                                <!--<i class="far fa-newspaper"></i>-->
+                            <!--</div>-->
+
+                            <!--<div id="portfolio-loader" class="loader" >-->
+                                <!--<span></span>-->
+                                <!--<span></span>-->
+                                <!--<span></span>-->
+                                <!--<span></span>-->
+                            <!--</div>-->
+                        <!--</figure>-->
+                    <!--</section>-->
+              <!---->
+                    <!--<section class="loader-wrapper">-->
+                        <!--<figure id="about-icon">-->
+
+                            <!--<div class="loader-icon">-->
+                                 <!--<i class="fab fa-earlybirds"></i>-->
+                            <!--</div>-->
+
+                            <!--<div id="about-loader" class="loader">-->
+                                <!--<span></span>-->
+                                <!--<span></span>-->
+                                <!--<span></span>-->
+                                <!--<span></span>-->
+                            <!--</div>-->
+
+                        <!--</figure>-->
+                    <!--</section>-->
+             <!---->
+                   <!--<section class="loader-wrapper">-->
+                       <!--<figure id="story-icon">-->
+
+
+                       <!--<div class="loader-icon">-->
+                            <!--<i class="fas fa-book-open"></i>-->
+                       <!--</div>-->
+
+                       <!--<div id="story-loader" class="loader" >-->
+                           <!--<span></span>-->
+                           <!--<span></span>-->
+                           <!--<span></span>-->
+                           <!--<span></span>-->
+                       <!--</div>-->
+
+
+                       <!--</figure>-->
+
+                   <!--</section>-->
+            <!---->
+                    <!--<section class="loader-wrapper">-->
+                        <!--<figure id="contact-icon">-->
+
+
+                        <!--<div class="loader-icon">-->
+                         <!--<i class="fas fa-phone-square"></i>-->
+                        <!--</div>-->
+
+                        <!--<div id="contact-loader" class="loader">-->
+                            <!--<span></span>-->
+                            <!--<span></span>-->
+                            <!--<span></span>-->
+                            <!--<span></span>-->
+                        <!--</div>-->
+
+                        <!--</figure>-->
+                    <!--</section>-->
+        <!--</div>-->
+
+
 
     </section>
 
 
+    <script src="../scripts/keyboard-map/keyboard-map.js"></script>
     <script src="../scripts/index.js"></script>
+
 
 
     <!--SCROLL TOP IN MODERN BROWSERS -->
