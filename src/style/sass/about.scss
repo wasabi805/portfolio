@@ -1,127 +1,341 @@
+@import "constants/width";
+$bg-shade : #2a3131;
+$bg-Off-Shade : #37303033 ;
+$highlighter: #7c9548;
+
+
+.faded-cyan{
+  color: #3a8080;
+}
+
+
 #about{
-  background-color: black;
-  height: 110vh;
+
+  position: relative;
+  top: 60px;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  padding-bottom: 5rem;
+
+}
+
+
+
+//==========  HEADERS ==========
+.about-headers{
+  position: absolute;
+  letter-spacing:  3px;
+  font-weight: 400;
+  font-size: 4rem;
+  top: -60px;
+  //color: hotpink;
+  color: #d65f9b;
+  font-family: "Thunderstorm";
+}
+
+.highlighter{
+  color: $highlighter;
+}
+
+
+
+//==========  Article 1 : stats ==========
+
+.dev-profile-container{
+  //position: fixed;
+  //background-color: #39b54a;
+}
+
+
+#bio-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+
+  @include tablet{
+    padding: 2em 4em;
+    flex-direction: row;
+  }
+
+  @include desktop{
+
+  }
+
+
+  //background-color: #630460;
+  align-items: center;
+
+}
+
+
+.about-title{
+
+  font-size: 3rem;
+
+  top: calc(6%);
+
+  @include tablet{
+    position: absolute;
+  }
+
+}
+
+
+
+//@ mobile
+
+
+//padding: 0em;
+
+.stats{
+
+  //background-color: #39b54a;
+  font-family: Futura;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  margin: 45px;
+
+
+  color: #FFFFFF;
+
+
+  order: 1;
+
+  @include tablet{
+
+    flex-direction: row;
+    order: 0;
+
+    margin: 0;
+    padding: 2em;
+  }
+
+
+
+  ul{
+    list-style: none;
+  }
+
+}
+
+.profile-image{
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  border: 5px solid white;
+
+
+
+  //height: 25em;
+
+  @include tablet{
+    max-width: 50%;
+  }
+
 
   img{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    object-fit: cover;
+    width: 100%;
+  }
+}
+
+//==========  Article 2 : abilities ==========
+
+
+#abilities-container{
+  display: flex;
+  //background-color: #39b54a21;
+  padding: 56px;
+  flex-direction: column;
+
+  font-family: sans-serif;
+
+
+  @include tablet{
+    flex-direction: row;
   }
 
 
-
-  .tim{
-    position: absolute;
-    top: 178px;
-    width: 44%;
-    right: 40px;
-    opacity: 0;
+  //projects
+  div:nth-child(1){
+    flex: 2;
   }
 
-  .fadeInTim{
-    animation: fadeInTim;
-    animation-duration: 4s; /* or: Xms */
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; //prevents reseting
+
+}
+
+.headers{
+
+  font-size: 41px;
+  letter-spacing: 5px;
+  font-weight: 200;
+
+
+}
+
+
+.abilities-item{
+  position: relative;
+  flex: 1;
+  color: #FFFFFF;
+  margin: 3rem 0;
+
+  @include tablet{
+    margin: 0;
   }
 
-  @keyframes fadeInTim {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 0;
-    }
-    75% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+  //border: 1px solid red;
+
+}
+
+
+.row{
+  display: flex;
+
+  position: relative;
+
+}
+
+.col{
+
+  //background-color: #630460;
+  width: 49%;
+
+
+
+
+  .offset{
+    margin-top: 21.5px;
   }
 
-  .tim-bio{
+  ul{
+    list-style: none;
 
+    li{
+      background-color: $bg-Off-Shade;
+      //border-top: 1px solid white;
+      //border-bottom: 1px solid white;
+      padding: 5px 2px;
+      margin: 3px;
+
+
+      h5{
+        color: $highlighter;
+        margin-left: 12px;
+        position: relative;
+        display: contents;
+        top: 6px;
+      }
+
+
+    }
+
+    li:nth-last-child(1){
+      //border-bottom: 1px solid white;
+    }
+
+  }
+
+}
+
+
+.project-item{
+  display: flex;
+  margin: 3px;
+}
+
+
+.project-icon{
+
+  text-align: center;
+  margin-right: 3px;
+  padding: 16px;
+  background-color: $bg-Off-Shade;
+
+
+  i{
+
+    position: relative;
+    font-size: 45px;
+  }
+
+}
+
+.project-text{
+  display: inline-block;
+  background-color: $bg-Off-Shade;
+  padding: 5px;
+  width: 89%;
+
+  h3{
+    color: cyan;
+  }
+
+
+}
+
+
+//==========  PERSONAL SECTION  ==========
+#personal{
+  color: #FFFFFF;
+
+}
+
+.personal-headers{
+
+  font-weight: 400;
+  font-size: 4rem;
+  top: -60px;
+  color: hotpink;
+  font-family: "Thunderstorm";
+
+
+}
+
+.personal-container{
+  //display: flex;
+  padding: 2em;
+
+
+  @include desktop{
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    font-family: Alcubierre;
-    top: 440px;
-    color: azure;
-    left: 50px;
-    width: 43%;
-    opacity: 0;
-
-    h1{
-      font-size: 1.7rem;
-      color: aqua;
-      letter-spacing: 1px;
-      text-indent: -4px;
-    }
-
-
-    h4{
-      font-family: 'Ubuntu', sans-serif;
-
-    }
-
-    p {
-      font-size: 1em;
-      line-height: 1.25em;
-      margin: 1.25em 0;
-      text-align: justify;
-      font-family: Alcubierre;
-    }
-
-
-
-
-
-    .rectangle-01{
-      opacity: 1;
-      top: 0;
-      transform: translate(0 , 0);
-      width: 100%;
-    }
-
-
-
   }
 
+}
+
+.personal-text{
+  flex: 2;
+  font-family: Alcubierre;
+  font-size: 1.4rem;
+  //border: 1px solid red;
 
 
-  .fadeInTimBio{
-    animation: fadeInTimBio;
-    animation-duration: 5s; /* or: Xms */
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; //prevents reseting
+
+}
+
+.personal-img{
+  flex: 1;
+
+  //border: 1px solid lime;
+  width: 100%;
+  background-color: white;
+  padding: 8px;
+  margin: 10px;
+
+  @include tablet{
+    display: inline-block;
+    width: 30%;
   }
 
-  @keyframes fadeInTimBio {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 0;
-    }
-    75% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+  @include desktop{
+    height: 31%;
   }
 
-
-  .about-nav{
-    background-color: #89e2de;
-    height: 20vh;
-    width: 40vw;
-    bottom: 0;
+  img{
+    position: relative;
+    width: 100%;
   }
-
 
 
 }

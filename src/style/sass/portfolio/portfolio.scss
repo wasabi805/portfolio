@@ -2,10 +2,11 @@
 
 
 #portfolio{
+  overflow: hidden;
   position: relative;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  min-height: 100vh;
-  border: 1px cyan solid ;
+  max-height: 100vh;
+  border: 1.5px cyan solid ;
 
   font-family: Alcubierre;
   color: #FFFFFF;
@@ -17,11 +18,11 @@
 #portfolio-bg{
   display: block;
   height: 30rem;
-  width: 99.8vw;
+  width: 99.5vw;
 
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 2px;
+  left: 2px;
   z-index: 0;
   overflow: hidden;
 
@@ -136,5 +137,13 @@
   to{
     transform: translateY(-2560px) translateX(-2560px) rotate(-45deg);
   }
+}
+
+
+
+
+.portfolio-tiles{
+  display: block;
+  margin: auto;
 }
 

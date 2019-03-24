@@ -35,30 +35,29 @@
             position: relative;
             display: flex;
             z-index: 10;
-
-            /*background-color: yellow;*/
-            /*opacity: .1;*/
             height: 100vh;
             width: 100vw;
-            border: 5px red solid;">
+            /*background-color: yellow;*/
+            /*opacity: .1;*/
+            /*border: 5px red solid;*/
+
+            ">
 
             <div class="portfolio-text"
                  style="
                  display: flex;
                  flex-direction: column;
                  justify-content: center;
-                 padding: 16px;
+                 padding: 10px;
                  align-items: center;
                  height: 100vh;
                  width: 300px;
                  flex-basis: 40%;
                  color: white;
-                 border: 1px lime dotted;
+                 /*border: 1px lime dotted;*/
 
                  /*background-color: #f26522;*/
-                 /*opacity: .1;*/
-
-">
+                 /*opacity: .1;*/">
                 <h1 style="display: block" >| PORTFOLIO |</h1>
 
 
@@ -67,37 +66,51 @@
                     This is some Text This is some Text This is some Text This is some Text
                     This is some Text This is some Text This is some Text This is some Text
                 </p>
+
             </div>
 
-            <div class="portfolio-tiles"
-                 style="
-                 height: 100vh;
-                 /*width: 300px;*/
-                 /*flex-basis: 50%;*/
-                 background-color: blue;
-                 /*opacity: .1;*/
 
-"></div>
+            <!-- Portfolio Images Cube-->
+            <div class="portfolio-tiles">
 
-        <div>
+                <section class="three-d-container">
+                    <input type="radio" checked class="three-d-bullet a" name="three-d">
+                    <input type="radio" class="three-d-bullet b" name="three-d">
+                    <input type="radio" class="three-d-bullet c" name="three-d">
+                    <input type="radio" class="three-d-bullet d" name="three-d">
+                    <input type="radio" class="three-d-bullet e" name="three-d">
+                    <input type="radio" class="three-d-bullet f" name="three-d">
+                    <div class="three-d-cube">
+                        <figure class="three-d-item">
+                            <img src="../img/doms-noms.png" alt="">
+                        </figure>
+                        <figure class="three-d-item">
+                            <img src="../img/optimus.jpg" alt="">
+                        </figure>
+                        <figure class="three-d-item">
+                            <img src="http://lorempixel.com/500/500/food/3" alt="">
+                        </figure>
+                        <figure class="three-d-item">
+                            <img src="http://lorempixel.com/500/500/food/4" alt="">
+                        </figure>
+                        <figure class="three-d-item">
+                            <img src="http://lorempixel.com/500/500/food/5" alt="">
+                        </figure>
+                        <figure class="three-d-item">
+                            <img src="http://lorempixel.com/500/500/food/6" alt="">
+                        </figure>
+                    </div>
+                </section>
+
+
+
+
+            </div>
 
         </div>
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!--<section id="portfolio">-->

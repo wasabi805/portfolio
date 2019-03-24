@@ -2,6 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 body{
@@ -173,6 +177,7 @@ body{
 
 
 
+
 .lead-image{
   background-color: #630460;
 }
@@ -189,6 +194,7 @@ body{
 @import "gallery";
 @import "landing/controller";
 @import "portfolio/portfolio";
+@import "portfolio/cube";
 
 
 

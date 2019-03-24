@@ -7,8 +7,6 @@ function Track(name){
     return new Audio(`../audio/${this.name}.mp3`);
 }
 
-
-
 let audio01  = new Track('HopPopMarch2019');
 let audio02 = new Track('thx-sound-test');
 
@@ -16,7 +14,6 @@ console.log(audio01);
 
 
 //==========    Define Handlers    ==========
-//NOTE : for more mixes will need to loop through and select each track - 7:50
 let seekBar01 = document.getElementById('seek-bar-01');
 let seekBar02 = document.getElementById('seek-bar-02');
 let tracks = document.querySelector('.tracks');
@@ -28,13 +25,12 @@ let playButtonIcon01 = playButton01.querySelector('i');
 
 
 let fillBar01 = document.querySelector('.fill-01');
-let fillBar02 = document.querySelector('.fill-02');
+// let fillBar02 = document.querySelector('.fill-02');
 
 
 //==========    Clamps   ==========
 
 // let p = audio01.currentTime / audio01.duration;
-
 
 //==========    PLAY BUTTON FUNCTIONALITY   ==========
 playButton01.addEventListener('click', function () {
@@ -78,7 +74,7 @@ audio01.addEventListener('pause', function () {
 
 // ==========   Traverse Track  =========
 
-//update fill bar as track time elapses
+// update fill bar as track time elapses
 audio01.addEventListener('timeupdate', function () {
     let p = audio01.currentTime / audio01.duration;
     fillBar01.style.width = p * 100 + '%'
@@ -103,8 +99,6 @@ function clamp(min, val, max){
 
 
 
-
-
 seekBar01.addEventListener('mousedown', function (e) {
     mouseDown = true;
 
@@ -114,21 +108,13 @@ seekBar01.addEventListener('mousedown', function (e) {
         this.clientWidth = seekBar01.clientWidth + 'px'
     }
 
-    var clues = new Data();
-
-
-    console.log(tracks.offsetLeft)
-    console.log(clues)
-
+    // console.log(tracks.offsetLeft);
 
     // let p = (e.clientX - seekBar01.offsetLeft) / seekBar01.clientWidth; //400px
 
     let p = (e.clientX - (tracks.offsetLeft + 100)) / seekBar01.clientWidth; //400px
 
     p = clamp(0, p,1);
-
-
-
 
     fillBar01.style.width = p * 100 + '%' //fill the status bar with elapsed track progress
 });
@@ -141,8 +127,6 @@ seekBar02.addEventListener('mousedown', function (e) {
 
     fillBar02.style.width = p * 100 + '%' //fill the status bar with elapsed track progress
 });
-
-
 
 
 //==========    Jump Track based on marker  ==========
@@ -177,9 +161,7 @@ seekBar01.addEventListener('mouseup' , function (e) {
 
 });
 
-
 //----  ---
-
 
 
 seekBar02.addEventListener('mousemove', function (e) {
@@ -204,3 +186,6 @@ seekBar02.addEventListener('mouseup' , function (e) {
     audio02.currentTime =p * audio02.duration
 
 });
+
+
+
