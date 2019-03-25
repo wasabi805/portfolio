@@ -8,65 +8,43 @@
 
 }
 
-body{
+html {
+  height: 100%;
+}
 
+body {
+  height: 100%;
+  overflow: auto;
 }
 
 
-
-#blue-lines{
-  height: 30rem;
-  width: 100vw;
-  background-color: #f26522;
-  position: fixed;
-  object-fit: contain;
-  z-index: 10;
-  overflow: hidden;
-  background: url("../../img/pawel-czerwinski-1020731-unsplash.jpg") no-repeat fixed;
-  background-size: cover
-;
-  //background-position: right 20px bottom -200px;
-
-
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 62%);
-
-
-
+.row{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  //width: 100%;
 
 }
 
-
+.col{
+  flex :0 1 30%;
+  display: inline-block;
+}
 
 #main{
-
   font-family: Alcubierre;
   color: azure;
   width: 100vw;
   height: 110vh;
 
-  position: relative;
-  overflow: auto;
-
-
-
+  position: absolute;
+  overflow: scroll;
+  z-index: 10;
 
 
   h1{
     font-family: Inter;
   }
-
-  //background images
-  #main-bg-img{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    object-fit: cover;
-  }
-
-
-
-
 
   #title-index{
     position: fixed;
@@ -103,35 +81,17 @@ body{
     }
   }
 
-  @keyframes slideRight{
-    0%{
-      left: -520px;
-    }
-
-    100%{
-      left: 1em;
-    }
-  }
-
-
-  .subTitle{
-    top: 12em;
-    z-index: 10;
-    position: fixed;
-  }
-
-
-
-
-
-
-
-
   //-------------------------------
 
   #main-bg-img{
     transition: 1.75s ease-in-out;
     position: fixed;
+
+    img{
+      width: 100%;
+      height: 110vh;
+    }
+
   }
 
   #black-bg{
@@ -151,54 +111,25 @@ body{
     opacity: 0;
   }
 
-
-
-
-
-
-
-  .slideInFromRight{
-    animation: 1s ease-out 0s 1 slideInFromRight;
-    animation-fill-mode: forwards;
-    opacity: 1;
-  }
-
-  .resetSlideInFromRight{
-    animation: 1s ease-out 0s 1 resetSlideInFromRight;
-    animation-fill-mode: forwards;
-    //opacity: 0.2;
-  }
-
-
-
-
 }
-
-
-
-
 
 .lead-image{
   background-color: #630460;
 }
 
-
-
-
 @import "header";
-@import "landing/tiles";
 @import "about";
 @import "audio-player";
 @import "mixes";
 @import "travel";
 @import "gallery";
 @import "landing/controller";
-@import "portfolio/portfolio";
-@import "portfolio/cube";
+@import "heroes/portfolio";
 
 
 
-@import "content";
+
+
 
 
 

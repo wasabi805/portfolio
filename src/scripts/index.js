@@ -1,132 +1,80 @@
 console.log('hello bro');
 
-var mainWindow = document.getElementById('main');
-
-var mainBgImg = document.getElementById('main-bg-img');
-var blackBg = document.getElementById('black-bg');
-
 var landingTitle = document.getElementById('title-index');
+landingTitle.classList.add('title-index-initial');
 
-var blueLines = document.getElementById('blue-lines');
-var tiles = document.getElementById('tiles');
-
-
-//  GET STARTED HEADER
-var getStarted = document.getElementById('get-started');
-
-//  Controller Group
-var controllerContainer = document.getElementById('controller-container');
-var controllerShadow = document.getElementById('controller-shadow');
+var main= document.getElementById('main');
+var about= document.getElementById('about');
 
 
-//  SNES buttons
-var yBtn = '';
-var xBtn = '';
-var bBtn = '';
-var aBtn = '';
 
-//https://javascript.info/onload-ondomcontentloaded
-(function hideStuff(){
 
+var aboutLink = document.getElementById('about-link');
+var about_link_sub_menu =document.getElementById('about-link-sub-menu');
+about_link_sub_menu.classList.add('hide-sub-menu');
+var show_about_area = document.getElementById('show-about-area');
+
+
+
+show_about_area.addEventListener('mouseenter', function (e) {
+    // console.log(e.clientX, 'this is e.clientX');
+    // console.log(aboutLink.offsetLeft, 'offsetLeft');
+    // console.log(e.y -  aboutLink.offsetTop, 'this is y')
+
+
+    about_link_sub_menu.classList.remove('hide-sub-menu');
+    about_link_sub_menu.classList.add('show-sub-menu');
+});
+
+(function setToTop() {
     if(document.readyState === 'loading'){
-        //Initial State for landing bg image background
-        console.log("I'm hiding stuff");
-
-
-        mainBgImg.classList.add('showIndexBg');
-        blackBg.classList.add('hideIndexBg');
-
-
-
-        // tiles.classList.add('hide-tiles');
-
-        //Title INITIAL
-        landingTitle.classList.add('title-index-initial');
-
-
-        //GET STARTED HEADER
-        getStarted.classList.add('hide-get-started-start');
-        getStarted.classList.add('shrink');
-
-        //CONTROLLER GROUP
-        blueLines.classList.add('hide-controller-group-start');
-        controllerContainer.classList.add('hide-controller-group-start');
-        controllerShadow.classList.add('hide-controller-group-start');
-
+        scroll(0,0)
     }
 })();
 
-//  ==========   Onscroll UP && DOWN   ==========
+
+let preventBounce = ()=>{
+    document.documentElement.style.overflow = 'hidden'
+};
+
+
+main.addEventListener('scroll', function (e) {
+    const scrollYIndex = main.scrollY;
+    console.log(scrollYIndex, 'from main');
+});
+
+
+var isAboutVisible = false;
+
+//  ==========   Onscroll DOWN   ==========
 window.addEventListener('scroll', function () {
+
     const scrollYIndex = window.scrollY;
     console.log(scrollYIndex);
 
-    if(scrollYIndex > 50){
-        console.log('scroll me');
+    if(scrollYIndex > 40){
 
-        //Crossfade Img
-        mainBgImg.classList.add('hideIndexBg');
-        mainBgImg.classList.remove('showIndexBg');
+        if(isAboutVisible === false){
+            // console.log('bring in the about page');
 
-        //Title 01 of 04
-        landingTitle.classList.remove('title-index-initial');
-        landingTitle.classList.add('slideLeft');
-
-
-        // tiles.classList.add('show-tiles');
-        // tiles.classList.remove('hide-tiles');
+            isAboutVisible = true;
+            landingTitle.classList.remove('title-index-initial');
+            landingTitle.classList.add('slideLeft');
+            main.classList.add('hideMain');
 
 
-        //SHOW GET STARTED HEADER
-        getStarted.classList.add('show-get-started');
-        getStarted.classList.remove('hide-get-started-start');
-        getStarted.classList.remove('shrink');
+           setTimeout(()=>{
+               scroll(0,0);
+               main.style.display = "none";
+               about.style.position = 'relative';
 
-        //SHOW Controller GROUP
-        blueLines.classList.add('show-controller-group');
-        controllerContainer.classList.add('show-controller-group');
-        controllerShadow.classList.add('show-controller-group');
+               //adds overflow hidden to the <html> to prevent "white" bounce
+               preventBounce();
 
-        blueLines.classList.remove('hide-controller-group');
-        controllerContainer.classList.remove('hide-controller-group');
-        controllerShadow.classList.remove('hide-controller-group');
+
+           }, 1000)
+        }
     }
-
-    //Title 02 of 04
-    if(scrollYIndex<50){
-        mainBgImg.classList.add('showIndexBg');
-        mainBgImg.classList.remove('hideIndexBg');
-
-        //HIDE GET STARTED HEADER
-        getStarted.classList.add('hide-get-started');
-        getStarted.classList.remove('show-get-started');
-        getStarted.classList.add('shrink');
-
-
-        //HIDE Controller GROUP
-        blueLines.classList.add('hide-controller-group');
-        controllerContainer.classList.add('hide-controller-group');
-        controllerShadow.classList.add('hide-controller-group');
-
-        blueLines.classList.remove('show-controller-group');
-        controllerContainer.classList.remove('show-controller-group');
-        controllerShadow.classList.remove('show-controller-group');
-
-
-    }
-
-    //Title 03 of 04
-    if(landingTitle.className === 'slideLeft' && scrollYIndex<50){
-        console.log('trigger the correct function now');
-        landingTitle.classList.add('slideRight');
-        landingTitle.classList.remove('slideLeft');
-    }
-
-    //Title 04 of 04
-    if(landingTitle.className === 'slideRight slideLeft' && scrollYIndex>50){
-        landingTitle.classList.remove('slideRight');
-    }
-
 });
 
 
@@ -139,16 +87,25 @@ function snesRedirect(id) {
 
     switch(id){
 
+        case 'y': // y btn
+            window.location.href = siteUrl+'about/mixes';
+            break;
+
         case 'x': // x btn
-            window.location.href =  siteUrl+'about';
+            window.location.href =  siteUrl+'about/heroes';
+            break;
+
+        case 'b': // b btn
+            window.location.href =  siteUrl+'about/travel';
             break;
 
         case 'a': // a btn
-            window.location.href = siteUrl+'portfolio';
+            window.location.href = siteUrl+'';
             break;
 
     }
 }
+
 
 
 

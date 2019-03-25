@@ -50,9 +50,10 @@
       position: absolute;
       height: 10%;
       width: 7%;
-      z-index: 100;
+
       transform: scale(1.1);
       border-radius: 50%;
+      z-index: 100;
 
       &:hover{
         transform: scale(1.0);

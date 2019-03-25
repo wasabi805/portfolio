@@ -48,7 +48,6 @@ playButton01.addEventListener('click', function () {
     }
 });
 
-
 playButton02.addEventListener('click', function () {
     console.log('btn2')
     //these are predefined in js lib

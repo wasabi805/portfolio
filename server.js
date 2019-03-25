@@ -3,7 +3,6 @@ var sassMiddleware = require('node-sass-middleware');
 var path = require('path');
 const app = express();
 
-//Sass : see https://github.com/sass/node-sass-middleware#express-example
 app.use(sassMiddleware({
     /* Options */
     src: path.join(__dirname, 'src' , 'style', 'sass'),
@@ -22,6 +21,7 @@ app.use(express.static('public'));//all other assets like images
 
 
 //===== ROUTES  ======
+//  (move these into a routes.js file.)
 app.get('/', (req, res)=>{
     res.sendFile(__dirname +'/src' + '/views'+'/index.html')
 });
@@ -38,8 +38,8 @@ app.get('/about/travel', (req, res)=>{
     res.sendFile(__dirname +'/src' + '/views'+'/travel.html')
 });
 
-app.get('/portfolio', (req, res)=>{
-    res.sendFile(__dirname +'/src' + '/views'+'/portfolio.html')
+app.get('/about/heroes', (req, res)=>{
+    res.sendFile(__dirname +'/src' + '/views'+'/heroes.html')
 });
 
 

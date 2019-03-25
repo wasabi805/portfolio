@@ -27,7 +27,7 @@ document.addEventListener("keydown", function(event) {
             break;
 
         case 65: // a btn
-            window.location.href = siteUrl+'portfolio';
+            window.location.href = siteUrl+'heroes';
             break;
 
     };

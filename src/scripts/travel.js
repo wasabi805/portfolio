@@ -15,7 +15,6 @@ var images = [
     {id: '12' , src: "https://i.ibb.co/L5qpRcd/20171103-104405.jpg", text: '' },
     {id: '13' , src: "https://i.ibb.co/4F64f90/20171103-110742.jpg", text: '' },
     {id: '14' , src: "https://i.ibb.co/RypCh7w/20171103-104736.jpg", text: '' },
-
 ];
 
 
@@ -50,9 +49,6 @@ const loadImg = (id) =>{
 
         const clientHeight = document.querySelector('.modal-travel');
         console.log(clientHeight.clientHeight);
-
-
-
 
 
         document.querySelector('#animate-img-a').innerHTML = innerHTMLString;

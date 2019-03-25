@@ -2,152 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>| HEROES |</title>
-
-
-
+    <title>| TRAVEL |</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../public/index.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-    </script>
-
-
-
-
-
-
 </head>
 
 <body>
 
+    <section id="travel">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="http://localhost:8080/">Home</a></li>
+                <li>Story</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
 
+        <img class="background" src="../img/kevin-laminto-574456-unsplash.jpg" alt="">
 
+        <div id="tap-menu">
+            <section id="gallery-travel" onchange="console.log('i changed')">
+                <div class="row">
+                    <div class="column">
+                        <img id="1" src="https://i.ibb.co/4g2CVWz/IMG-20190224-170820.jpg" alt="" onclick="loadImg(this.id)"/>
+                        <img id="2" src="https://i.ibb.co/SB3GDvx/IMG-20190222-185550.jpg" alt=""  onclick="loadImg(this.id)" />
+                        <img id="3" src="https://i.ibb.co/sFhDvRr/MAXX-PINK.png" alt=""  onclick="loadImg(this.id)"/>
+                        <img id="4" src="https://i.ibb.co/k2X6ctX/IMG-20190224-155314.jpg" alt="" onclick="loadImg(this.id)"/>
+                        <img id="5" src="https://i.ibb.co/VqS8Ryz/IMG-20190224-160733.jpg" alt="" onclick="loadImg(this.id)"/>
+                        <img id="6" src="https://i.ibb.co/VpBRMBK/IMG-20190224-141013.jpg" alt="" onclick="loadImg(this.id)"/>
+                        <img id="7" src="https://i.ibb.co/Lgc9bfF/IMG-20190224-152505.jpg" alt="" onclick="loadImg(this.id)"/>
+                    </div>
 
-<section id="travel">
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="http://localhost:8080/">Home</a></li>
-            <li>Story</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-
-
-    <img class="background" src="../img/kevin-laminto-574456-unsplash.jpg" alt="">
-
-    <div id="tap-menu">
-        <section id="gallery-travel" onchange="console.log('i changed')">
-            <div class="row">
-                <div class="column">
-                    <img id="1" src="https://i.ibb.co/4g2CVWz/IMG-20190224-170820.jpg" alt="" onclick="loadImg(this.id)"/>
-                    <img id="2" src="https://i.ibb.co/SB3GDvx/IMG-20190222-185550.jpg" alt=""  onclick="loadImg(this.id)" />
-                    <img id="3" src="https://i.ibb.co/sFhDvRr/MAXX-PINK.png" alt=""  onclick="loadImg(this.id)"/>
-                    <img id="4" src="https://i.ibb.co/k2X6ctX/IMG-20190224-155314.jpg" alt="" onclick="loadImg(this.id)"/>
-                    <img id="5" src="https://i.ibb.co/VqS8Ryz/IMG-20190224-160733.jpg" alt="" onclick="loadImg(this.id)"/>
-                    <img id="6" src="https://i.ibb.co/VpBRMBK/IMG-20190224-141013.jpg" alt="" onclick="loadImg(this.id)"/>
-                    <img id="7" src="https://i.ibb.co/Lgc9bfF/IMG-20190224-152505.jpg" alt="" onclick="loadImg(this.id)"/>
+                    <div class="column">
+                        <img id="8"  src="https://i.ibb.co/VD4gFTg/IMG-20190224-142143.jpg" alt="" onclick="loadImg(this.id)" />
+                        <img id="9" src="https://i.ibb.co/RDdXMLL/Seek-Png-com-gorillaz-png-2405094.png" alt="" onclick="loadImg(this.id)"/>
+                        <img id="10" src="https://i.ibb.co/fvQWNzX/IMG-20190224-161115.jpg" alt="" onclick="loadImg(this.id)"/>
+                        <img id="11" src="https://i.ibb.co/9vwXWfB/noodle-phase-1-by-xxsuperfire-d6n548q.png" alt="" onclick="loadImg(this.id)"/>
+                        <img id="12" src="https://i.ibb.co/L5qpRcd/20171103-104405.jpg" alt="" onclick="loadImg(this.id)"/>
+                        <img id="13" src="https://i.ibb.co/4F64f90/20171103-110742.jpg" alt="" onclick="loadImg(this.id)"/>
+                        <img id="14" src="https://i.ibb.co/RypCh7w/20171103-104736.jpg" alt="" onclick="loadImg(this.id)"/>
+                    </div>
+                    <div class="column">
+                        <img src="https://picsum.photos/200/300/?image=123" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=53" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=18" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=8" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=13" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=47" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=87" alt=""/>
+                    </div>
+                    <div class="column">
+                        <img src="https://picsum.photos/200/300/?image=123" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=53" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=18" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=8" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=13" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=47" alt=""/>
+                        <img src="https://picsum.photos/200/300/?image=87" alt=""/>
+                    </div>
                 </div>
+            </section>
+        </div>
 
-                <div class="column">
-                    <img id="8"  src="https://i.ibb.co/VD4gFTg/IMG-20190224-142143.jpg" alt="" onclick="loadImg(this.id)" />
-                    <img id="9" src="https://i.ibb.co/RDdXMLL/Seek-Png-com-gorillaz-png-2405094.png" alt="" onclick="loadImg(this.id)"/>
-                    <img id="10" src="https://i.ibb.co/fvQWNzX/IMG-20190224-161115.jpg" alt="" onclick="loadImg(this.id)"/>
-                    <img id="11" src="https://i.ibb.co/9vwXWfB/noodle-phase-1-by-xxsuperfire-d6n548q.png" alt="" onclick="loadImg(this.id)"/>
-                    <img id="12" src="https://i.ibb.co/L5qpRcd/20171103-104405.jpg" alt="" onclick="loadImg(this.id)"/>
-                    <img id="13" src="https://i.ibb.co/4F64f90/20171103-110742.jpg" alt="" onclick="loadImg(this.id)"/>
-                    <img id="14" src="https://i.ibb.co/RypCh7w/20171103-104736.jpg" alt="" onclick="loadImg(this.id)"/>
-                </div>
-                <div class="column">
-                    <img src="https://picsum.photos/200/300/?image=123" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=53" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=18" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=8" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=13" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=47" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=87" alt=""/>
-                </div>
-                <div class="column">
-                    <img src="https://picsum.photos/200/300/?image=123" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=53" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=18" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=8" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=13" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=47" alt=""/>
-                    <img src="https://picsum.photos/200/300/?image=87" alt=""/>
-                </div>
-            </div>
+        <section class="wrapper">
+            <h1 class="title-travel">Travel</h1>
+
+           <section class="test">
+               <section class="modal-travel">
+
+                   <div id="animate-img-a"></div>
+                   <div id="animate-img-b"></div>
+                   <!--<p>THIS IS THE IMG MENU</p>-->
+               </section>
 
 
+               <section id="text-travel">
+                   <h3>Optimus</h3>
+                   <p> grew up on the crime side, the New York Times side
+                       Staying alive was no jive
+                       Had second hands, moms bounced on old men
+                       So then we moved to Shaolin land
+                       A young youth, yo rockin' the gold tooth, 'Lo goose
+                       Only way, I begin to G off was drug loot
+                       And let's…
+
+                       Staying alive was no jive
+                       Had second hands, moms bounced on old men
+                       So then we moved to Shaolin land
+                       A young youth, yo rockin' the gold tooth, 'Lo goose
+                       Only way, I begin to G off was drug loot
+                       And let's…
+                   </p>
+               </section>
+           </section>
         </section>
-    </div>
-
-
-
-    <section class="wrapper">
-
-        <h1 class="title-travel">Travel</h1>
-
-
-
-       <section class="test">
-           <section class="modal-travel">
-
-               <div id="animate-img-a"></div>
-               <div id="animate-img-b"></div>
-               <!--<p>THIS IS THE MODAL</p>-->
-               <!--<img src="../img/optimus.jpg" alt="">-->
-           </section>
-
-
-           <section id="text-travel">
-               <h3>Optimus</h3>
-               <p> grew up on the crime side, the New York Times side
-                   Staying alive was no jive
-                   Had second hands, moms bounced on old men
-                   So then we moved to Shaolin land
-                   A young youth, yo rockin' the gold tooth, 'Lo goose
-                   Only way, I begin to G off was drug loot
-                   And let's…
-
-                   Staying alive was no jive
-                   Had second hands, moms bounced on old men
-                   So then we moved to Shaolin land
-                   A young youth, yo rockin' the gold tooth, 'Lo goose
-                   Only way, I begin to G off was drug loot
-                   And let's…
-               </p>
-           </section>
-       </section>
-
-
-
-
-
-
     </section>
 
-
-
-    <!--<section id="footer-img">-->
-        <!--<h1>This is the Footer img</h1>-->
-    <!--</section>-->
-
-
-
-
-
-</section>
-
-
-
-<script src="../scripts/travel.js"></script>
+    <script src="../scripts/travel.js"></script>
 
 </body>
 </html>
