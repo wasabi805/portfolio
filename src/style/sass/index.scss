@@ -18,6 +18,28 @@ body {
   background-color: black;
 }
 
+@font-face {
+  font-family: Alcubierre;
+  src: url("../../fonts/Alcubierre.woff")
+}
+
+@font-face {
+  font-family: "Dolce Vita";
+  src: url("../../fonts/Dolce_Vita.woff")
+}
+
+@font-face {
+  font-family: Standaris ;
+  src: url("../../fonts/Standaris.woff")
+}
+
+@font-face {
+  font-family: Thunderstorm;
+  src: url("../../fonts/Thunderstorm-Update.woff")
+}
+
+
+
 
 .gallery-travel__row{
   display: flex;
