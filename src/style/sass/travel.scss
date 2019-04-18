@@ -1,12 +1,17 @@
+@import "constants/width";
+@import "functions/functions";
+
+
 #travel{
-  .background{
-    position: absolute;
-  }
 
-
+  position: relative;
+  color: azure;
+  background-color: #00ffff1f;
+  background-size: cover;
 
   img{
     width: 100%;
+    border: 1px solid cyan;
   }
 
   &:before{
@@ -21,214 +26,282 @@
     z-index: 0;
   }
 
-  position: relative;
-  color: azure;
-  background-color: #00ffff1f;
 
-  //background: url("../../img/kevin-laminto-574456-unsplash.jpg") no-repeat  fixed;
-  background-size: cover;
-
-  border: 1px solid #50d8d2;
-  //overflow-y: hidden;
-
-
-
-
-  .title-travel{
-    font-size: 23px;
-    position :absolute;
-
-  }
-
-
-  .wrapper{
-    font-family: Alcubierre;
-
+  .initial-content{
     position: relative;
-    //display: flex;
-    //justify-content: space-evenly;
-    height: 100vh;
-
-
-
-    section:nth-child(5){
-      flex-basis: 100%;
-    }
-
-    width: 100%;
-    text-align: center;
-    //border: blue 1px solid;
-
-    .modal-travel{
-      margin: auto;
-      height: 74vh;
-
-
-      img{
-        width : 100%
-      }
-
-    }
-
-
-    #animate-img-a{
-      opacity:1;
-      transition: all 1s;
-      position: absolute;
-
-      img{
-        width: 100%;
-      }
-
-    }
-
-    #animate-img-b{
-      opacity:1;
-      transition: all 1s;
-      position: absolute;
-
-      img{
-        width: 100%;
-      }
-    }
-
-    #animate-img-a.isHidden{
-      opacity:0;
-    }
-
-    #animate-img-b.isHidden{
-      opacity:0;
-    }
-
-    #animate-img-b.isShowing{
-      opacity:1;
-    }
-
-    #animate-img-a.isShowing{
-      opacity:1;
-    }
-
-
-
-
-
-
-    #text-travel{
+    &__title{
+      position :absolute;
       font-family: Alcubierre;
-      font-size: 10px;
-      align-self: center;
-      position: absolute;
-      bottom: 40px;
+      text-align: center;
+
+      top: 1em;
       color: #FFFFFF;
-      right: 74px;
       z-index: 10;
-      width: 33%;
-      text-align: justify;
-      //border: 1px solid yellow;
 
+      font-size: 2rem;
+      letter-spacing: 12px;
+      font-weight: 200;
 
-      h3{
-        color: cyan;
+      @include tablet{
+        font-size: 3rem;
+        top: 10em;
       }
 
-      p{
-
-      }
     }
 
+    &__image{
+      position: absolute;
+    }
+  }
+
+
+  .travel-content-group{
+    position: relative;
+    margin-top: 60px;
+
+    @include tablet{
+      margin-top: 0;
+    }
+  }
+
+  .modal-travel{
+    margin: auto;
+    //height: 74vh;
+    img{
+      width : 100%
+    }
 
   }
 
-.test{
+  #animate-img-a{
+    opacity:1;
+    transition-property: opacity;
+    transition-duration: 1s;
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+  #animate-img-b{
+    opacity:1;
+    transition-property: opacity;
+    transition-duration: 1s;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  #animate-img-a.isHidden{
+
+    h1{
+      color: black;
+    }
+    color: black;
+    opacity: 0;
+    width: 0;
+    max-width: 0;
+
+  }
+
+  #animate-img-b.isHidden{
+
+    h1{
+      color: black;
+    }
+    color: black;
+    opacity: 0;
+    width: 0;
+    max-width: 0;
+
+  }
+
+  #animate-img-b.isShowing{
+    opacity:1;
+
+  }
+
+  #animate-img-a.isShowing{
+    opacity:1;
+
+  }
+
+}
+
+
+.image-wrapper{
   position: relative;
-  left: 2px; //adjust the width specific to image
-  border: 1px orange dotted;
-  height: 99%; //adjust the height specific to image
+  text-align: center;
+
+  &__header{
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+    h1{
+      font-family: "Dolce Vita";
+      color: #FFFFFF;
+      letter-spacing: 12px;
+      font-weight: 100;
+
+      @include desktop{
+        font-size: 6rem;
+      }
+    }
+
+
+    @include desktop{
+      top :8rem;
+    }
+
+  }
+
+
+
 }
 
 
-}
-
-.testMe{
-  background-color: #630460;
-  color: #FFFFFF;
-}
 
 
-#tap-menu{
-  background-color: #39b54a;
+
+.galleryOnHover{
   position: fixed;
-  display: contents;
-  border: 1px yellow solid;
-  margin-top: 6em;
-  width: 25%;
-  max-height: 70vh;
-  z-index: 90;
-}
-
-
-#gallery-travel{
-  position: fixed;
-  margin-top: 6em;
-
+  margin-top: 1em;
 
   background-color: #f0ffff17;
-  width: 25%;
+  width: 300px;
   max-height: 70vh;
   overflow: scroll;
   z-index: 90;
 
 
-  left: -267px;
+  left: $hide;
   transition: all 0.5s ease-in-out;
 
 
-
-  .row{
-    flex-wrap: wrap;
-    padding: 0 4px;
-
-    transform: rotateY(48deg);
-
-    .column{
-      flex: 25%;
-      padding: 0 4px;
-
-
-      img{
-        max-width: 20%;
-        margin-top: 8px;
-        vertical-align: middle;
-
-        &:hover{
-          cursor: pointer;
-        }
-      }
+}
 
 
 
-      @media screen and (max-width: 800px) {
+
+//====================Grand-Parent==============================
+.gallery-travel{
+
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  background-color: #f0ffff17;
+  width: 300px;
+  max-height: 30vh;
+  overflow: scroll;
+  z-index: 90;
+  //left: -267px;
+  transition: all 0.5s ease-in-out;
+
+  @include tablet{
+    max-height: 40vh;
+    font-size: 0.75em;
+  }
 
 
-        flex: 50%;
-        max-width: 50%;
-
-      }
-
-      @media screen and (max-width: 600px) {
 
 
-        flex: 100%;
-        max-width: 100%;
-
-      }
-
-    }
-
+  &__container{
+    overflow-y: scroll;
+    max-height: 500px;
 
 
   }
+
+
+  &__row{
+    flex-wrap: wrap;
+    padding: 0 4px;
+    //transform: rotateY(48deg);
+  }
+
+  //------  Child -----
+
+  &__column{
+    padding: 0 4px;
+
+    @media screen and (max-width: 800px) {
+      flex: 50%;
+      max-width: 50%;
+
+    }
+
+    @media screen and (max-width: 600px) {
+      flex: 100%;
+      max-width: 100%;
+
+    }
+  }
+
+  &__image{
+    display: inline;
+  }
+
+
+  img{
+    max-width: 20%;
+    margin-top: 8px;
+    vertical-align: middle;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
 }
+
+.gallery-travel:before{
+
+  position: absolute;
+  content: attr(data-value);
+
+  //right: 0;
+
+  writing-mode: vertical-rl;//display vertical
+  text-orientation: upright;//display vertical
+  text-align: center; //in this case, vertically center
+
+  line-height: 2em;  //horizontal center content
+
+  font-family: Standaris;
+  font-size: 14px;
+  font-weight: 500;
+
+
+  color: white;
+
+  width: 30px;
+  height: 100%;
+  background-color: rgba(85, 117, 114, 0.3);
+
+  @include tablet{
+    font-size: 2em;
+    line-height: 26px;
+  }
+
+  @include desktop{
+   line-height: 26px;
+  }
+
+}
+
+
+
+//==================================================
 
 #gallery-travel.showMeTheMoney{
   opacity: 1;
@@ -236,9 +309,7 @@
 }
 
 
-
-
-.title-travel{
+.initial-content__title{
   font-family: Alcubierre;
   top: 10em;
   color: #FFFFFF;
@@ -250,6 +321,64 @@
   letter-spacing: 12px;
 
 }
+
+.text-travel{
+
+  &__content{
+    font-family: Alcubierre;
+
+    font-size: 13px;
+    align-self: center;
+    padding: 2em;
+    color: white;
+    z-index: 100;
+
+    text-align: justify;
+
+    animation: fadeTravelText 2s ease-in-out;
+
+
+    @include tablet{
+      position: absolute;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.75);
+      bottom: 6em;
+      right: 0;
+      width: 35%
+    }
+
+    @include laptop{
+      align-self: center;
+      position: absolute;
+      bottom: 40px;
+      color: white;
+
+      right: 74px;
+      z-index: 100;
+      width: 42%;
+      text-align: justify;
+    }
+
+    h3{
+      color: cyan;
+    }
+
+    @keyframes fadeTravelText {
+      0%{
+        opacity: 0;
+        color: black;
+      }
+
+      100%{
+
+        opacity: 1;
+        color: white
+      }
+    }
+
+  }
+}
+
 
 
 

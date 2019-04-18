@@ -7,7 +7,6 @@
   background: url("../../img/sankhadeep-barman-558514-unsplash.jpg") no-repeat center fixed;
   background-size: cover;
 
-
   @media only screen and(min-width: 768px) {
     overflow-y: hidden;
 
@@ -20,6 +19,9 @@
     from { opacity: 0; }
     to   { opacity: 1; }
   }
+
+
+
 
    .wrapper{
      position: relative;

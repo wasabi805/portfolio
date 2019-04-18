@@ -1,12 +1,25 @@
 $tablet-width: 768px;
-$desktop-width: 1024px;
+$laptop-width: 1024px;
+$desktop-width: 1281px;
 $xl-width : 2560px;
+
+
+//PREVENTS SCROLL BOUNCE ON HEADER
+body{
+  overscroll-behavior: none;
+}
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
     @content;
   }
 }
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;

@@ -5,6 +5,7 @@
     <title>| My Mixes |</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../public/index.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <script
@@ -15,21 +16,26 @@
 </head>
 <body>
 
-    <nav class="nav-bar">
-        <div class="logo">
-            <img src="../img/kisspng-wu-tang-wu-tang-clan-logo-wu-tang-forever-tang-5ae0345013fd09.9009980915246428960819.png" alt="">
-        </div>
-
-        <ul>
-            <li><a href="http://localhost:8080/">Home</a></li>
-            <li>Story</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
 
 
     <section id="mixes">
+        <div id="nav-tab">
+            navigation
+        </div>
+
+        <nav id="nav-bar">
+            <div class="logo">
+                <img src="../img/kisspng-wu-tang-wu-tang-clan-logo-wu-tang-forever-tang-5ae0345013fd09.9009980915246428960819.png" alt="">
+            </div>
+
+            <ul>
+                <li><a href="http://localhost:8080/">Home</a></li>
+                <li>Story</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
 
         <div class="wrapper">
             <h1 class="title-right"> | MIXES |</h1>
@@ -100,6 +106,9 @@
         </div>
     </section>
 
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/navigation/header-navigation.js"></script>
+    <script src="../scripts/navigation/tab-drop-navbar.js"></script>
     <script src="../scripts/music-player.js"></script>
 </body>
 </html>

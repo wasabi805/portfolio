@@ -15,10 +15,11 @@ html {
 body {
   height: 100%;
   overflow: auto;
+  background-color: black;
 }
 
 
-.row{
+.gallery-travel__row{
   display: flex;
   flex-direction: row;
   position: relative;

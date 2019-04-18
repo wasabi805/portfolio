@@ -13,60 +13,20 @@
 </head>
 <body id="body">
 
-    <nav class="nav-bar">
+    <!--NAV-->
+    <nav id="nav-bar">
         <div class="logo">
             <img src="../img/kisspng-wu-tang-wu-tang-clan-logo-wu-tang-forever-tang-5ae0345013fd09.9009980915246428960819.png" alt="">
         </div>
 
-       <div class="links-container">
-           <div class="row nav-row">
-               <div class="col nav-col">
-                   <button id="home-link" onclick="nav_link_loc(this.id)">
-                       <a href=""> Home</a>
-                   </button>
-               </div>
-
-               <div class="col nav-col">
-                   <div id="show-about-area">
-                       <button id="about-link">
-                           <a>About</a>
-                       </button>
-                   </div>
-
-                   <div id="about-link-sub-menu">
-
-                       <button class="about-button">
-                           <a href="http://localhost:8080/about/mixes">Mixes</a>
-                       </button>
-
-                       <button>
-                           <a href="http://localhost:8080/about/heroes">ACBA</a>
-                       </button>
-
-                       <button>
-                           <a href="">Food</a>
-                       </button>
-
-                       <button>
-                           <a href="http://localhost:8080/about/travel">Travel</a>
-                       </button>
-                   </div>
-               </div>
-
-               <div class="col nav-col">
-                   <button>
-                       <a href="http://localhost:8080/#projects">Projects</a>
-                   </button>
-               </div>
-
-               <div class="col nav-col">
-                   <button>
-                       <a>Contact</a>
-                   </button>
-               </div>
-           </div>
-       </div>
+        <ul>
+            <li><a href="http://localhost:8080/">Home</a></li>
+            <li>Story</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </nav>
+
 
 
     <div id="main" >
@@ -79,8 +39,12 @@
         <h1 id="title-index">Welcome to ProletDev</h1>
     </div>
 
+
+
+    <!--ABOUT SECTION-->
     <div id="about">
         <section class="dev-profile-container">
+
             <article id="bio-container">
                 <div class="stats">
                     <h1 class="about-title">ABOUT</h1>
@@ -107,61 +71,112 @@
                 </div>
             </article>
 
+
+
+            <!--Abilities-->
+
             <article id="abilities-container">
                 <!--Thinking about turning this into an accordion menu later to display a snap shot of the sites before user visits. -->
-                <div class="abilities-item">
-                    <h1 id="projects" class="about-headers">Projects</h1>
 
 
-                    <div class="project-item">
-                        <div class="project-icon">
+                <!--item-01-->
+                <div id="projects" class="abilities-item">
+
+                    <h1 class="about-headers">Projects</h1>
+
+                    <div id="dev-connector" class="project-item">
+
+                        <div id="dev-connector__icon" class="project-item__icon" onclick="handleClickDropDown(this.id)">
                             <i class="fas fa-angle-down faded-cyan"></i>
                         </div>
-                        <div class="project-text" >
+
+                        <div id="project-item__content" >
                             <h3>DevConnector</h3>
                             <p>A React Project with login , registration, and social feed.  </p>
+
+                            <div id="show-dev-con" class="project-item__show" >
+                                <div class="row-project">
+                                    <div class="col-project" >
+                                        <img class="col-project-img" src="../img/dev-con.png" alt="">
+                                    </div>
+                                    <div class="col-project" ><h3></h3></div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
+
 
                     <div class="project-item">
 
-                        <div class="project-icon">
+                        <div id="doms-noms__icon" class="project-item__icon " onclick="handleClickDropDown(this.id)">
                             <i class="fas fa-angle-down faded-cyan"></i>
                         </div>
 
-                        <div class="project-text" >
+                        <div class="project-item__content" >
                             <h3>Dom's Noms</h3>
                             <p>Single-page-app built wth React + Redux client's BBQ catering service.</p>
-                        </div>
 
+                            <div id="show-doms-noms" class="project-item__show">
+                                <div class="row-project">
+                                    <div class="col-project" >
+                                        <img class="col-project-img" src="../img/doms.png" alt="">
+                                    </div>
+                                    <div class="col-project" ></div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="project-item">
-                        <div class="project-icon">
+                        <div id="moj-photo__icon" class="project-item__icon" onclick="handleClickDropDown(this.id)">
                             <i class="fas fa-angle-down faded-cyan"></i>
                         </div>
-                        <div class="project-text" >
+                        <div class="project-item__content" >
                             <h3>Mostajo Photography</h3>
                             <p>Site built with React. </p>
+
+                            <div id="show-moj-photo" class="project-item__show" >
+                                <div class="row-project">
+                                    <div class="col-project" >
+                                        <!--<img src="../img/dev-con.png" alt="">-->
+                                    </div>
+                                    <div class="col-project" ><h3></h3></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
                     <div class="project-item">
-                        <div class="project-icon">
+
+                        <div id="sb-sit__icon" class="project-item__icon" onclick="handleClickDropDown(this.id)">
                             <i class="fas fa-angle-down faded-cyan"></i>
                         </div>
-                        <div class="project-text" >
+
+                        <div class="project-item__content" >
                             <h3>SB Sit N' Stay</h3>
                             <p>A React + Redux site for my wife's dog sitting service.</p>
+
+                            <div id="show-sb-sit" class="project-item__show" >
+                                <div class="row-project">
+                                    <div class="col-project" ><h1></h1></div>
+                                    <div class="col-project" ><h3></h3></div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="abilities-item">
+
+                <!--item-02-->
+                <div id="skills" class="abilities-item">
+
                     <h1 class="about-headers">Skills</h1>
-                    <div class="row">
+                    <div class="gallery-travel__row">
                         <div class="list">
                             <h3></h3>
                             <ul>
@@ -184,11 +199,15 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="abilities-item">
+
+                <!--item-03-->
+                <div id="arsenal" class="abilities-item">
+
                     <h1 class="about-headers">Arsenal</h1>
-                    <div class="row">
+                    <div class="gallery-travel__row">
                         <div class="list">
 
                             <ul>
@@ -211,8 +230,14 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
+
+
             </article>
+
+
+
 
             <!--    PERSONAL SECTION-->
 
@@ -285,7 +310,11 @@
         </section>
     </div>
 
-    <script src="../scripts/keyboard-map/keyboard-map.js"></script>
     <script src="../scripts/index.js"></script>
+    <script src="../scripts/navigation/header-navigation.js"></script>
+    <script src="../scripts/about/about.js"></script>
+    <script src="../scripts/keyboard-map/keyboard-map.js"></script>
+
+
 </body>
 </html>

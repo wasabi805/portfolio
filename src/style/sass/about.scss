@@ -1,13 +1,13 @@
 @import "constants/width";
-$bg-shade : #2a3131;
-$bg-Off-Shade : #37303033 ;
+$bg-shade: #2a3131;
+$bg-Off-Shade: #37303033;
 $highlighter: #7c9548;
 
-.faded-cyan{
+.faded-cyan {
   color: #3a8080;
 }
 
-#about{
+#about {
   position: fixed;
   top: 60px;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -18,13 +18,12 @@ $highlighter: #7c9548;
 
   animation: welcome-fade-in 4s ease-in-out;
   animation-fill-mode: forwards;
-
 }
 
 //==========  HEADERS ==========
-.about-headers{
+.about-headers {
   position: absolute;
-  letter-spacing:  3px;
+  letter-spacing: 3px;
   font-weight: 400;
   font-size: 4rem;
   top: -60px;
@@ -33,58 +32,52 @@ $highlighter: #7c9548;
   font-family: "Thunderstorm";
 }
 
-.highlighter{
+.highlighter {
   color: $highlighter;
 }
 
 //==========  Article 1 : stats ==========
 
-.dev-profile-container{
-
+.dev-profile-container {
 }
 
-#bio-container{
+#bio-container {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  @include tablet{
+  @include tablet {
     padding: 2em 4em;
     flex-direction: row;
   }
 
-  @include desktop{
-
+  @include laptop {
   }
   //background-color: #630460;
   align-items: center;
-
 }
 
-.about-title{
-
+.about-title {
   font-size: 3rem;
 
   top: calc(6%);
 
-  @include tablet{
+  @include tablet {
     position: absolute;
   }
-
 }
 
-.stats{
+.stats {
   //background-color: #39b54a;
   font-family: Futura;
   border-top: 5px solid white;
   border-bottom: 5px solid white;
   margin: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
   order: 1;
 
-  @include tablet{
-
+  @include tablet {
     flex-direction: row;
     order: 0;
 
@@ -92,31 +85,30 @@ $highlighter: #7c9548;
     padding: 2em;
   }
 
-  ul{
+  ul {
     list-style: none;
   }
 }
 
-.profile-image{
+.profile-image {
   position: relative;
   overflow: hidden;
   object-fit: contain;
   border: 5px solid white;
   //height: 25em;
 
-  @include tablet{
+  @include tablet {
     max-width: 50%;
   }
 
-  img{
+  img {
     width: 100%;
   }
 }
 
 //==========  Article 2 : abilities ==========
 
-
-#abilities-container{
+#abilities-container {
   display: flex;
   //background-color: #39b54a21;
   padding: 56px;
@@ -124,55 +116,53 @@ $highlighter: #7c9548;
 
   font-family: sans-serif;
 
-
-  @include tablet{
+  @include tablet {
     flex-direction: row;
   }
 
   //projects
-  div:nth-child(1){
-    flex: 2;
-  }
+  //div:nth-child(1){
+  //  flex: 2;
+  //}
 }
 
-.headers{
+.headers {
   font-size: 41px;
   letter-spacing: 5px;
   font-weight: 200;
 }
 
-.abilities-item{
+.abilities-item {
   position: relative;
   flex: 1;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 3rem 0;
 
-  @include tablet{
+  @include tablet {
     margin: 0;
   }
   //border: 1px solid red;
 }
 
-.list{
+.list {
   //background-color: #630460;
   width: 49%;
 
-  .offset{
+  .offset {
     margin-top: 21.5px;
   }
 
-  ul{
+  ul {
     list-style: none;
 
-    li{
+    li {
       background-color: $bg-Off-Shade;
       //border-top: 1px solid white;
       //border-bottom: 1px solid white;
       padding: 5px 2px;
       margin: 3px;
 
-
-      h5{
+      h5 {
         color: $highlighter;
         margin-left: 12px;
         position: relative;
@@ -181,55 +171,86 @@ $highlighter: #7c9548;
       }
     }
 
-    li:nth-last-child(1){
+    li:nth-last-child(1) {
       //border-bottom: 1px solid white;
     }
   }
 }
 
-.project-item{
+.project-item {
   display: flex;
   margin: 3px;
+
+  &__icon {
+    text-align: center;
+    margin-right: 3px;
+    padding: 16px;
+    max-height: 75px;
+    border: 1px solid lime;
+    background-color: $bg-Off-Shade;
+    i {
+      position: relative;
+      font-size: 45px;
+    }
+  }
+
+  &__content {
+    display: inline-block;
+    background-color: $bg-Off-Shade;
+    padding: 5px;
+    width: 89%;
+
+    &__show {
+      //display: none;
+      color: lime;
+      //
+    }
+
+    h3 {
+      color: cyan;
+    }
+
+    p {
+      font-family: "Arvo", serif, Aleo;
+      font-style: italic;
+    }
+  }
 }
 
-.project-icon{
-
-  text-align: center;
-  margin-right: 3px;
-  padding: 16px;
-  background-color: $bg-Off-Shade;
-
-  i{
-
-    position: relative;
-    font-size: 45px;
-  }
-
+#project-item__content {
 }
 
-.project-text{
-  display: inline-block;
-  background-color: $bg-Off-Shade;
-  padding: 5px;
-  width: 89%;
+.row-project{
+  position: relative;
+  display: flex;
+}
 
-  h3{
-    color: cyan;
+.col-project{
+
+  .col-project-img{
+    width: 0;
   }
 
-  p{
-    font-family: 'Arvo', serif , Aleo;
-    font-style: italic;
+  img{
+    width: 100%;
   }
+}
+
+
+
+#test {
+  opacity: 0;
+  height: 0;
+
+  transition: opacity 3s, width 2s;
 }
 
 //==========  PERSONAL SECTION  ==========
-#personal{
-  color: #FFFFFF;
+#personal {
+  color: #ffffff;
 }
 
-.personal-headers{
-
+.personal-headers {
   font-weight: 400;
   font-size: 4rem;
   top: -60px;
@@ -237,30 +258,27 @@ $highlighter: #7c9548;
   font-family: "Thunderstorm";
 }
 
-.personal-container{
+.personal-container {
   //display: flex;
   padding: 2em;
 
-
-  @include desktop{
+  @include laptop {
     display: flex;
   }
-
 }
 
-.personal-text{
+.personal-text {
   flex: 2;
   font-family: Alcubierre;
   font-size: 1.4rem;
   //border: 1px solid red;
-  p{
-
+  p {
     margin: 16px;
     text-align: justify;
   }
 }
 
-.personal-img{
+.personal-img {
   flex: 1;
 
   //border: 1px solid lime;
@@ -269,59 +287,56 @@ $highlighter: #7c9548;
   padding: 8px;
   margin: 10px;
 
-  @include tablet{
+  @include tablet {
     display: inline-block;
     width: 30%;
   }
 
-  @include desktop{
+  @include laptop {
     height: 31%;
   }
 
-  img{
+  img {
     position: relative;
     width: 100%;
   }
 }
 
-.hideAbout{
+.hideAbout {
   opacity: 0;
 }
 
-.showAbout{
+.showAbout {
   opacity: 1;
 }
 
-.hideMain{
+.hideMain {
   opacity: 1;
   animation: welcome-fade-out 2s ease-in-out;
   animation-fill-mode: forwards;
 }
 
-.showMain{
+.showMain {
   opacity: 1;
 }
 
-
 @keyframes welcome-fade-out {
-  0%{
+  0% {
     opacity: 1;
   }
 
-  100%{
+  100% {
     opacity: 0;
   }
 }
 
-
 @keyframes welcome-fade-in {
-  0%{
+  0% {
     opacity: 0;
     position: fixed;
   }
 
-
-  100%{
+  100% {
     opacity: 1;
   }
 }

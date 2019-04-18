@@ -25,7 +25,7 @@ let playButtonIcon01 = playButton01.querySelector('i');
 
 
 let fillBar01 = document.querySelector('.fill-01');
-// let fillBar02 = document.querySelector('.fill-02');
+let fillBar02 = document.querySelector('.fill-02');
 
 
 //==========    Clamps   ==========

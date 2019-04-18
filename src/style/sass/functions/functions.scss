@@ -1,0 +1,23 @@
+
+
+
+
+@function slideGalleryTravel($before, $after){
+  //before = -267px
+  //after= +267px
+  @return $before + $after
+}
+
+
+@function resetGalleryTravel($before, $after){
+
+  //before = 0px
+  //after= 267px
+
+  @return $before - $after
+}
+
+
+$show: slideGalleryTravel(-267, 267);
+
+$hide: resetGalleryTravel(0 , 267);
