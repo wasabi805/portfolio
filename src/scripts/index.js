@@ -43,25 +43,22 @@ window.addEventListener("scroll", function() {
 //  ==========   On SNES Button Press    ==========
 
 function snesRedirect(id) {
-  console.log(id);
-
-  let siteUrl = "http://localhost:8080/";
 
   switch (id) {
     case "y": // y btn
-      window.location.href = siteUrl + "about/mixes";
+      window.location.href = "/about/mixes";
       break;
 
     case "x": // x btn
-      window.location.href = siteUrl + "";
+      window.location.href = "";
       break;
 
     case "b": // b btn
-      window.location.href = siteUrl + "about/travel";
+      window.location.href = "/about/travel";
       break;
 
     case "a": // a btn
-      window.location.href = siteUrl + "";
+      window.location.href = "";
       break;
   }
 }
