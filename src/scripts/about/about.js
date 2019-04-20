@@ -8,13 +8,14 @@ var abilities_item = document.getElementsByClassName("abilities-item");
 var test = document.getElementById("test");
 var project_item__content = document.getElementById("project-item__content");
 
+var project_item = document.getElementsByClassName('project-item');
 var project_item__icon = document.getElementsByClassName("project-item__icon");
 var project_item__show = document.getElementsByClassName("project-item__show");
 var row_project = document.getElementsByClassName("row-project");
+var col_project = document.getElementsByClassName("col-project");
 var col_project_img = document.getElementsByClassName("col-project-img");
 
 console.log(Array.isArray(col_project_img), "col_project_img");
-
 
 const projectList = {
   isDevConOpen: false,
@@ -30,15 +31,12 @@ Object.values(row_project).forEach(div => {
 });
 
 const showProject = index => {
-  project_item__show[index].style = "min-height : 20em; height: 100%";
-  showProjectDiv[index].style = "width: 100%";
-  col_project_img[index].style = "width: 100%";
+  project_item__show[index].style = " height: 100%";
 };
 
 const hideProject = index => {
-  project_item__show[index].style = "height : 0px";
-  showProjectDiv[index].style = "width: 0px";
-  col_project_img[index].style = "width: 0px";
+  project_item__show[index].style = "height : 0px; ";
+
 };
 
 //  reformat abilities-container from display flex to display block:
