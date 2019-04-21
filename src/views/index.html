@@ -91,86 +91,97 @@
           <div id="projects" class="abilities-item">
             <h1 class="about-headers">Projects</h1>
 
-            <!--<div id="dev-connector" class="project-item">-->
-                <!--&lt;!&ndash;DROP DOWN ICON&ndash;&gt;-->
-              <!--<div id="dev-connector__icon" class="project-item__icon" onclick="handleClickDropDown(this.id)">-->
-                <!--<i class="fas fa-angle-down faded-cyan"></i>-->
-              <!--</div>-->
-                <!--&lt;!&ndash;INITIAL TEXT DEFAULT SHOWN&ndash;&gt;-->
-              <!--<div id="project-item__content">-->
-                <!--<h3>DevConnector</h3>-->
-                <!--<p>-->
-                  <!--A React Project with login , registration, and social feed.-->
-                <!--</p>-->
-                  <!--&lt;!&ndash;INITIAL ==== HIDE  && OnIconClick === SHOW CONTENT&ndash;&gt;-->
-                <!--<div id="show-dev-con" class="project-item__show">-->
-                    <!--<img class="col-project-img" src="../img/dev-con.png" alt=""/>-->
-                    <!--<div class="project-item__text">-->
-                        <!--<h1>hello here is some text</h1>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-              <!--</div>-->
-            <!--</div>-->
-
-
-
-
+            <!--========= ==========  Dev Con ==========  ==========-->
             <div class="project-item">
-
-
-                <!--div 1-->
-              <div style="display: block; width: 100%; border: 1px solid red">
+              <div class="project-item__wrapper">
                   <!--DROP DOWN ICON-->
-                  <div id="doms-noms__icon" class="project-item__icon" onclick="handleClickDropDown(this.id)">
+
+                  <div id="dev-con__icon" class="project-item__icon" onclick="handleClickDropDown(this.id)">
                       <i class="fas fa-angle-down faded-cyan"></i>
                   </div>
                   <!--INITIAL TEXT DEFAULT SHOWN-->
                   <div class="project-item__content" >
-                      <h3>Dom's Noms</h3>
+                      <h3>Dev Connector</h3>
                       <p>
-                          Single-page-app built wth React + Redux client's BBQ catering
-                          service.
+                          Social Site build with React+Redux, express.js, mongoDb, & Bootstrap
                       </p>
                   </div>
               </div>
 
-                <!--end div1-->
-
-                <!--div2-->
                 <!--INITIAL ==== HIDE  && OnIconClick === SHOW CONTENT-->
-
                 <!--THIS IS A FLEX CONTAINER-->
                 <div id="show-doms-noms" class="project-item__show">
+                    <div class="project-item__container">
 
-                    <div class="project-item__text">
-
-
-                       <div style="position: relative; display: inline-block; width: 50%;">
-                           <img src="../img/doms.png" alt="" />
+                       <div class="project-item__container__img-wrapper" >
+                           <img src="../img/dev-con.png" alt="" />
                        </div>
 
-
-                        <div style="position: absolute; display: inline-block; background-color: #7fffd414; width: 48%; ">
-                            <h1>Highlights</h1>
-
+                        <div class="project-item__container__text" >
+                            <h1 class="wu-tang" >Features</h1>
                             <ul>
-                                <li>iframe video hero section </li>
-                                <li>"streaming video service" style photo photo gallery </li>
-                                <li> uses SendGrid.js auto - emailer </li>
+                                <li>Login & Registration : User Authentication </li>
+                                <li>Github API</li>
+                                <li>Message forum that tracks likes</li>
                             </ul>
                             <br>
                             <p>
-                                Dom's Nom's is a company that specializes in BBQ catering for music festival events, corporate,
-                                wedding, and special event catering.
-                                <br/>
-
-                                Mobile in nature, this site took a mobile first approach in design with a single page app design.
-                                Mobile in nature, this site took a mobile first approach in design with a single page app design.
+                               This is a Full stack Udemy project I completed to learn the basics of working with React
                             </p>
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <!--========= ==========  DOMS NOMS ==========  ==========-->
+
+            <div class="project-item">
+              <div class="project-item__wrapper">
+                <!--DROP DOWN ICON-->
+                <div id="doms-noms__icon" class="project-item__icon" onclick="handleClickDropDown(this.id)">
+                  <i class="fas fa-angle-down faded-cyan"></i>
+                </div>
+                <!--INITIAL TEXT DEFAULT SHOWN-->
+                <div class="project-item__content" >
+                  <h3>Dom's Noms</h3>
+                  <p>
+                    Single-page-app built wth React + Redux client's BBQ catering
+                    service.
+                  </p>
+                </div>
+              </div>
+
+              <!--INITIAL ==== HIDE  && OnIconClick === SHOW CONTENT-->
+              <!--THIS IS A FLEX CONTAINER-->
+              <div id="placeholder-for-devcon" class="project-item__show">
+                <div class="project-item__container">
+
+                  <div class="project-item__container__img-wrapper" >
+                    <img src="../img/doms.png" alt="" />
+                  </div>
+
+                  <div class="project-item__container__text" >
+                    <h1 id="wu-tang" >Features</h1>
+                    <ul>
+                      <li>iframe video hero section </li>
+                      <li>"streaming video service" style photo photo gallery </li>
+                      <li> uses SendGrid.js auto - emailer </li>
+                    </ul>
+                    <br>
+                    <p>
+                      Dom's Nom's is a company that specializes in BBQ catering for music festival events, corporate,
+                      wedding, and special event catering.
+                      <br/>
+
+                      Mobile in nature, this site took a mobile first approach in design with a single page app design.
+                      Mobile in nature, this site took a mobile first approach in design with a single page app design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
 
             </div>
 
@@ -222,9 +233,8 @@
           <!--item-02-->
           <div id="skills" class="abilities-item">
             <h1 class="about-headers">Skills</h1>
-            <div class="gallery-travel__row">
+
               <div class="list">
-                <h3></h3>
                 <ul>
                   <li>JavaScript</li>
                   <li>HTML</li>
@@ -244,13 +254,13 @@
                   <li>AJAX</li>
                 </ul>
               </div>
-            </div>
+
           </div>
 
           <!--item-03-->
           <div id="arsenal" class="abilities-item">
             <h1 class="about-headers">Arsenal</h1>
-            <div class="gallery-travel__row">
+
               <div class="list">
                 <ul>
                   <li><h5>FRAMEWORKS</h5></li>
@@ -271,7 +281,7 @@
                   <li>GIMP</li>
                 </ul>
               </div>
-            </div>
+
           </div>
         </article>
 
@@ -359,9 +369,23 @@
       </section>
     </div>
 
+    <script src="../scripts/global.js/consts.js"></script>
+
+    <script src="../scripts/global.js/widths.js"></script>
+
+    <script src="../scripts/global.js/reponsive-resize-req-anim-frame.js"></script>
+    <script src="../scripts/global.js/header.js"></script>
+
     <script src="../scripts/index.js"></script>
+
+
+
+
     <script src="../scripts/navigation/header-navigation.js"></script>
     <script src="../scripts/about/about.js"></script>
     <script src="../scripts/keyboard-map/keyboard-map.js"></script>
+
+
+
   </body>
 </html>

@@ -1,6 +1,7 @@
 
 // window.location.pathname
 
+
 var landingTitle = document.getElementById("title-index");
 // landingTitle.classList.add("title-index-initial");
 

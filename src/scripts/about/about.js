@@ -5,24 +5,14 @@ var arsenal = document.getElementById("arsenal");
 var abilities_container = document.getElementById("abilities-container");
 var abilities_item = document.getElementsByClassName("abilities-item");
 
-var test = document.getElementById("test");
-var project_item__content = document.getElementById("project-item__content");
-
-var project_item = document.getElementsByClassName('project-item');
 var project_item__icon = document.getElementsByClassName("project-item__icon");
 var project_item__show = document.getElementsByClassName("project-item__show");
+
+
 var row_project = document.getElementsByClassName("row-project");
-var col_project = document.getElementsByClassName("col-project");
-var col_project_img = document.getElementsByClassName("col-project-img");
 
-console.log(Array.isArray(col_project_img), "col_project_img");
+var wu_tang = document.getElementsByClassName('wu-tang');
 
-const projectList = {
-  isDevConOpen: false,
-  isDomNomsOpen: false,
-  isVincePhotoOpen: false,
-  isSbSitOpen: false
-};
 
 //shows img
 let showProjectDiv = [];
@@ -30,8 +20,12 @@ Object.values(row_project).forEach(div => {
   showProjectDiv.push(div);
 });
 
+
+
+
 const showProject = index => {
-  project_item__show[index].style = " height: 100%";
+  console.log(index)
+  project_item__show[index].style = `height: calc(${showHeight}px)`;
 };
 
 const hideProject = index => {
@@ -59,6 +53,7 @@ const toggleProjectItemShow = id => {
   Object.values(project_item__icon).forEach(icon => {
     iconId.push(icon.id);
   });
+
 
   // if the clicked id matches icon id, toggle div class === project-item__show
   switch (id) {
@@ -92,3 +87,4 @@ function handleClickDropDown(id) {
   moveSkillsAndArsenal();
   toggleProjectItemShow(id);
 }
+

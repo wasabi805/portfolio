@@ -111,14 +111,30 @@ $highlighter: #7c9548;
 #abilities-container {
   display: flex;
   height: 100%;
-  //background-color: #39b54a21;
-  padding: 56px;
+  padding: 14px;
   flex-direction: column;
   font-family: sans-serif;
+
+  #projects{
+    //flex: 2;
+  }
+
+  #skills{
+    //flex: 1;
+  }
+
+  #arsenal{
+    //flex: 1;
+  }
 
   //div:nth-child(1){
   //  flex: 2;
   //}
+
+
+
+
+
 
   @include tablet {
     flex-direction: row;
@@ -135,15 +151,30 @@ $highlighter: #7c9548;
 
 .abilities-item {
   position: relative;
-  //flex: 1;
+  display: inline-flex;
   color: #ffffff;
   margin: 3rem 0;
 
+
+  width: 48%;
+  //background-color: cadetblue;
+
   flex: 1;
 
-  div:nth-child(1){
+  &:first-child{
+    display: block;
+    width: 100%;
     flex: 2;
+
+    //background-color: yellow;
+
   }
+
+  //div:nth-child(1){
+  //  flex: 2;
+  //  background-color: #14ffe9;
+  //  width: 100%;
+  //}
 
   @include tablet {
     margin: 0;
@@ -153,7 +184,6 @@ $highlighter: #7c9548;
 
 .list {
   //background-color: #630460;
-  width: 49%;
 
   .offset {
     margin-top: 21.5px;
@@ -166,8 +196,8 @@ $highlighter: #7c9548;
       background-color: $bg-Off-Shade;
       //border-top: 1px solid white;
       //border-bottom: 1px solid white;
-      padding: 5px 2px;
-      margin: 3px;
+      //padding: 5px 2px;
+      margin: 5px 0;
 
       h5 {
         color: $highlighter;
@@ -189,6 +219,20 @@ $highlighter: #7c9548;
   position: relative;
   margin: 3px;
   //flex-direction: column;
+  &__wrapper{
+    display: block; width: 100%; border: 1px solid #8c8b8b;
+
+  }
+
+  div:nth-child(1){
+    flex: 2;
+    //background-color: #14ffe9;
+    width: 100%;
+    @include tablet{
+      display: inline-flex;
+    }
+  }
+
 
   &__icon {
     display: inline-block;
@@ -213,8 +257,7 @@ $highlighter: #7c9548;
   &__content {
     display: inline-block;
     background-color: $bg-Off-Shade;
-    padding: 5px;
-    width: 70%;
+    width: calc(100% - 85px);
     height: auto;
 
     h3 {
@@ -232,8 +275,15 @@ $highlighter: #7c9548;
     position: relative;
     display: flex;
     align-content: center;
+    height:0;
+    transition: height .25s ease-in-out  ;
 
-    height: 0;
+    text-align: center;
+
+    @include tablet{
+      text-align: left;
+    }
+
 
     &:after{
       position: absolute;
@@ -242,17 +292,13 @@ $highlighter: #7c9548;
       left: 0;
       width: 100%;
       height: 100%;
-      max-height: 90%;
-
-
-
 
       background-image: url(http://www.transparenttextures.com/patterns/green-dust-and-scratches.png);
       opacity: .4;
     }
 
 
-    transition: height .4s ease-in-out  ;
+
 
     img{
       height: 100%;
@@ -264,7 +310,7 @@ $highlighter: #7c9548;
 
   }
 
-  &__text {
+  &__container {
     overflow: scroll;
     position: relative;
     right: 0;
@@ -275,10 +321,51 @@ $highlighter: #7c9548;
     max-height: 90%;
     //background-color: #1f2934;
 
-    img{
-      width: 90%;
-      display: inline-block;
+    &__img-wrapper{
+      position: relative;
+      display: block;
+      width: 100%;
+
+      @include tablet{
+        display: inline-block;
+        width: 50%;
+      }
+
+
+
+      img{
+        width: 90%;
+        display: inline-block;
+        margin: 2em 0;
+      }
     }
+
+    &__text{
+      position: relative;
+      font-family: Alcubierre, "Dolce Vita";
+      display: block;
+      text-align: center;
+      vertical-align: middle;
+
+      ul{
+        list-style: none;
+      }
+
+
+
+
+      @include tablet{
+        //position: absolute;
+        padding: 2em 0;
+        display: inline-block;
+        //background-color: #7fffd414;
+        width: 48%;
+        height: 100%;
+      }
+
+    }
+
+
 
     h1{
       font-family: "Dolce Vita";
@@ -293,9 +380,12 @@ $highlighter: #7c9548;
 }
 
 
+
+
 #test {
   opacity: 0;
   height: 0;
+
 
   transition: opacity 3s, width 2s;
 }
