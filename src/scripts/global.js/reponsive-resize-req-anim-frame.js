@@ -20,6 +20,12 @@ function repeatOften() {
   let imgWrapperHeight;
   // let isProjectList = projectList
 
+  //get the icon height;
+
+  let conversation_iconHeight = window.getComputedStyle(conversation_icon).getPropertyValue('height')
+
+  console.log(conversation_iconHeight,'conversation_iconHeight')
+
   //RESIZE H1 in Text box
   Object.values(project_item__container__text).forEach(textBox => {
     textBoxWidth = window.getComputedStyle(textBox).getPropertyValue("width");
@@ -45,6 +51,7 @@ function repeatOften() {
 
   if(screen.width < 767){
     showHeight = Math.ceil(
+        parseInt(conversation_iconHeight, 10)+
         parseInt(textBoxHeight, 10) +
         parseInt(imgWrapperHeight, 10)) + 150*(50/100);
   }

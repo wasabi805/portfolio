@@ -13,6 +13,8 @@ var row_project = document.getElementsByClassName("row-project");
 
 var wu_tang = document.getElementsByClassName('wu-tang');
 
+var conversation_icon = document.getElementById('conversation-icon')
+
 
 //shows img
 let showProjectDiv = [];
