@@ -30,6 +30,7 @@ $highlighter: #7c9548;
   //color: hotpink;
   color: #d65f9b;
   font-family: "Thunderstorm";
+
 }
 
 .highlighter {
@@ -182,7 +183,15 @@ $highlighter: #7c9548;
   &:first-child {
     display: block;
     width: 100%;
+  }
 
+  ul{
+    width: 50%;;
+  }
+
+  li{
+    margin: 0 3px;
+    width: 100%;
   }
 
   //div:nth-child(1){
@@ -195,6 +204,10 @@ $highlighter: #7c9548;
     margin: 0;
   }
   //border: 1px solid red;
+}
+
+.arsenal-title{
+  color: rgba(138, 181, 50, .7)
 }
 
 .list {
@@ -234,7 +247,12 @@ $highlighter: #7c9548;
   position: relative;
   margin: 3px;
   //flex-direction: column;
+
+
   &__wrapper {
+    border-top-color: #c2cccc6e;
+
+    border-style: inset inset none none;
     display: block;
     width: 100%;
     //border: 1px solid #8c8b8b;
@@ -260,7 +278,8 @@ $highlighter: #7c9548;
     max-height: 75px;
     max-width: 75px;
 
-    border: 1px solid lime;
+    border: 3px solid rgba(0, 255, 0, 0.2);
+    border-style: double;
     background-color: $bg-Off-Shade;
     i {
       position: relative;
@@ -290,6 +309,7 @@ $highlighter: #7c9548;
     align-content: center;
     height: 0;
     transition: height 0.25s ease-in-out;
+    border: 1px solid rgba(180, 206, 216, 0.4);
 
     text-align: center;
 
