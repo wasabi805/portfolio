@@ -1,5 +1,3 @@
-
-
 //  The Header NavBar
 let nav_bar = document.getElementById('nav-bar');
 

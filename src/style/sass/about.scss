@@ -116,22 +116,20 @@ $highlighter: #7c9548;
   //flex-direction: column;
   font-family: sans-serif;
 
-
-
-  #projects{
+  #projects {
     flex-basis: 100%;
 
-    @include tablet{
+    @include tablet {
       flex-basis: 36%;
     }
   }
 
-  #skills{
+  #skills {
     //flex-basis: 50%;
-    flex:1;
+    flex: 1;
     //background-color: lime;
     height: 7em;
-    ul{
+    ul {
       list-style: none;
       display: flex;
       flex-basis: 100%;
@@ -139,18 +137,18 @@ $highlighter: #7c9548;
       flex-direction: column;
       //background-color: #4ef0fa;
 
-      @include tablet{
+      @include tablet {
         flex-basis: 40%;
       }
     }
   }
 
-  #arsenal{
+  #arsenal {
     //flex-basis: 23%;
-    flex:1;
+    flex: 1;
 
     height: 7em;
-    ul{
+    ul {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
@@ -159,20 +157,9 @@ $highlighter: #7c9548;
     }
   }
 
-  //div:nth-child(1){
-  //  flex: 2;
-  //}
-
-
-
-
-
-
   @include tablet {
     flex-direction: row;
   }
-
-
 }
 
 .headers {
@@ -187,21 +174,14 @@ $highlighter: #7c9548;
   color: #ffffff;
   margin: 3rem 0;
 
-  flex :1;
+  flex: 1;
   flex-basis: 100%;
 
-
   width: 48%;
-  //background-color: cadetblue;
 
-  //flex: 1;
-
-  &:first-child{
+  &:first-child {
     display: block;
     width: 100%;
-
-
-    //background-color: yellow;
 
   }
 
@@ -254,21 +234,20 @@ $highlighter: #7c9548;
   position: relative;
   margin: 3px;
   //flex-direction: column;
-  &__wrapper{
-    display: block; width: 100%;
+  &__wrapper {
+    display: block;
+    width: 100%;
     //border: 1px solid #8c8b8b;
-
   }
 
-  div:nth-child(1){
+  div:nth-child(1) {
     flex: 2;
     //background-color: #14ffe9;
     width: 100%;
-    @include tablet{
+    @include tablet {
       display: inline-flex;
     }
   }
-
 
   &__icon {
     display: inline-block;
@@ -280,7 +259,6 @@ $highlighter: #7c9548;
     height: 100%;
     max-height: 75px;
     max-width: 75px;
-
 
     border: 1px solid lime;
     background-color: $bg-Off-Shade;
@@ -306,44 +284,38 @@ $highlighter: #7c9548;
     }
   }
 
-
   &__show {
     position: relative;
     display: flex;
     align-content: center;
-    height:0;
-    transition: height .25s ease-in-out  ;
+    height: 0;
+    transition: height 0.25s ease-in-out;
 
     text-align: center;
 
-    @include tablet{
+    @include tablet {
       text-align: left;
     }
 
-
-    &:after{
+    &:after {
       position: absolute;
-      content: '';
+      content: "";
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
 
       background-image: url(http://www.transparenttextures.com/patterns/green-dust-and-scratches.png);
-      opacity: .4;
+      opacity: 0.4;
     }
 
-
-
-
-    img{
+    img {
       height: 100%;
       width: 50%;
       max-width: 100%;
       max-height: 90%;
       z-index: 10;
     }
-
   }
 
   &__container {
@@ -357,47 +329,40 @@ $highlighter: #7c9548;
     max-height: 90%;
     //background-color: #1f2934;
 
-    &__img-wrapper{
+    &__img-wrapper {
       position: relative;
       display: block;
       width: 100%;
 
-      @include tablet{
+      @include tablet {
         display: inline-block;
         width: 50%;
       }
 
-
-
-      img{
+      img {
         width: 90%;
         display: inline-block;
         margin: 2em 0;
       }
     }
 
-    &__text{
+    &__text {
       position: relative;
       font-family: Alcubierre, "Dolce Vita";
       display: block;
       text-align: center;
       vertical-align: middle;
 
-      p{
+      p {
         margin: 2em;
         text-align: justify;
       }
 
-
-
-      ul{
+      ul {
         list-style: none;
       }
 
-
-
-
-      @include tablet{
+      @include tablet {
         //position: absolute;
         padding: 2em 0;
         display: inline-block;
@@ -405,30 +370,21 @@ $highlighter: #7c9548;
         width: 48%;
         height: 100%;
       }
-
     }
 
-
-
-    h1{
+    h1 {
       font-family: "Dolce Vita";
       display: block;
       color: hotpink;
       font-size: 3em;
       letter-spacing: 6px;
     }
-
-
   }
 }
-
-
-
 
 #test {
   opacity: 0;
   height: 0;
-
 
   transition: opacity 3s, width 2s;
 }
@@ -449,7 +405,6 @@ $highlighter: #7c9548;
 .personal-container {
   align-self: center;
 
-
   @include desktop {
     display: flex;
     padding: 2em;
@@ -462,48 +417,40 @@ $highlighter: #7c9548;
   padding: 0 0.5em;
   //border: 1px solid red;
 
-  @include tablet{
+  @include tablet {
     font-size: 1.4rem;
   }
 
-
-
   p {
-
     text-align: justify;
-    @include tablet{
+    @include tablet {
       margin: 16px;
     }
   }
 }
 
-.personal-img-container{
+.personal-img-container {
   display: flex;
   padding: 0 0.5em;
 
-  @include desktop{
+  @include desktop {
     margin-top: 4em;
     flex: 1;
     flex-basis: 30%;
   }
-
 }
 
 .personal-img {
   margin: 6px;
 
-  img{
+  img {
     border: 5px solid white;
   }
-
-
-
 
   //border: 1px solid lime;
   width: 100%;
   height: 100%;
   //background-color: white;
-
 
   @include tablet {
     display: inline-block;
@@ -561,20 +508,19 @@ $highlighter: #7c9548;
   }
 }
 
-#users-icon{
+#users-icon {
   position: relative;
   border-radius: 50%;
   width: 100px;
   height: 100px;
   background-color: #995780;
 
-  svg{
+  svg {
     display: block;
     border: 1px solid red;
     //transform: translate(50% , 50%);
   }
 }
 
-#email-icon{
-
+#email-icon {
 }
