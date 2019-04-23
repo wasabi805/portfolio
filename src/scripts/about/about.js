@@ -1,20 +1,6 @@
 //  ==========   Display Portfolio Animation    ==========
 var skills = document.getElementById("skills");
-var arsenal = document.getElementById("arsenal");
-var projects = document.getElementById('projects');
 
-var abilities_container = document.getElementById("abilities-container");
-var abilities_item = document.getElementsByClassName("abilities-item");
-
-var project_item__icon = document.getElementsByClassName("project-item__icon");
-var project_item__show = document.getElementsByClassName("project-item__show");
-
-
-var row_project = document.getElementsByClassName("row-project");
-
-var wu_tang = document.getElementsByClassName('wu-tang');
-
-var conversation_icon = document.getElementById('conversation-icon')
 
 //checks if any project is visible: if none visible, reduce length of projects line && place skills & arsenal on the same line
 const checkAnyProjectVisible =()=>{
@@ -49,13 +35,14 @@ const showProject = index => {
     arsenal.classList.remove('slideInSkillsAndArsenal')
   }
 
-
+  faArrows[index].style = 'transform: rotate(180deg)';
   project_item__show[index].style = `height: calc(${showHeight}px)`;
   projects.style= 'max-width : 100%';
 };
 
 const hideProject = index => {
 
+  faArrows[index].style = 'transform: rotate(0deg)';
   project_item__show[index].style = "height : 0px; ";
   setTimeout(()=>checkAnyProjectVisible(), 200)
 };

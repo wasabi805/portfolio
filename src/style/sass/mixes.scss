@@ -26,11 +26,13 @@
    .wrapper{
      position: relative;
      display: flex;
-     justify-content: space-between;
+     //justify-content: space-between;
+     overflow-x: hidden;
      flex-wrap: wrap;
      width: 100%;
      text-align: center;
      z-index: 1;
+     height: 100%;
 
      font-family: Alcubierre;
      color: #FFFFFF;
@@ -69,14 +71,13 @@
      .text{
        display: flex;
        position: relative;
-       top: 10em;
+       top: 8em;
        color: #fff9f9;
 
        flex-direction: column;
        justify-content: center;
        text-align: justify;
 
-       font-size: 24px;
        font-weight: 600;
 
        z-index: 9;
@@ -111,11 +112,11 @@
        margin: auto;
 
        position: relative;
-       top: 10rem;
+       top: 2rem;
 
        @media only screen and(min-width: 768px) {
          padding: 33px;
-         top: 2rem;
+
        }
 
        //THINGS TO PLAY WITH BELOW

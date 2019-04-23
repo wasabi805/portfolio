@@ -31,10 +31,18 @@
   margin: 6px 0;
 
 
-  @media only screen and(min-width: 768px) {
-    padding: 2em;
-
+  &:after{
+    position: absolute;
+    content: attr(data-value);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 200px;
+    height: 20px;
+    background-color: #1b2947;
+    display: inline-block;
   }
+
 
   p{
     position: absolute;
@@ -44,20 +52,6 @@
     transform: translate(-50%, -100%);
   }
 
-
-
-  //&:after{
-  //  content: "\01 - Hip Pop MIx March 2019 - \0020";
-  //  position: relative;
-  //  top: 20px;
-  //  left: -318px;
-  //  width: 200px;
-  //  height: 20px;
-  //  //border: 1px solid yellow;
-  //
-  //  //moving content
-  //  //https://stackoverflow.com/questions/7880053/proper-way-to-position-before-pseudo-elements
-  //}
 
   #play-01 , #play-02{
     display: block;
@@ -89,8 +83,6 @@
       background: linear-gradient(105.25802520026593deg, rgba(231, 244, 245,1) 5.083148558758316%,rgba(78, 240, 250,1) 97.54434589800442%);
       border-radius: 10000000px;
     }
-
-
     //current point in track marker
     .handle{
       width: 10px;
@@ -109,6 +101,11 @@
       }
 
     }
+
+    &:active{
+      background-color: #9a8ea769;
+    }
+
   }
 
 
