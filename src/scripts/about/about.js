@@ -16,6 +16,21 @@ var wu_tang = document.getElementsByClassName('wu-tang');
 
 var conversation_icon = document.getElementById('conversation-icon')
 
+//checks if any project is visible: if none visible, reduce length of projects line && place skills & arsenal on the same line
+const checkAnyProjectVisible =()=>{
+  let check = Object.values(projectList).map(project=>{
+    return project
+  });
+  if(check.includes(true)){
+
+  }else{
+    console.log('put everything back')
+    abilities_container.style='display: flex';
+    projects.style = 'width: 50%;';
+    skills.classList.add('slideInSkillsAndArsenal');
+    arsenal.classList.add('slideInSkillsAndArsenal')
+  }
+};
 
 //shows img
 let showProjectDiv = [];
@@ -24,18 +39,25 @@ Object.values(row_project).forEach(div => {
 });
 
 
-
-
 const showProject = index => {
-  console.log(index);
-  projects.style= 'max-width : 100%';
-  project_item__show[index].style = `height: calc(${showHeight}px)`;
 
+  if(skills.classList.contains('slideInSkillsAndArsenal')){
+    skills.classList.remove('slideInSkillsAndArsenal')
+  }
+
+  if(arsenal.classList.contains('slideInSkillsAndArsenal')){
+    arsenal.classList.remove('slideInSkillsAndArsenal')
+  }
+
+
+  project_item__show[index].style = `height: calc(${showHeight}px)`;
+  projects.style= 'max-width : 100%';
 };
 
 const hideProject = index => {
-  project_item__show[index].style = "height : 0px; ";
 
+  project_item__show[index].style = "height : 0px; ";
+  setTimeout(()=>checkAnyProjectVisible(), 200)
 };
 
 //  reformat abilities-container from display flex to display block:

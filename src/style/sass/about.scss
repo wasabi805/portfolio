@@ -55,10 +55,12 @@ $highlighter: #7c9548;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 3rem;
 
   @include tablet {
     padding: 2em 4em;
     flex-direction: row;
+    margin-bottom: -3rem;
   }
 
   @include laptop {
@@ -105,6 +107,7 @@ $highlighter: #7c9548;
   object-fit: contain;
   border: 5px solid white;
   //height: 25em;
+  margin: 7px;
 
   @include tablet {
     max-width: 50%;
@@ -124,6 +127,11 @@ $highlighter: #7c9548;
   padding: 14px;
   //flex-direction: column;
   font-family: sans-serif;
+
+
+  @include desktop{
+    padding: 0px 20rem;
+  }
 
 
   #projects {
@@ -164,6 +172,31 @@ $highlighter: #7c9548;
   }
 }
 
+#skills.slideInSkillsAndArsenal{
+  -webkit-animation: slideInSkillsAndArsenal 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+  animation: slideInSkillsAndArsenal 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+  animation-fill-mode: forwards;
+}
+
+#arsenal.slideInSkillsAndArsenal{
+  -webkit-animation: slideInSkillsAndArsenal 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+  animation: slideInSkillsAndArsenal 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInSkillsAndArsenal {
+  0%{
+    right: -600px;
+  }
+
+  100%{
+    right: 0;
+  }
+}
+
+
+
+
 .headers {
   font-size: 41px;
   letter-spacing: 5px;
@@ -175,7 +208,7 @@ $highlighter: #7c9548;
   //display: inline-flex;
   display: inherit;
   color: #ffffff;
-  margin: 3rem 3px;
+  //margin: 3rem 0;
   /* flex: 1; */
   /* flex-basis: 100%; */
   width: 100%;
@@ -413,7 +446,7 @@ $highlighter: #7c9548;
         padding: 2em 0;
         display: inline-block;
         //background-color: #7fffd414;
-        width: 45%;
+        width: 90%;
         height: 100%;
       }
     }
@@ -438,6 +471,7 @@ $highlighter: #7c9548;
 //==========  PERSONAL SECTION  ==========
 #personal {
   color: #ffffff;
+  padding: 1em;
 }
 
 .personal-headers {
