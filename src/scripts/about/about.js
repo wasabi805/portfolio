@@ -1,6 +1,7 @@
 //  ==========   Display Portfolio Animation    ==========
 var skills = document.getElementById("skills");
 var arsenal = document.getElementById("arsenal");
+var projects = document.getElementById('projects');
 
 var abilities_container = document.getElementById("abilities-container");
 var abilities_item = document.getElementsByClassName("abilities-item");
@@ -26,8 +27,10 @@ Object.values(row_project).forEach(div => {
 
 
 const showProject = index => {
-  console.log(index)
+  console.log(index);
+  projects.style= 'max-width : 100%';
   project_item__show[index].style = `height: calc(${showHeight}px)`;
+
 };
 
 const hideProject = index => {

@@ -1,6 +1,33 @@
 var showHeight;
+let x = projectList
 
 function repeatOften() {
+
+
+  (function f() {
+
+    let anyProjectsOpen = Object.values(projectList).map(val=>{
+      return val
+    });
+
+    // [false, false , false, false]
+    // console.log(anyProjectsOpen)
+    if(anyProjectsOpen.includes(true)){
+      // console.log('do something')
+    }else{
+      console.log('run a reset function')
+      projects.style = 'width: 50%;'
+      abilities_container.style = 'display: flex;'
+    }
+
+
+
+  })();
+
+
+
+
+
   //      screen size
   const screenWidth = (function() {
     return screen.width;

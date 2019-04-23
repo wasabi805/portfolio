@@ -9,6 +9,8 @@
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/about/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/sass/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.html" afterDir="false" />
     </list>
@@ -22,14 +24,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3957704">
+    <splitter split-orientation="horizontal" split-proportion="0.3564862">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="267" column="38" selection-start-line="267" selection-start-column="25" selection-end-line="267" selection-end-column="38" />
+                <state relative-caret-position="323">
+                  <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
                   <folding>
                     <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -39,11 +41,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="17" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -94,8 +96,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/style/sass/about.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="403">
-                  <caret line="188" column="4" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
+                <state relative-caret-position="370">
+                  <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
                 </state>
               </provider>
             </entry>
@@ -112,8 +114,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+                <state relative-caret-position="323">
+                  <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
                 </state>
               </provider>
             </entry>
@@ -135,8 +137,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="29" column="62" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="62" />
+                <state relative-caret-position="14">
+                  <caret line="5" column="23" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -156,13 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>project</find>
-      <find>project-item</find>
-      <find>20em</find>
-      <find>style</find>
-      <find>wutang.s</find>
-      <find>list</find>
-      <find>gallery-trave</find>
       <find>gallery-</find>
       <find>content</find>
       <find>request</find>
@@ -175,7 +170,6 @@
       <find>handleClickDropDown</find>
       <find>icon</find>
       <find>wu</find>
-      <find>abilities-item</find>
       <find>child</find>
       <find>border</find>
       <find>wrapper</find>
@@ -186,6 +180,14 @@
       <find>container</find>
       <find>galle</find>
       <find>project-ite</find>
+      <find>abil</find>
+      <find>nth</find>
+      <find>50%</find>
+      <find>45%</find>
+      <find>42</find>
+      <find>about-he</find>
+      <find>abilities-item</find>
+      <find>pro</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -240,19 +242,17 @@
         <option value="$PROJECT_DIR$/src/scripts/index.js" />
         <option value="$PROJECT_DIR$/src/scripts/global.js/consts.js" />
         <option value="$PROJECT_DIR$/src/icons/conversation.svg" />
-        <option value="$PROJECT_DIR$/src/scripts/about/about.js" />
         <option value="$PROJECT_DIR$/src/scripts/navigation/header-navigation.js" />
-        <option value="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" />
         <option value="$PROJECT_DIR$/src/views/index.html" />
+        <option value="$PROJECT_DIR$/src/scripts/about/about.js" />
+        <option value="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" />
         <option value="$PROJECT_DIR$/src/style/sass/about.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1209" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -260,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,12 +314,26 @@
               <item name="portfolio-tim" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio-tim" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-tim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-tim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-tim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-tim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,18 +440,19 @@
       <workItem from="1555709713681" duration="10613000" />
       <workItem from="1555739672311" duration="13097000" />
       <workItem from="1555821398497" duration="27189000" />
-      <workItem from="1555949639115" duration="2162000" />
+      <workItem from="1555949639115" duration="2420000" />
+      <workItem from="1555976383005" duration="9202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="615562000" />
+    <option name="totallyTimeSpent" value="625022000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1209" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1302966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21554486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -451,7 +465,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5480769" visible="true" weight="0.22357723" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5480769" visible="true" weight="0.053977273" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.45192307" side_tool="true" weight="0.3068182" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -666,13 +680,6 @@
     <entry file="file://$PROJECT_DIR$/src/icons/mail.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/global.js/widths.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -711,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/global.js/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -728,17 +728,10 @@
     <entry file="file://$PROJECT_DIR$/src/scripts/navigation/header-navigation.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="267" column="38" selection-start-line="267" selection-start-column="25" selection-end-line="267" selection-end-column="38" />
+        <state relative-caret-position="323">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
             <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -747,10 +740,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/sass/about.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="188" column="4" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
+        <state relative-caret-position="370">
+          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
         </state>
       </provider>
     </entry>
