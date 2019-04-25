@@ -7,7 +7,14 @@
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/ajax.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/scripts/main.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/about/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/consts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sass/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/mixes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/mixes.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,14 +26,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.21849594">
+    <splitter split-orientation="horizontal" split-proportion="0.46182266">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/views/mixes.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+                <state relative-caret-position="648">
+                  <caret line="111" selection-start-line="111" selection-end-line="111" />
                 </state>
               </provider>
             </entry>
@@ -34,8 +41,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+                <state relative-caret-position="1224">
+                  <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
                 </state>
               </provider>
             </entry>
@@ -43,8 +50,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="17" selection-start-column="6" selection-end-column="17" />
+                <state relative-caret-position="456">
+                  <caret line="41" selection-start-line="41" selection-end-line="41" />
                 </state>
               </provider>
             </entry>
@@ -56,8 +63,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="6086">
-                  <caret line="381" column="39" selection-start-line="381" selection-start-column="39" selection-end-line="381" selection-end-column="39" />
+                <state relative-caret-position="669">
+                  <caret line="383" column="9" lean-forward="true" selection-start-line="383" selection-start-column="9" selection-end-line="383" selection-end-column="9" />
                   <folding>
                     <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -70,26 +77,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/views/about.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="33" column="23" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/style/sass/audio-player.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="380">
+                  <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -97,8 +86,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="482">
-                  <caret line="40" column="62" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="62" />
+                <state relative-caret-position="-823">
+                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/style/sass/about.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-94">
+                  <caret line="323" column="5" lean-forward="true" selection-start-line="323" selection-start-column="5" selection-end-line="323" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -118,16 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>arsenal</find>
-      <find>setT</find>
-      <find>bio-con</find>
-      <find>ABILI</find>
-      <find>about-head</find>
-      <find>personal-con</find>
-      <find>#abilit</find>
-      <find>about-tit</find>
-      <find>abilities-container</find>
-      <find>abilities-con</find>
       <find>@incl</find>
       <find>index</find>
       <find>padding</find>
@@ -140,14 +128,24 @@
       <find>conversation_icon</find>
       <find>audio</find>
       <find>tracks</find>
-      <find>project-item</find>
       <find>text</find>
       <find>playButton01</find>
       <find>showHeigh</find>
-      <find>showH</find>
-      <find>showHeight</find>
       <find>log</find>
       <find>screenHeight</find>
+      <find>scrollYIndex</find>
+      <find>showH</find>
+      <find>textBoxHeight</find>
+      <find>screen.width</find>
+      <find>scroll</find>
+      <find>showHeight</find>
+      <find>conversat</find>
+      <find>showHe</find>
+      <find>imgWrapperHeight</find>
+      <find>project-item</find>
+      <find>wrapper</find>
+      <find>what</find>
+      <find>convers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,22 +195,24 @@
         <option value="$PROJECT_DIR$/src/scripts/navigation/header-navigation.js" />
         <option value="$PROJECT_DIR$/src/style/sass/landing/controller.scss" />
         <option value="$PROJECT_DIR$/src/style/sass/audio-player.scss" />
-        <option value="$PROJECT_DIR$/src/views/mixes.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/style/sass/mixes.scss" />
-        <option value="$PROJECT_DIR$/src/style/sass/about.scss" />
-        <option value="$PROJECT_DIR$/src/scripts/about/about.js" />
         <option value="$PROJECT_DIR$/src/scripts/music-player.js" />
-        <option value="$PROJECT_DIR$/src/scripts/global.js/consts.js" />
-        <option value="$PROJECT_DIR$/src/views/index.html" />
         <option value="$PROJECT_DIR$/src/scripts/index.js" />
+        <option value="$PROJECT_DIR$/src/views/index.html" />
+        <option value="$PROJECT_DIR$/src/style/sass/about.scss" />
+        <option value="$PROJECT_DIR$/src/views/mixes.html" />
+        <option value="$PROJECT_DIR$/src/scripts/global.js/consts.js" />
+        <option value="$PROJECT_DIR$/src/scripts/about/about.js" />
         <option value="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="-1209" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -397,18 +397,18 @@
       <workItem from="1555949639115" duration="2420000" />
       <workItem from="1555976383005" duration="35677000" />
       <workItem from="1556152930652" duration="2310000" />
-      <workItem from="1556198364864" duration="903000" />
+      <workItem from="1556198364864" duration="15067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="654710000" />
+    <option name="totallyTimeSpent" value="668874000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-1209" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21153846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13983051" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -421,7 +421,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.5480769" visible="true" weight="0.4318182" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5480769" visible="true" weight="0.11382114" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.45192307" side_tool="true" weight="0.3068182" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -503,13 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/sass/constants/width.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -655,50 +648,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/mixes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6086">
-          <caret line="381" column="39" selection-start-line="381" selection-start-column="39" selection-end-line="381" selection-end-column="39" />
-          <folding>
-            <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/sass/about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -709,24 +662,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
+    <entry file="file://$PROJECT_DIR$/src/style/sass/constants/width.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="40" column="62" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="62" />
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1697">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="383" column="9" lean-forward="true" selection-start-line="383" selection-start-column="9" selection-end-line="383" selection-end-column="9" />
+          <folding>
+            <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/sass/about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="323" column="5" lean-forward="true" selection-start-line="323" selection-start-column="5" selection-end-line="323" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/mixes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="6" selection-end-column="17" />
+        <state relative-caret-position="456">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-823">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="380">
+          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
         </state>
       </provider>
     </entry>

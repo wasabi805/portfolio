@@ -1,5 +1,5 @@
-const screenWidth = screen.width;
-const screenHeight = screen.height;
+var screenWidth = screen.width;
+var screenHeight = screen.height;
 
 const projectList = {
     isDevConOpen: false,
@@ -7,6 +7,11 @@ const projectList = {
     isVincePhotoOpen: false,
     isSbSitOpen: false
 };
+
+//Site URLS
+const prevLocation = document.referrer;
+const indexURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/';
+const mixesURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/about/mixes';
 
 
 //ABOUT SECTION
@@ -27,6 +32,61 @@ const wu_tang = document.getElementsByClassName('wu-tang');
 
 const conversation_icon = document.getElementById('conversation-icon')
 const faArrows = document.getElementsByClassName('fa-angle-down');
+
+
+var showHeight;
+var textBoxWidth;
+var textBoxHeight;
+var imgWrapperHeight;
+
+
+Object.values(project_item__container__text).forEach(textBox => {
+    textBoxWidth = window.getComputedStyle(textBox).getPropertyValue("width");
+    textBoxHeight = window.getComputedStyle(textBox).getPropertyValue("height");
+    //strip px from textBoxWidth...
+    let textBoxWidthStripped = parseInt(textBoxWidth, 10);
+    let reSized = Math.floor(textBoxWidthStripped * (1 / 10));
+
+    //  now add the style...
+    wu_tang.style = `font-size:${reSized}px`;
+    // console.log(wu_tang.style = `font-size:${reSized}px`)
+    // console.log('dynamicTextBoxHeight', textBoxHeight)
+});
+
+
+
+Object.values(project_item__container__img_wrapper).forEach(img_wrapper => {
+
+    console.log(img_wrapper, 'i ran')
+
+
+    imgWrapperHeight = window.getComputedStyle(img_wrapper).getPropertyValue("height");
+
+
+
+    console.log(imgWrapperHeight , 'imgWrapperHeight')
+});
+
+
+
+// var textBoxHeight;
+// var imgWrapperHeight;
+// const conversation_iconHeight = window
+//     .getComputedStyle(conversation_icon)
+//     .getPropertyValue("height");
+//
+// const showHeight =()=> {
+//    return  (Math.ceil(
+//        parseInt(conversation_iconHeight, 10) +
+//        parseInt(textBoxHeight, 10) +
+//        parseInt(imgWrapperHeight, 10)
+//        ) +
+//        150 * (50 / 100))
+// };
+
+
+
+// console.log(conversation_iconHeight, 'conversation_iconHeight', showHeight(), 'showHeight')
 
 
 //Mixes Section

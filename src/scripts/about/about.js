@@ -1,6 +1,8 @@
 //  ==========   Display Portfolio Animation    ==========
 var skills = document.getElementById("skills");
-
+const conversation_iconHeight = window
+    .getComputedStyle(conversation_icon)
+    .getPropertyValue("height");
 
 //checks if any project is visible: if none visible, reduce length of projects line && place skills & arsenal on the same line
 const checkAnyProjectVisible =()=>{
@@ -26,6 +28,35 @@ Object.values(row_project).forEach(div => {
 
 
 const showProject = index => {
+
+
+
+
+  // if(showHeight === undefined){
+  //
+  //
+  //   console.log(conversation_iconHeight , 'conversation_iconHeight')
+  //   console.log(textBoxHeight, 'textBoxHeight')
+  //   // showHeight = Math.ceil(parseInt(conversation_iconHeight, 10) + parseInt(textBoxHeight, 10) + parseInt(imgWrapperHeight, 10)) + 150 * (50 / 100)
+  //   // showHeight = 700
+  //
+  //   // console.log( Math.ceil(parseInt(conversation_iconHeight, 10)), 'conversation_iconHeight')
+  //   // console.log( parseInt(textBoxHeight, 10) , 'tbHeight')
+  //   // console.log(imgWrapperHeight, 'imgWrapperHeight')
+  //   //
+  //   // showHeight =
+  //   //     Math.ceil(
+  //   //         parseInt(conversation_iconHeight, 10) +
+  //   //         parseInt(textBoxHeight, 10) +
+  //   //         parseInt(imgWrapperHeight, 10)
+  //   //     ) +
+  //   //     150 * (50 / 100);
+  //   //
+  //
+  // }
+
+
+  console.log(showHeight, 'what is showHeight?')
 
   if(skills.classList.contains('slideInSkillsAndArsenal')){
     skills.classList.remove('slideInSkillsAndArsenal')
@@ -103,4 +134,6 @@ function handleClickDropDown(id) {
   moveSkillsAndArsenal();
   toggleProjectItemShow(id);
 }
+
+
 
