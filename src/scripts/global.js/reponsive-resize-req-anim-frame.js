@@ -1,15 +1,14 @@
 var showHeight;
-// let x = projectList;
 
 function repeatOften() {
 
   //About page operations:
-
-  (function(){
     // console.log(window.location.href)
 
     let mixesURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/about/mixes';
     let aboutURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/';
+
+    console.log(mixesURL)
 
     // console.log(aboutURL)
     if(window.location.href === aboutURL){
@@ -18,6 +17,7 @@ function repeatOften() {
       let screenWidth = (function() {
         return screen.width;
       })();
+
 
       let screenHeight = (function() {
         return screen.height;
@@ -58,6 +58,8 @@ function repeatOften() {
       //add these two values to get px size needed for mobile when open
       // console.log('bt height + img B height',  textBoxHeight , imgWrapperHeight, ' :', )
 
+      // let showHeight;
+
       if (screen.width < 767) {
         showHeight =
             Math.ceil(
@@ -71,9 +73,6 @@ function repeatOften() {
       if (screen.width > 767) {
         showHeight = screen.width / 2;
       }
-
-
-
     }
 
     let displayCurrentMin = '';
@@ -98,7 +97,7 @@ function repeatOften() {
       }
 
 
-      //TODO: CLEAN UP - see what you need from the code above to refactor into the code below.
+
       function convertMinsToHrsMins(mins) {
         let h = Math.floor(mins / 60);
         let m = mins % 60;
@@ -118,7 +117,7 @@ function repeatOften() {
     }
 
 
-  })();
+
   requestAnimationFrame(repeatOften);
 }
 
