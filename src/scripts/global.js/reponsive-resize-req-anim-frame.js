@@ -72,10 +72,8 @@ function repeatOften() {
         showHeight = screen.width / 2;
       }
 
-      // console.log(project_item__show[0])
 
 
-      console.log('hello')
     }
 
     let displayCurrentMin = '';
@@ -112,24 +110,15 @@ function repeatOften() {
         return `${h} : ${m} : ${s}` ;
       }
 
-      console.log(convertMinsToHrsMins(totalMinutes), 'did i convert?')
-
-      console.log(elapsedMins,":", elapsedSeconds);
+      // console.log(convertMinsToHrsMins(totalMinutes), 'did i convert?')
+      //
+      // console.log(elapsedMins,":", elapsedSeconds);
 
       track_01_title[0].dataset.value = convertMinsToHrsMins(elapsedMins) + ' / ' + '1:10:57'
     }
 
 
   })();
-
-
-
-
-
-
-
-
-
   requestAnimationFrame(repeatOften);
 }
 

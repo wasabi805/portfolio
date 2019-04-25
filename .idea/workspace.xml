@@ -8,7 +8,8 @@
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/scripts/main.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +21,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.1761427">
+    <splitter split-orientation="horizontal" split-proportion="0.43040293">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/views/mixes.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-11">
-                  <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-613">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
                 </state>
               </provider>
             </entry>
@@ -36,16 +46,25 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="426">
-                  <caret line="378" column="47" lean-forward="true" selection-start-line="378" selection-start-column="47" selection-end-line="378" selection-end-column="47" />
+                <state relative-caret-position="358">
+                  <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
                   <folding>
                     <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -71,8 +90,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+                <state relative-caret-position="210">
+                  <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
@@ -89,7 +108,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
+                <state relative-caret-position="680">
                   <caret line="40" column="62" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="62" />
                 </state>
               </provider>
@@ -135,10 +154,10 @@
       <find>tracks</find>
       <find>project-item</find>
       <find>text</find>
-      <find>showHeight</find>
       <find>playButton01</find>
-      <find>showH</find>
       <find>showHeigh</find>
+      <find>showH</find>
+      <find>showHeight</find>
       <find>log</find>
     </findStrings>
   </component>
@@ -196,9 +215,9 @@
         <option value="$PROJECT_DIR$/src/style/sass/about.scss" />
         <option value="$PROJECT_DIR$/src/scripts/about/about.js" />
         <option value="$PROJECT_DIR$/src/scripts/music-player.js" />
+        <option value="$PROJECT_DIR$/src/views/index.html" />
         <option value="$PROJECT_DIR$/src/scripts/global.js/consts.js" />
         <option value="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" />
-        <option value="$PROJECT_DIR$/src/views/index.html" />
       </list>
     </option>
   </component>
@@ -388,18 +407,18 @@
       <workItem from="1555821398497" duration="27189000" />
       <workItem from="1555949639115" duration="2420000" />
       <workItem from="1555976383005" duration="35677000" />
-      <workItem from="1556152930652" duration="493000" />
+      <workItem from="1556152930652" duration="1370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="651990000" />
+    <option name="totallyTimeSpent" value="652867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19791667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -571,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -653,24 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="16" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/music-player.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/mixes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -688,10 +686,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
+    <entry file="file://$PROJECT_DIR$/src/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="358">
+          <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
+          <folding>
+            <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/mixes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-613">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="62" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -702,22 +726,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/about/about.js">
+    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/consts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="40" column="62" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="62" />
+        <state relative-caret-position="210">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/index.html">
+    <entry file="file://$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="378" column="47" lean-forward="true" selection-start-line="378" selection-start-column="47" selection-end-line="378" selection-end-column="47" />
-          <folding>
-            <element signature="n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
         </state>
       </provider>
     </entry>
