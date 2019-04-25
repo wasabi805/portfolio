@@ -42,9 +42,6 @@ function Track(name){
 let audio01  = new Track('HopPopMarch2019');
 let audio02 = new Track('05_Silk_City_and_Dua_Lipa-Electricity_Xplicid_and_Mikol_Angelo_Remix_Extended');
 
-console.log(audio01);
-
-
 //==========    Define Handlers    ==========
 let seekBar01 = document.getElementById('seek-bar-01');
 let seekBar02 = document.getElementById('seek-bar-02');
@@ -53,7 +50,7 @@ let tracks = document.querySelector('.tracks');
 //allows nested fa icon to perform pause and play
 let playButton01 = document.getElementById('play-01');
 let playButton02 = document.getElementById('play-02');
-let playButtonIcon01 = playButton01.querySelector('i');
+
 
 
 let fillBar01 = document.querySelector('.fill-01');

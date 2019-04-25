@@ -306,8 +306,8 @@ $highlighter: #7c9548;
 
 
   &__wrapper {
+    position: relative;
     border-top-color: #c2cccc6e;
-
     border-style: inset inset none none;
     display: block;
     width: 100%;
@@ -346,6 +346,7 @@ $highlighter: #7c9548;
 
   &__content {
     display: inline-block;
+    padding: 12px;
     background-color: $bg-Off-Shade;
     width: calc(100% - 85px);
     height: auto;

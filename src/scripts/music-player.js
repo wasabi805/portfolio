@@ -1,7 +1,7 @@
 
 console.log('this is the music player');
 
-
+let playButtonIcon01 = playButton01.querySelector('i');
 
 
 //==========    Clamps   ==========

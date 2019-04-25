@@ -1,4 +1,4 @@
-// var showHeight;
+var showHeight;
 // let x = projectList;
 
 function repeatOften() {

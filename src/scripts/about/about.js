@@ -35,6 +35,8 @@ const showProject = index => {
     arsenal.classList.remove('slideInSkillsAndArsenal')
   }
 
+  console.log(showHeight, 'whats in showHeight')
+
   faArrows[index].style = 'transform: rotate(180deg)';
   project_item__show[index].style = `height: calc(${showHeight}px)`;
   projects.style= 'max-width : 100%';
