@@ -5,8 +5,8 @@ function repeatOften() {
   //About page operations:
     // console.log(window.location.href)
 
-    let mixesURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/about/mixes';
-    let aboutURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/';
+    let mixesURL = window.location.protocol+'//' +window.location.hostname + '/about/mixes';
+    let aboutURL = window.location.protocol+'//' +window.location.hostname + '/';
 
     console.log(mixesURL)
 
