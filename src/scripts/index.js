@@ -7,7 +7,7 @@ var main = document.getElementById("main");
 var about = document.getElementById("about");
 
 var isAboutVisible = false;
-console.log(indexURL+'#about')
+
 
 //  ==========   Don't display intro if redirecting from other pages within site   ==========
 if (prevLocation === mixesURL || indexURL+'#about') {

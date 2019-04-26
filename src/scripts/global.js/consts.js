@@ -10,8 +10,8 @@ const projectList = {
 
 //Site URLS
 const prevLocation = document.referrer;
-const indexURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/';
-const mixesURL = window.location.protocol+'//' +window.location.hostname +":" + window.location.port+ '/about/mixes';
+const indexURL = window.location.protocol+'//' +window.location.hostname + '/';
+const mixesURL = window.location.protocol+'//' +window.location.hostname +'/about/mixes';
 
 
 //ABOUT SECTION

@@ -4,7 +4,7 @@ function repeatOften() {
   //About page operations:
   // (function(){
 
-
+    console.log(window.location.href)
 
     if (window.location.href === indexURL || window.location.href ==="http://localhost:8080/#about") {
       //      screen size
@@ -54,11 +54,6 @@ function repeatOften() {
       // let showHeight;
 
       if (screen.width < 767) {
-
-        console.log(conversation_iconHeight, 'conversation_iconHeight')
-        console.log(textBoxHeight, 'textBoxHeight')
-        console.log(imgWrapperHeight, 'imgWrapperHeight')
-
 
         showHeight =
             Math.ceil(
