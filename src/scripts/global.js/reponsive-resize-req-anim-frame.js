@@ -2,8 +2,11 @@
 function repeatOften() {
 
   //About page operations:
-  (function(){
-    if (window.location.href === indexURL || "http://localhost:8080/#about") {
+  // (function(){
+
+
+
+    if (window.location.href === indexURL || window.location.href ==="http://localhost:8080/#about") {
       //      screen size
       screenWidth = (function() {
         return screen.width;
@@ -13,14 +16,14 @@ function repeatOften() {
         return screen.height;
       })();
 
+      console.log('you should not see me!')
 
 
       // let imgWrapperHeight;
-
       //get the icon height;
-      // const conversation_iconHeight = window
-      //     .getComputedStyle(conversation_icon)
-      //     .getPropertyValue("height");
+      const conversation_iconHeight = window
+          .getComputedStyle(conversation_icon)
+          .getPropertyValue("height");
 
       //RESIZE H1 in Text box
       // Object.values(project_item__container__text).forEach(textBox => {
@@ -51,6 +54,12 @@ function repeatOften() {
       // let showHeight;
 
       if (screen.width < 767) {
+
+        console.log(conversation_iconHeight, 'conversation_iconHeight')
+        console.log(textBoxHeight, 'textBoxHeight')
+        console.log(imgWrapperHeight, 'imgWrapperHeight')
+
+
         showHeight =
             Math.ceil(
                 parseInt(conversation_iconHeight, 10) +
@@ -76,7 +85,7 @@ function repeatOften() {
       }
     }
 
-  })();
+  // })();
 
   let displayCurrentMin = "";
 

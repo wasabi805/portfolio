@@ -1,5 +1,6 @@
 //  ==========   Display Portfolio Animation    ==========
 var skills = document.getElementById("skills");
+
 const conversation_iconHeight = window
     .getComputedStyle(conversation_icon)
     .getPropertyValue("height");
