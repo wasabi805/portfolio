@@ -2,7 +2,7 @@
 
 #nav-bar{
   position: fixed;
-  display: flex;
+
   height: 60px;
   width: 100vw;
   top: 0;
@@ -13,7 +13,7 @@
   opacity: 1;
 
   @include tablet{
-    position: fixed;
+
     transition: all 0.5s ease-in-out;
     top: -60px;
     opacity: 0;
@@ -24,15 +24,20 @@
     font-family: Alcubierre;
     right: 0px;
     font-size: 14px;
-    position: absolute;
+    position: relative;
     color: white;
     transform: translate(0, 25px);
-    margin: 0 3rem 0 0;
     padding: 0;
-    display: flex;
+    display: block;
     list-style: none;
+    text-align: center;
+
+    @include tablet{
+      position: absolute;
+    }
 
     @include desktop{
+      //display: flex;
       font-size: 22px;
     }
 

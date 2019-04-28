@@ -23,6 +23,7 @@ app.use(express.static('public'));//all other assets like images
 //===== ROUTES  ======
 //  (move these into a routes.js file.)
 app.get('/', (req, res)=>{
+    console.log('index works')
     res.sendFile(__dirname +'/src' + '/views'+'/index.html')
 });
 
@@ -41,6 +42,12 @@ app.get('/about/travel', (req, res)=>{
 app.get('/about/heroes', (req, res)=>{
     res.sendFile(__dirname +'/src' + '/views'+'/heroes.html')
 });
+
+app.get('/contact', (req, res)=>{
+    console.log('contact works')
+    res.sendFile(__dirname +'/src' + '/views'+'/contact.html')
+});
+
 
 
 const port = process.env.PORT || 8080;

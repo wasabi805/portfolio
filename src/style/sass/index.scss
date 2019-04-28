@@ -140,12 +140,36 @@ body {
   background-color: #630460;
 }
 
+
+.button{
+  font-family: Dolce Vita;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  background-color: #873e68;
+  color: antiquewhite;
+  font-size: 22px;
+  width: 16rem;
+  height: 3rem;
+  border-radius: 4px;
+  z-index: 100;
+  transform: scale(1);
+  transition: transform .2s ease-in-out;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+
+}
+
+
+
 @import "header";
 @import "about";
 @import "audio-player";
 @import "mixes";
 @import "travel";
 @import "gallery";
+@import "contact";
 @import "landing/controller";
 @import "heroes/portfolio";
 

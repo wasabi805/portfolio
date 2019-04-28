@@ -13,5 +13,21 @@ nav_bar.addEventListener('mouseleave', function (e) {
 });
 
 
+function routeTo(id) {
+    history.pushState("", document.title, window.location.pathname
+        + window.location.search);
 
+    switch (id) {
+
+        case 'about_url':
+            console.log(history)
+            window.location.hash = '#personal'
+            break;
+        case 'contact_url':
+            window.location.replace(window.location.href+'contact');
+
+            break
+    }
+
+}
 

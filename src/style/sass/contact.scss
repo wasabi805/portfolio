@@ -1,0 +1,198 @@
+@import "constants/width";
+
+//body{
+//  &:after {
+//    position: absolute;
+//    content: "";
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//
+//
+//    background-image: url(http://www.transparenttextures.com/patterns/green-dust-and-scratches.png);
+//    opacity: 0.4;
+//  }
+//}
+
+#contact{
+  display: block;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  //height: 100%;
+  text-align: center;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  top: 60px;
+  padding: 0 12px;
+  overflow: hidden;
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    background-image: url(http://www.transparenttextures.com/patterns/green-dust-and-scratches.png);
+    opacity: 0.4;
+  }
+
+  @include tablet{
+    overflow: scroll;
+    height: initial;
+    top: 0;
+  }
+
+}
+
+.contact-container{
+  position: relative;
+  display: block;
+  z-index: 2;
+  height: 100%;
+  top: 60px;
+
+
+  &__header{
+    top: 6rem;
+    left: 0;
+    letter-spacing: 8px;
+    right: 0;
+    position: absolute;
+    display: inline-block;
+    font-size: 3rem;
+    font-family: "Dolce Vita";
+    color: white;
+
+
+    @include small-iphone-landscape{
+      top: 13rem;
+
+    }
+  }
+
+  &__image{
+    width: 60vh;
+
+    //position: absolute; //landscape
+    //width: 60vh;//landscape
+    @include small-iphone-landscape {
+      width: 60vh;
+      display: block;
+    }
+
+    @include tablet{
+      display: flex; //portrait
+      height: 100%; //portrait
+    }
+
+
+    img{
+      width: 100%;
+
+      @include tablet{
+       display: inline-block;
+        max-height: 100vh;
+        width: initial;
+      }
+    }
+
+    @include tablet {
+      display: inline-block;
+      width: 45%;
+    }
+  }
+
+  &__text-01{
+    position: absolute;
+    display: block;
+    background: #1d8a8a54;
+    top: 14rem;
+    width: 100%;
+
+    @include small-iphone-portrait{
+
+    }
+
+
+    @include small-iphone-landscape {
+      top: 1rem;
+      left: -70%;
+      width: 140%;
+    }
+
+    @include tablet{
+      left: calc(3%);
+    }
+
+    @include laptop{
+      left: calc(-37%);
+    }
+
+    h4{
+      font-family: Thunderstorm;
+      font-size: 3rem;
+      color: hotpink;
+      display: inline-block;
+      text-align: initial;
+      font-weight: 300;
+      margin-right: 16px;
+      letter-spacing: 3px;
+
+
+    }
+
+    ul{
+      text-align: initial;
+      list-style: none;
+
+      li{
+        color: #FFFFFF;
+        font-family: Alcubierre;
+      }
+    }
+
+    @include tablet{
+      //position: absolute;
+      //top: 35%;
+      ////background: antiquewhite;
+      //display: inline-block;
+      //margin-left: -136px;
+    }
+  }
+
+  @media (min-width:375px){
+    display: inline-block;
+  }
+
+  @include tablet{
+    top: 0;
+
+  }
+
+}
+
+.social-container{
+  position: absolute;
+  /* display: block; */
+  width: 100%;
+  bottom: 110px;
+  /* background: lime; */
+
+  @include small-iphone-landscape{
+
+    margin-left: 264px;
+    width: initial;
+  }
+
+
+  svg{
+    margin: 22px;
+    @include small-iphone-landscape{
+      margin: 6px;
+    }
+  }
+}

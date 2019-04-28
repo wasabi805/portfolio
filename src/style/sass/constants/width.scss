@@ -1,3 +1,8 @@
+$mobile-width: 320px;
+$small-iphone-max-width:480px;
+
+$mobile-height: 568px;
+
 $tablet-width: 768px;
 $laptop-width: 1024px;
 $desktop-width: 1281px;
@@ -9,8 +14,21 @@ body{
   overscroll-behavior: none;
 }
 
+@mixin small-iphone-landscape {
+  @media (min-device-height : 0px) and (max-device-height: $small-iphone-max-width) {
+    @content;
+  }
+}
+
+@mixin small-iphone-portrait {
+  @media (min-device-width : #{$mobile-width +1}) and (max-device-width: $mobile-height) {
+    @content;
+  }
+}
+
+
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) {
+  @media (min-width: #{$tablet-width}) and (min-height: 321px) {
     @content;
   }
 }

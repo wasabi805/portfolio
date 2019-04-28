@@ -1,12 +1,11 @@
-
 function repeatOften() {
-
   //About page operations:
-  // (function(){
 
-    console.log(window.location.href)
-
-    if (window.location.href === indexURL || window.location.href ==="http://localhost:8080/#about") {
+  (function() {
+    if (
+      window.location.href === indexURL ||
+      window.location.href === "http://localhost:8080/#about"
+    ) {
       //      screen size
       screenWidth = (function() {
         return screen.width;
@@ -16,74 +15,28 @@ function repeatOften() {
         return screen.height;
       })();
 
-      console.log('you should not see me!')
-
-
-      // let imgWrapperHeight;
       //get the icon height;
       const conversation_iconHeight = window
-          .getComputedStyle(conversation_icon)
-          .getPropertyValue("height");
-
-      //RESIZE H1 in Text box
-      // Object.values(project_item__container__text).forEach(textBox => {
-      //   textBoxWidth = window.getComputedStyle(textBox).getPropertyValue("width");
-      //   textBoxHeight = window.getComputedStyle(textBox).getPropertyValue("height");
-      //   //strip px from textBoxWidth...
-      //   let textBoxWidthStripped = parseInt(textBoxWidth, 10);
-      //   let reSized = Math.floor(textBoxWidthStripped * (1 / 10));
-      //
-      //   //  now add the style...
-      //   wu_tang.style = `font-size:${reSized}px`;
-      //   // console.log(wu_tang.style = `font-size:${reSized}px`)
-      //   // console.log('dynamicTextBoxHeight', textBoxHeight)
-      // });
-
-      //Get Project Img-wrapper size
-      // Object.values(project_item__container__img_wrapper).forEach(img_wrapper => {
-      //   imgWrapperHeight = window
-      //       .getComputedStyle(img_wrapper)
-      //       .getPropertyValue("height");
-      // });
-
-      // console.log(imgWrapperHeight)
-
-      //add these two values to get px size needed for mobile when open
-      // console.log('bt height + img B height',  textBoxHeight , imgWrapperHeight, ' :', )
-
-      // let showHeight;
+        .getComputedStyle(conversation_icon)
+        .getPropertyValue("height");
 
       if (screen.width < 767) {
-
-        showHeight =
-            Math.ceil(
-                parseInt(conversation_iconHeight, 10) +
-                parseInt(textBoxHeight, 10) +
-                parseInt(imgWrapperHeight, 10)
-            )
-            // + 150 * (50 / 100);
+        showHeight = (Math.ceil(
+          parseInt(conversation_iconHeight, 10) +
+            parseInt(textBoxHeight, 10) +
+            parseInt(imgWrapperHeight, 10))
+        );
       }
 
       if (screen.width > 767) {
         // showHeight = screen.width / 2;
 
-        showHeight = screen.width /2;
-
-        // showHeight=Math.ceil(
-        //     parseInt(conversation_iconHeight, 10) +
-        //     parseInt(textBoxHeight, 10) +
-        //     parseInt(imgWrapperHeight, 10)
-        // ) +
-        // 150 * (50 / 100);
-
-
+        showHeight = screen.width * .55 ;
       }
     }
-
-  // })();
+  })();
 
   let displayCurrentMin = "";
-
   //==========  ----- Mixes-----  =============
   if (window.location.href === mixesURL) {
     let totalSeconds = audio01.currentTime;
@@ -110,11 +63,6 @@ function repeatOften() {
       m = m < 10 ? "0" + m : m;
       return `${h} : ${m} : ${s}`;
     }
-
-    // console.log(convertMinsToHrsMins(totalMinutes), 'did i convert?')
-    //
-    // console.log(elapsedMins,":", elapsedSeconds);
-
     track_01_title[0].dataset.value =
       convertMinsToHrsMins(elapsedMins) + " / " + "1:10:57";
   }

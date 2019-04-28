@@ -367,6 +367,7 @@ $highlighter: #7c9548;
     height: 0;
     transition: height 0.25s ease-in-out;
     border: 1px solid rgba(180, 206, 216, 0.4);
+    z-index: 1;
 
 
     text-align: center;
@@ -400,12 +401,10 @@ $highlighter: #7c9548;
     overflow: hidden;
     position: relative;
     right: 0;
-    //text-align: center;
-    //max-width: 500px;
     width: 50%;
     height: 100%;
     max-height: 90%;
-    //background-color: #1f2934;
+    z-index: 2;
 
     &__img-wrapper {
       position: relative;
@@ -431,21 +430,47 @@ $highlighter: #7c9548;
       display: block;
       text-align: center;
       vertical-align: middle;
+      margin-right: 5%;
+      //background-color: mediumpurple;
 
-      p {
-        margin: 2em;
-        text-align: justify;
+      svg{
+        display: inline-block;
+        margin: 0 auto;
       }
 
       ul {
+        flex-basis: 10%;
         list-style: none;
+        display: inline-block;
+        margin: 0 auto;
+
+        li{
+          font-size: 1.2em;
+        }
+      }
+
+      p {
+        margin: 28px 0;
+        text-align: justify;
+        //padding-right: calc(10% + 2em);
+        //padding-left: calc(10% + 2em);
+
+        @include desktop{
+          font-size: 1.5em;
+          padding: 0 20%;
+        }
+      }
+
+      input{
+        display: inline-block;
+        margin: 0 auto;
       }
 
       @include tablet {
-        //position: absolute;
-        padding: 10% 0;
-        display: inline-block;
-        //background-color: #7fffd414;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3% 0;
         width: 90%;
         height: 100%;
       }

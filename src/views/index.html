@@ -26,18 +26,11 @@
   <body id="body">
     <!--NAV-->
     <nav id="nav-bar">
-      <div class="logo">
-        <img
-          src="../img/kisspng-wu-tang-wu-tang-clan-logo-wu-tang-forever-tang-5ae0345013fd09.9009980915246428960819.png"
-          alt=""
-        />
-      </div>
-
       <ul>
         <li><a href="/">Home</a></li>
-        <li>Story</li>
-        <li><a href="/#about">About</a></li>
-        <li>Contact</li>
+        <li id="projects_url" onclick="routeTo(this.id)">Projects</li>
+        <li id="about_url" onclick="routeTo(this.id)">About</li>
+        <li id="contact_url" onclick="routeTo(this.id)">Contact </li>
       </ul>
     </nav>
 
@@ -236,7 +229,7 @@
                       </li>
                       <li>uses SendGrid.js auto - emailer</li>
                     </ul>
-                    <br />
+
                     <p>
                       Dom's Nom's is a company that specializes in BBQ catering
                       for music festival events, corporate, wedding, and special
@@ -246,6 +239,12 @@
                       this site took a mobile first approach in design with a
                       single page app design.
                     </p>
+
+                    <a href="http://www.doms-noms.com" target="_blank">
+                      <input class="button" type="button" value="Visit"/>
+                    </a>
+
+
                   </div>
                 </div>
               </div>
