@@ -4,11 +4,16 @@ var landingTitle = document.getElementById("title-index");
 var about = document.getElementById("about");
 var isAboutVisible = false;
 
-console.log(prevLocation, "prevLocation");
 
-console.log(indexURL, 'sup!!')
+console.log(window.location.href, 'window.location.href')
+console.log(indexURL, 'indexURL')
+
+console.log(main_bg_img, 'main_bg_img')
+console.log(title_index, 'title_index')
+
 
 function initialLoad() {
+
   if (window.location.href === indexURL) {
     main_bg_img.classList.add("show");
     title_index.classList.add("fadeIn");

@@ -8,34 +8,7 @@
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/scripts/main.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../node-jquery-ajax/client/src/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/about/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/dom-elements.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/consts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/reponsive-resize-req-anim-frame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/global.js/widths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/global.js/widths.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/keyboard-map/keyboard-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/keyboard-map/keyboard-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/music-player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/music-player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/navigation/header-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/navigation/header-navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/travel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/travel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/audio-player.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/audio-player.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/constants/width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/constants/width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/functions/functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/functions/functions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/gallery.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/mixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/mixes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sass/travel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sass/travel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/mixes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/mixes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/travel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/travel.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,14 +20,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.28752375">
+    <splitter split-orientation="horizontal" split-proportion="0.53704876">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/style/sass/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+                <state relative-caret-position="299">
+                  <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
                 </state>
               </provider>
             </entry>
@@ -133,7 +106,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
+                <state relative-caret-position="542">
                   <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
                   <folding>
                     <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -159,8 +132,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -188,6 +161,15 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="85">
                   <caret line="5" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/scripts/navigation/header-navigation.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
@@ -237,15 +219,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/style/sass/audio-player.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -261,8 +234,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>doms</find>
-      <find>abilities-item</find>
       <find>nav-tab</find>
       <find>visi</find>
       <find>nav-bar</find>
@@ -291,6 +262,8 @@
       <find>visiti</find>
       <find>showH</find>
       <find>#project</find>
+      <find>.show</find>
+      <find>show</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -394,7 +367,27 @@
               <item name="portfolio-tim" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio-tim" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-tim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-tim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-tim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-tim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-tim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-tim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -519,12 +512,12 @@
       <workItem from="1556572725034" duration="3727000" />
       <workItem from="1556638750769" duration="5556000" />
       <workItem from="1556746916260" duration="17603000" />
-      <workItem from="1556821313135" duration="10302000" />
+      <workItem from="1556821313135" duration="11124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="751461000" />
+    <option name="totallyTimeSpent" value="752283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1209" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -543,7 +536,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5480769" visible="true" weight="0.092479676" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5480769" visible="true" weight="0.3394309" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.45192307" side_tool="true" weight="0.3068182" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -679,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/navigation/header-navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/navigation/tab-drop-navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -773,17 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/mixes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -816,13 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/sass/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
@@ -868,10 +836,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/navigation/header-navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+        <state relative-caret-position="272">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#article#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/sass/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>
