@@ -1,8 +1,7 @@
 var screenWidth = screen.width;
 var screenHeight = screen.height;
-var showHeight;
 var textBoxWidth;
-var textBoxHeight;
+var textBoxHeight = 0;
 var imgWrapperHeight;
 
 const projectList = {
@@ -14,6 +13,7 @@ const projectList = {
 
 //Site URLS
 const prevLocation = document.referrer;
+
 const indexURL =
   window.location.protocol +
   "//" +
@@ -29,9 +29,16 @@ const mixesURL =
   window.location.port +
   "/about/mixes";
 
+//LANDING BACKGROUND
+var main = document.getElementById("main");
+var main_bg_img = document.getElementById("main-bg-img");
+var title_index = document.getElementById("title-index");
+
 //ABOUT SECTION
+var about = document.getElementById("about");
 const arsenal = document.getElementById("arsenal");
 const projects = document.getElementById("projects");
+const personal = document.getElementById("personal");
 
 const abilities_container = document.getElementById("abilities-container");
 const abilities_item = document.getElementsByClassName("abilities-item");
@@ -58,25 +65,24 @@ const faArrows = document.getElementsByClassName("fa-angle-down");
 
 Object.values(project_item__container__text).forEach(textBox => {
   textBoxWidth = window.getComputedStyle(textBox).getPropertyValue("width");
+
   textBoxHeight = window.getComputedStyle(textBox).getPropertyValue("height");
+
   //strip px from textBoxWidth...
   let textBoxWidthStripped = parseInt(textBoxWidth, 10);
   let reSized = Math.floor(textBoxWidthStripped * (1 / 10));
 
   //  now add the style...
   wu_tang.style = `font-size:${reSized}px`;
-  // console.log(wu_tang.style = `font-size:${reSized}px`)
-  // console.log('dynamicTextBoxHeight', textBoxHeight)
+
 });
 
 Object.values(project_item__container__img_wrapper).forEach(img_wrapper => {
-  console.log(img_wrapper, "i ran");
-
   imgWrapperHeight = window
     .getComputedStyle(img_wrapper)
     .getPropertyValue("height");
 
-  console.log(imgWrapperHeight, "imgWrapperHeight");
+  // console.log(imgWrapperHeight, "imgWrapperHeight");
 });
 
 //Mixes Section
@@ -104,3 +110,4 @@ const fillBar02 = document.querySelector(".fill-02");
 
 //Elapsed time on mixes targets this dom : playing a track injects elapsed time into this DOM element's pseudo elem.
 const track_01_title = document.getElementsByClassName("track-01-title");
+

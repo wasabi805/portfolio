@@ -2,22 +2,21 @@
 var skills = document.getElementById("skills");
 
 const conversation_iconHeight = window
-    .getComputedStyle(conversation_icon)
-    .getPropertyValue("height");
+  .getComputedStyle(conversation_icon)
+  .getPropertyValue("height");
 
 //checks if any project is visible: if none visible, reduce length of projects line && place skills & arsenal on the same line
-const checkAnyProjectVisible =()=>{
-  let check = Object.values(projectList).map(project=>{
-    return project
+const checkAnyProjectVisible = () => {
+  let check = Object.values(projectList).map(project => {
+    return project;
   });
-  if(check.includes(true)){
-
-  }else{
-    console.log('put everything back')
-    abilities_container.style='display: flex';
-    projects.style = 'width: 50%;';
-    skills.classList.add('slideInSkillsAndArsenal');
-    arsenal.classList.add('slideInSkillsAndArsenal')
+  if (check.includes(true)) {
+  } else {
+    console.log("put everything back");
+    abilities_container.style = "display: flex";
+    projects.style = "width: 50%;";
+    skills.classList.add("slideInSkillsAndArsenal");
+    arsenal.classList.add("slideInSkillsAndArsenal");
   }
 };
 
@@ -27,58 +26,28 @@ Object.values(row_project).forEach(div => {
   showProjectDiv.push(div);
 });
 
-
 const showProject = index => {
+  console.log(showHeight, "what is showHeight?");
 
-
-
-
-  // if(showHeight === undefined){
-  //
-  //
-  //   console.log(conversation_iconHeight , 'conversation_iconHeight')
-  //   console.log(textBoxHeight, 'textBoxHeight')
-  //   // showHeight = Math.ceil(parseInt(conversation_iconHeight, 10) + parseInt(textBoxHeight, 10) + parseInt(imgWrapperHeight, 10)) + 150 * (50 / 100)
-  //   // showHeight = 700
-  //
-  //   // console.log( Math.ceil(parseInt(conversation_iconHeight, 10)), 'conversation_iconHeight')
-  //   // console.log( parseInt(textBoxHeight, 10) , 'tbHeight')
-  //   // console.log(imgWrapperHeight, 'imgWrapperHeight')
-  //   //
-  //   // showHeight =
-  //   //     Math.ceil(
-  //   //         parseInt(conversation_iconHeight, 10) +
-  //   //         parseInt(textBoxHeight, 10) +
-  //   //         parseInt(imgWrapperHeight, 10)
-  //   //     ) +
-  //   //     150 * (50 / 100);
-  //   //
-  //
-  // }
-
-
-  console.log(showHeight, 'what is showHeight?')
-
-  if(skills.classList.contains('slideInSkillsAndArsenal')){
-    skills.classList.remove('slideInSkillsAndArsenal')
+  if (skills.classList.contains("slideInSkillsAndArsenal")) {
+    skills.classList.remove("slideInSkillsAndArsenal");
   }
 
-  if(arsenal.classList.contains('slideInSkillsAndArsenal')){
-    arsenal.classList.remove('slideInSkillsAndArsenal')
+  if (arsenal.classList.contains("slideInSkillsAndArsenal")) {
+    arsenal.classList.remove("slideInSkillsAndArsenal");
   }
 
-  console.log(showHeight, 'whats in showHeight')
-
-  faArrows[index].style = 'transform: rotate(180deg)';
-  project_item__show[index].style = `height: calc(${showHeight}px)`;
-  projects.style= 'max-width : 100%';
+  faArrows[index].style = "transform: rotate(180deg)";
+  // project_item__show[index].style = `height: calc(${showHeight}px)`;
+  project_item__show[index].style = `height: calc(${showHeight})`;
+  // project_item__show[index].style = `height: calc(90vh)`;
+  projects.style = "max-width : 100%";
 };
 
 const hideProject = index => {
-
-  faArrows[index].style = 'transform: rotate(0deg)';
+  faArrows[index].style = "transform: rotate(0deg)";
   project_item__show[index].style = "height : 0px; ";
-  setTimeout(()=>checkAnyProjectVisible(), 200)
+  setTimeout(() => checkAnyProjectVisible(), 200);
 };
 
 //  reformat abilities-container from display flex to display block:
@@ -101,7 +70,6 @@ const toggleProjectItemShow = id => {
   Object.values(project_item__icon).forEach(icon => {
     iconId.push(icon.id);
   });
-
 
   // if the clicked id matches icon id, toggle div class === project-item__show
   switch (id) {
@@ -135,6 +103,3 @@ function handleClickDropDown(id) {
   moveSkillsAndArsenal();
   toggleProjectItemShow(id);
 }
-
-
-

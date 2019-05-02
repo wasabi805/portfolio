@@ -1,33 +1,23 @@
 //  The Header NavBar
-let nav_bar = document.getElementById('nav-bar');
+var nav_bar = document.getElementById("nav-bar");
+var about_link = document.getElementById("about-link");
+var mixes_url = document.getElementById("mixes-url");
 
-
-nav_bar.addEventListener('mouseenter', function (e) {
-    console.log('i in now')
+console.log(window.history, "window.history yo");
+nav_bar.addEventListener("mouseenter", function(e) {
+  console.log("i in now");
 });
 
-nav_bar.addEventListener('mouseleave', function (e) {
-    console.log('i out now');
-    nav_bar.classList.remove('slideNavBarDown');
-    nav_tab.classList.remove('slideNavTabUp')
+nav_bar.addEventListener("mouseleave", function(e) {
+  console.log("i out now");
+  nav_bar.classList.remove("slideNavBarDown");
+  nav_tab.classList.remove("slideNavTabUp");
 });
 
+about_link.addEventListener("mouseenter", function(e) {
+  about_link.style = "height : 180px";
+});
 
-function routeTo(id) {
-    history.pushState("", document.title, window.location.pathname
-        + window.location.search);
-
-    switch (id) {
-
-        case 'about_url':
-            console.log(history)
-            window.location.hash = '#personal'
-            break;
-        case 'contact_url':
-            window.location.replace(window.location.href+'contact');
-
-            break
-    }
-
-}
-
+about_link.addEventListener("mouseleave", function(e) {
+  about_link.style = "height : 24px";
+});

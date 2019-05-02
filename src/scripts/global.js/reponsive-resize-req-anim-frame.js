@@ -1,40 +1,41 @@
+var showHeight = 0;
+
 function repeatOften() {
   //About page operations:
+  let x = screen.width * 0.01;
 
-  (function() {
-    if (
-      window.location.href === indexURL ||
-      window.location.href === "http://localhost:8080/#about"
-    ) {
-      //      screen size
-      screenWidth = (function() {
-        return screen.width;
-      })();
+  if (
+    window.location.href === indexURL ||
+    window.location.href === indexURL+"#projects"
+  ) {
+    //      screen size
+    screenWidth = function() {
+      return screen.width;
+    };
 
-      screenHeight = (function() {
-        return screen.height;
-      })();
+    screenHeight = function() {
+      return screen.height;
+    };
 
-      //get the icon height;
-      const conversation_iconHeight = window
-        .getComputedStyle(conversation_icon)
-        .getPropertyValue("height");
-
-      if (screen.width < 767) {
-        showHeight = (Math.ceil(
-          parseInt(conversation_iconHeight, 10) +
-            parseInt(textBoxHeight, 10) +
-            parseInt(imgWrapperHeight, 10))
-        );
-      }
-
-      if (screen.width > 767) {
-        // showHeight = screen.width / 2;
-
-        showHeight = screen.width * .55 ;
-      }
+    if (screen.width < 767) {
+      showHeight = "100%";
+      // showHeight = `${x}px`
     }
-  })();
+
+    if (screen.width > 767) {
+      // showHeight = '90vh'
+      showHeight = `${x * 75}px`;
+    }
+
+    if (screen.width > 1080) {
+      showHeight = `${x * 60}px`;
+    }
+
+    if (screen.width > 1440) {
+      showHeight = `${x * 50}px`;
+    }
+    // console.log(showHeight, "what is this ? showHeight");
+  }
 
   let displayCurrentMin = "";
   //==========  ----- Mixes-----  =============

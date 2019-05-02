@@ -1,21 +1,19 @@
 @import "constants/width";
 @import "functions/functions";
 
-
-#travel{
-
+#travel {
   position: relative;
   color: azure;
   background-color: #00ffff1f;
   background-size: cover;
 
-  img{
+  img {
     width: 100%;
     border: 1px solid cyan;
   }
 
-  &:before{
-    content: '';
+  &:before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -26,150 +24,127 @@
     z-index: 0;
   }
 
-
-  .initial-content{
+  .initial-content {
     position: relative;
-    &__title{
-      position :absolute;
+    &__title {
+      position: absolute;
       font-family: Alcubierre;
       text-align: center;
 
       top: 1em;
-      color: #FFFFFF;
+      color: #ffffff;
       z-index: 10;
 
       font-size: 2rem;
       letter-spacing: 12px;
       font-weight: 200;
 
-      @include tablet{
+      @include tablet {
         font-size: 3rem;
         top: 10em;
       }
-
     }
 
-    &__image{
+    &__image {
       position: absolute;
     }
   }
 
-
-  .travel-content-group{
+  .travel-content-group {
     position: relative;
     margin-top: 60px;
 
-    @include tablet{
+    @include tablet {
       margin-top: 0;
     }
   }
 
-  .modal-travel{
+  .modal-travel {
     margin: auto;
     //height: 74vh;
-    img{
-      width : 100%
-    }
-
-  }
-
-  #animate-img-a{
-    opacity:1;
-    transition-property: opacity;
-    transition-duration: 1s;
-
-    img{
-      width: 100%;
-    }
-
-  }
-
-  #animate-img-b{
-    opacity:1;
-    transition-property: opacity;
-    transition-duration: 1s;
-
-    img{
+    img {
       width: 100%;
     }
   }
 
-  #animate-img-a.isHidden{
+  #animate-img-a {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
 
-    h1{
+    img {
+      width: 100%;
+    }
+  }
+
+  #animate-img-b {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #animate-img-a.isHidden {
+    h1 {
       color: black;
     }
     color: black;
     opacity: 0;
     width: 0;
     max-width: 0;
-
   }
 
-  #animate-img-b.isHidden{
-
-    h1{
+  #animate-img-b.isHidden {
+    h1 {
       color: black;
     }
     color: black;
     opacity: 0;
     width: 0;
     max-width: 0;
-
   }
 
-  #animate-img-b.isShowing{
-    opacity:1;
-
+  #animate-img-b.isShowing {
+    opacity: 1;
   }
 
-  #animate-img-a.isShowing{
-    opacity:1;
-
+  #animate-img-a.isShowing {
+    opacity: 1;
   }
-
 }
 
-
-.image-wrapper{
+.image-wrapper {
   position: relative;
   text-align: center;
 
-  &__header{
+  &__header {
     position: absolute;
     top: 1em;
     left: 0;
     right: 0;
     margin: auto;
 
-
-    h1{
+    h1 {
       font-family: "Dolce Vita";
-      color: #FFFFFF;
+      color: #ffffff;
       letter-spacing: 12px;
       font-weight: 100;
 
-      @include desktop{
+      @include desktop {
         font-size: 6rem;
       }
     }
 
-
-    @include desktop{
-      top :8rem;
+    @include desktop {
+      top: 8rem;
     }
-
   }
-
-
-
 }
 
-
-
-
-
-.galleryOnHover{
+.galleryOnHover {
   position: fixed;
   margin-top: 1em;
 
@@ -179,19 +154,12 @@
   overflow: scroll;
   z-index: 90;
 
-
   left: $hide;
   transition: all 0.5s ease-in-out;
-
-
 }
 
-
-
-
 //====================Grand-Parent==============================
-.gallery-travel{
-
+.gallery-travel {
   position: fixed;
 
   top: 0;
@@ -207,23 +175,17 @@
   //left: -267px;
   transition: all 0.5s ease-in-out;
 
-  @include tablet{
+  @include tablet {
     max-height: 40vh;
     font-size: 0.75em;
   }
 
-
-
-
-  &__container{
+  &__container {
     overflow-y: scroll;
     max-height: 500px;
-
-
   }
 
-
-  &__row{
+  &__row {
     flex-wrap: wrap;
     padding: 0 4px;
     //transform: rotateY(48deg);
@@ -231,56 +193,50 @@
 
   //------  Child -----
 
-  &__column{
+  &__column {
     padding: 0 4px;
 
     @media screen and (max-width: 800px) {
       flex: 50%;
       max-width: 50%;
-
     }
 
     @media screen and (max-width: 600px) {
       flex: 100%;
       max-width: 100%;
-
     }
   }
 
-  &__image{
+  &__image {
     display: inline;
   }
 
-
-  img{
+  img {
     max-width: 20%;
     margin-top: 8px;
     vertical-align: middle;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
-
 }
 
-.gallery-travel:before{
-
+.gallery-travel:before {
   position: absolute;
   content: attr(data-value);
 
   //right: 0;
 
-  writing-mode: vertical-rl;//display vertical
-  text-orientation: upright;//display vertical
+  writing-mode: vertical-rl; //display vertical
+  text-orientation: upright; //display vertical
   text-align: center; //in this case, vertically center
 
-  line-height: 2em;  //horizontal center content
+  line-height: 2em; //horizontal center content
 
   font-family: Standaris;
   font-size: 14px;
   font-weight: 500;
-
 
   color: white;
 
@@ -288,43 +244,37 @@
   height: 100%;
   background-color: rgba(85, 117, 114, 0.3);
 
-  @include tablet{
+  @include tablet {
     font-size: 2em;
     line-height: 26px;
   }
 
-  @include desktop{
-   line-height: 26px;
+  @include desktop {
+    line-height: 26px;
   }
-
 }
-
-
 
 //==================================================
 
-#gallery-travel.showMeTheMoney{
+#gallery-travel.showMeTheMoney {
   opacity: 1;
   left: 0px;
 }
 
-
-.initial-content__title{
+.initial-content__title {
   font-family: Alcubierre;
   top: 10em;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 10;
   height: 8%;
   width: 100%;
   display: block;
   font-size: 3rem;
   letter-spacing: 12px;
-
 }
 
-.text-travel{
-
-  &__content{
+.text-travel {
+  &__content {
     font-family: Alcubierre;
 
     font-size: 13px;
@@ -337,17 +287,16 @@
 
     animation: fadeTravelText 2s ease-in-out;
 
-
-    @include tablet{
+    @include tablet {
       position: absolute;
       color: white;
       background-color: rgba(0, 0, 0, 0.75);
       bottom: 6em;
       right: 0;
-      width: 35%
+      width: 35%;
     }
 
-    @include laptop{
+    @include laptop {
       align-self: center;
       position: absolute;
       bottom: 40px;
@@ -359,30 +308,20 @@
       text-align: justify;
     }
 
-    h3{
+    h3 {
       color: cyan;
     }
 
     @keyframes fadeTravelText {
-      0%{
+      0% {
         opacity: 0;
         color: black;
       }
 
-      100%{
-
+      100% {
         opacity: 1;
-        color: white
+        color: white;
       }
     }
-
   }
 }
-
-
-
-
-
-
-
-
