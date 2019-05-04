@@ -1,89 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../public/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../public/index.css" />
+    <link rel="stylesheet" type="text/css" href="../style/sass/acba.scss" />
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
 
-
-    <title> | ACBA |</title>
-</head>
-<body>
-    <nav class="nav-bar">
-        <div class="logo">
-            <img src="../img/kisspng-wu-tang-wu-tang-clan-logo-wu-tang-forever-tang-5ae0345013fd09.9009980915246428960819.png" alt="">
-        </div>
-
-        <ul>
-            <li>Home</li>
-            <li>Story</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-
-    <div id="acba">
-        <div id="acba-bg">
-            <div class="stars"></div>
-            <div class="stars1"></div>
-            <div class="stars2"></div>
-            <div class="shooting-stars"></div>
-        </div>
-
-        <div class="flex-container" style="
-            position: relative;
-            display: flex;
-            z-index: 10;
-            height: 100vh;
-            width: 100vw;
-            /*background-color: yellow;*/
-            /*opacity: .1;*/
-            /*border: 5px red solid;*/
-
-            ">
-
-            <div class="acba-text"
-                 style="
-                 display: flex;
-                 flex-direction: column;
-                 justify-content: center;
-                 padding: 10px;
-                 align-items: center;
-                 height: 100vh;
-                 width: 300px;
-                 flex-basis: 40%;
-                 color: white;
-                 /*border: 1px lime dotted;*/
-
-                 /*background-color: #f26522;*/
-                 /*opacity: .1;*/">
-                <h1 style="display: block" >| ARTICULATED COMIC BOOK ART |</h1>
-
-                <h2> This section will be a showcase of my Marvel Legends and Transformers collection </h2>
-                <p>
-                    This is some Text This is some Text This is some Text This is some Text
-                    This is some Text This is some Text This is some Text This is some Text
-                    This is some Text This is some Text This is some Text This is some Text
-                </p>
-
-            </div>
-
-
-
-
-        </div>
-
-
+    <title>| ACBA |</title>
+  </head>
+  <body>
+    <div id="nav-tab">
+      navigation
     </div>
 
+    <nav id="nav-bar">
+      <ul class="nav-links">
+        <li class="nav-links-item"><a href="/">Home</a></li>
+        <li class="nav-links-item"><a href="/#projects">Projects</a></li>
+        <li id="about-link" class="">
+          <a>About</a>
+          <i id="mixes-url"><a href="/about/mixes">Mixes</a></i>
+          <i><a href="/about/heroes">ACBA</a></i>
+          <i id="travel-url"><a href="/about/travel">Travel</a></i>
+          <i>Cooking</i>
+        </li>
+        <li id="contact-url" class="nav-links-item">
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-    <!--<section id="heroes">-->
-        <!--<h1>THIS IS THE PORTFOLIO PAGE</h1>-->
-    <!--</section>-->
+    <div class="acba">
+      <h1 class="acba__heading">ACBA</h1>
+      <h3 class="acba__sub-heading">Articulate Comic Book Art</h3>
+
+      <div class="'"></div>
+
+      <div class="acba__hero">
+        <div class="acba__hero__tile marvel">
+          <img src="../img/deadpool-uncanny.png" alt="" />
+        </div>
+        <div class="acba__hero__tile transformers">
+          <img src="../img/megatron.png" alt="" />
+        </div>
+        <div class="acba__hero__tile gi-joe">
+          <img src="../img/snake-eyes-2.jpg" alt="" />
+        </div>
+      </div>
+
+      <div>
+        <h1>Render Imagination<</h1>
+      </div>
 
 
-    <script src="../scripts/keyboard-map/keyboard-map.js"></script>
+      <article class="acba__article thanos">
+        <div class="acba__article__text-container acba-left">
+          <h1>The Mad Titan</h1>
 
-</body>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
+            dummy text of the printing and typesetting industry. Lorem Ipsum has
+          </p>
+        </div>
+
+        <div class="acba__article__image-container acba-right">
+          <img src="../img/thanos.jpg" />
+        </div>
+      </article>
+
+      <article class="acba__article x-men">
+
+        <div class="acba__article__image-container acba-left">
+          <img src="../img/x-men-temp.jpg" />
+        </div>
+
+        <div class="acba__article__text-container acba-right">
+          <h1>The Uncanny X-Men</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
+            dummy text of the printing and typesetting industry. Lorem Ipsum has
+          </p>
+        </div>
+      </article>
+
+      <article class="acba__article joes-01">
+        <div class="acba__article__text-container acba-left">
+          <h1>Yo Joe!</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
+            dummy text of the printing and typesetting industry. Lorem Ipsum has
+          </p>
+        </div>
+
+        <div class="acba__article__image-container acba-right">
+          <img src="../img/duke-scarlet-lowlight.jpg" />
+        </div>
+      </article>
+    </div>
+
+    <script src="../scripts/navigation/header-navigation.js"></script>
+    <script src="../scripts/navigation/tab-drop-navbar.js"></script>
+  </body>
 </html>
