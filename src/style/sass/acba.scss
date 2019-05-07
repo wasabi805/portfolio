@@ -7,6 +7,7 @@
   overflow-y: scroll;
   text-align: center;
   padding-top: 3rem;
+  overflow-x: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 
   section {
@@ -23,7 +24,7 @@
         z-index: 10;
         letter-spacing: 3px;
         font-weight: 400;
-        font-size: 4rem;
+        //font-size: 4rem;
         top: -15px;
         color: hotpink;
         font-family: "Thunderstorm";
@@ -62,10 +63,13 @@
     &__tile {
       position: relative;
       overflow: hidden;
-      height: 18rem;
+      height: 20rem;
+      margin-top: 2px;
 
       img {
         width: 100%;
+        border: 2px solid white;
+
 
         @include tablet {
           height: 100%;
@@ -85,6 +89,9 @@
       @include tablet {
         display: inline-block;
         width: 32%;
+      }
+
+      @include desktop{
         height: 60vh;
       }
     }
@@ -143,18 +150,22 @@
       color: white;
       display: inline-block;
       text-align: justify;
+      background: linear-gradient(to left, rgba(255,0,0,0), rgba(72,181,166,0.380392));
 
 
       p {
-        //background: #30828254;
-        //background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #141515);
         margin: 1.1rem;
+      }
+
+      @include small-iphone-portrait{
+
       }
 
       @include laptop {
         font-size: 1.2rem;
         width: 56%;
         max-width: calc(100vw - 30%);
+        background: none;
       }
 
       h1 {
@@ -171,14 +182,13 @@
     }
 
     &__image-container {
-
-
-
-
      @include tablet{
-       display: inline-block;
-       width: 40%;
      }
+
+      @include laptop{
+        display: inline-block;
+        width: 40%;
+      }
 
       img {
         width: 100%;
@@ -189,23 +199,12 @@
 
 .marvel {
   background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #a42929);
-  padding-top: 2em;
 }
 
 .transformers {
-  //red fade
-  //background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #9100ff);
 }
 
-.gi-joe {
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgba(255, 0, 0, 1)
-  );
-  object-fit: contain;
-}
 
 .thanos {
   margin: 0 calc(100vw - 92%);
@@ -213,11 +212,13 @@
   padding: 1em 0;
 
   &:before{
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+    @include laptop{
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+    }
   }
 
   @include tablet {
@@ -237,39 +238,57 @@
   margin-bottom: 3rem;
 
   &:before{
-    content: "";
-    position: absolute;
-    left: calc(100vw - 56%);
-    width: 500px;
-    height: 500px;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+    @include laptop{
+      content: "";
+      position: absolute;
+      left: calc(100vw - 56%);
+      width: 500px;
+      height: 500px;
+      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+    }
+  }
+
+  @include tablet{
+    background-color: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
   }
 
   @include laptop {
+
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 101%, 0 90%);
   }
 
-  //@include desktop {
-  //  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-  //  clip-path: polygon(0 0, 100% 0, 100% 101%, 0 90%);
-  //}
 }
 
-.avengers-heading{
-  //@include small-iphone-portrait{
-  //  width: 100%;
-  //  left: 0;
-  //  font-size: 2.8rem;
-  //  letter-spacing: 2px;
-  //}
+.fig-headings {
+  font-size: 2.5rem;
+  @include tablet{
+    font-size: 4rem;
+  }
 }
 
-
-
-.x-men-heading {
-  left: calc(100vw - 50%);
+.fig-headings.rhs{
+  @include laptop{
+    left: calc(100vw - 50%);
+  }
 }
+
+.fig-headings.lhs{
+
+}
+
+.gi-joe-heading{
+  font-size: 2.5rem;
+
+  @include tablet{
+    font-size: 4rem;
+  }
+
+  @include laptop{
+    left: calc(100vw - 50%);
+  }
+};
+
 
 .joes-01 {
   margin: 0 calc(100vw - 92%);
@@ -277,11 +296,13 @@
   padding-top: 1em;
 
   &:before{
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+    @include laptop{
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+    }
   }
 
   @include tablet {
