@@ -143,8 +143,7 @@
       color: white;
       display: inline-block;
       text-align: justify;
-      width: 56%;
-      max-width: calc(100vw - 30%);
+
 
       p {
         //background: #30828254;
@@ -154,6 +153,8 @@
 
       @include laptop {
         font-size: 1.2rem;
+        width: 56%;
+        max-width: calc(100vw - 30%);
       }
 
       h1 {
@@ -170,10 +171,14 @@
     }
 
     &__image-container {
-      display: inline-block;
-      width: 40%;
-      //background-color: #4ef0fa;
-      //margin-left: 5px;
+
+
+
+
+     @include tablet{
+       display: inline-block;
+       width: 40%;
+     }
 
       img {
         width: 100%;
@@ -250,6 +255,17 @@
   //  clip-path: polygon(0 0, 100% 0, 100% 101%, 0 90%);
   //}
 }
+
+.avengers-heading{
+  //@include small-iphone-portrait{
+  //  width: 100%;
+  //  left: 0;
+  //  font-size: 2.8rem;
+  //  letter-spacing: 2px;
+  //}
+}
+
+
 
 .x-men-heading {
   left: calc(100vw - 50%);

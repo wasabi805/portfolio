@@ -1,12 +1,15 @@
 .lds-spinner {
   color: white;
+  //background: blue;
   display: inline-block;
   position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 64px;
   height: 64px;
-
-  top: calc(100vh - 49%);
-  left: calc(100vw - 53%);
+  margin: auto;
 }
 .lds-spinner div {
   transform-origin: 32px 32px;

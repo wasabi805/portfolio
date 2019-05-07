@@ -1,4 +1,4 @@
-var tapMenu = getElemById('tap-menu');
+var tapMenu = getElemById("tap-menu");
 var galleryTravel = getElemById("gallery-travel");
 const travel = getElemById("travel");
 
@@ -113,23 +113,21 @@ const images = [
   }
 ];
 
+const HideImage = el => el.classList.add("isHidden");
+const RemoveHide = el => el.classList.remove("isHidden");
 
-const HideImage =(el)=> el.classList.add('isHidden');
-const RemoveHide = (el)=> el.classList.remove('isHidden');
-
-const ShowImage =(el)=> el.classList.add('isShowing');
-const RemoveShow = (el)=> el.classList.remove('isShowing');
+const ShowImage = el => el.classList.add("isShowing");
+const RemoveShow = el => el.classList.remove("isShowing");
 
 //                  onClick Gallery Thumbnail  LOGIC
 
 //Set both Images to hidden
-const animateImgA = querySelectElem('#animate-img-a');
+const animateImgA = querySelectElem("#animate-img-a");
 const animateImgB = querySelectElem("#animate-img-b");
 const textTravel = querySelectElem(".text-travel");
 
 HideImage(animateImgA); //default: don't show image
 HideImage(animateImgB); //default: don't show image
-
 
 //attach to all thumbnails,
 const loadImg = id => {

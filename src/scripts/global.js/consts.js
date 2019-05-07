@@ -14,13 +14,7 @@ function getElemByClass(className) {
   return document.getElementsByClassName(`${className}`);
 }
 
-const querySelectElem =(el)=> document.querySelector(el);
-
-
-
-
-
-
+const querySelectElem = el => document.querySelector(el);
 
 const projectList = {
   isDevConOpen: false,
@@ -37,8 +31,10 @@ const prevLocation = document.referrer;
 //   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
 
 //  Use when Deploying
-const indexURL = window.location.protocol+'//' +window.location.hostname + '/';
-const mixesURL = window.location.protocol+'//' +window.location.hostname +'/about/mixes';
+const indexURL =
+  window.location.protocol + "//" + site.hostname + "/";
+const mixesURL =
+  window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
 const main = getElemById("main");
@@ -84,8 +80,6 @@ Object.values(project_item__container__text).forEach(textBox => {
   wu_tang.style = `font-size:${reSized}px`;
 });
 
-
-
 Object.values(project_item__container__img_wrapper).forEach(img_wrapper => {
   imgWrapperHeight = window
     .getComputedStyle(img_wrapper)
@@ -93,7 +87,6 @@ Object.values(project_item__container__img_wrapper).forEach(img_wrapper => {
 
   // console.log(imgWrapperHeight, "imgWrapperHeight");
 });
-
 
 //Mixes Section
 function Track(name) {

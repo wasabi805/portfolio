@@ -1,3 +1,4 @@
+@import "constants/width";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,11 +66,15 @@ body {
   #title-index {
     position: fixed;
     display: inline-block;
-    width: 30%;
+
     top: 33%;
     left: 0;
     right: 0;
     margin: 0 auto;
+    background: #b947c8;
+    width: 100%;
+    padding: 9px 0px 9px 9px;
+
 
     //top: 25%;
     font-family: "Dolce Vita";
@@ -77,10 +82,16 @@ body {
     font-size: 3em;
 
     color: white;
-    background: hotpink;
     z-index: 100;
     opacity: 0;
     transition: 2s opacity ease-in-out;
+
+    @include tablet{
+      background: #b947c896;
+      width: 70%;
+    }
+
+
   }
   #title-index.fadeIn {
     opacity: 1;
@@ -121,11 +132,30 @@ body {
     position: fixed;
     opacity: 0;
     z-index: 2;
+    width: 100%;
+    height: 110vh;
 
-    img {
-      width: 100%;
-      height: 110vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../img/nick-reynolds-788187-unsplash.jpg");
+
+
+
+    @include tablet{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../../img/umbrella.jpg");
+
     }
+
+
+
+    //img {
+    //  width: 100%;
+    //  height: 110vh;
+    //}
   }
 
   #main-bg-img.show {
