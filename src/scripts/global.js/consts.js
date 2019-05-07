@@ -32,13 +32,13 @@ const projectList = {
 //Site URLS
 const prevLocation = document.referrer;
 
-const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-const mixesURL =
-  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
+// const mixesURL =
+//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
 
 //  Use when Deploying
-// const indexURL = window.location.protocol+'//' +window.location.hostname + '/';
-// const mixesURL = window.location.protocol+'//' +window.location.hostname +'/about/mixes';
+const indexURL = window.location.protocol+'//' +window.location.hostname + '/';
+const mixesURL = window.location.protocol+'//' +window.location.hostname +'/about/mixes';
 
 //LANDING BACKGROUND
 const main = getElemById("main");
