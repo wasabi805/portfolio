@@ -4,11 +4,32 @@
   margin-top: 62px;
   position: relative;
   width: 100%;
-  z-index: 100;
   overflow-y: scroll;
   text-align: center;
   padding-top: 3rem;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+  section {
+    position: relative;
+    text-align: center;
+
+    header {
+      display: inline-block;
+      width: 83%;
+      background-color: #4ef0fa;
+
+      h1 {
+        position: absolute;
+        z-index: 10;
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 4rem;
+        top: -15px;
+        color: hotpink;
+        font-family: "Thunderstorm";
+      }
+    }
+  }
 
   &__heading {
     display: block;
@@ -33,7 +54,8 @@
     width: 100%;
     max-width: calc(100vw - 15%);
     position: relative;
-    border: 5px solid white;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
     margin: 0 auto;
     margin-bottom: 6em;
 
@@ -68,8 +90,50 @@
     }
   }
 
+  &__info{
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+    width: calc(100vw - 15%);
+    margin-bottom: 5em;
+
+    h1{
+      display: inline-block;
+      color: white;
+      font-family: "Dolce Vita";
+    }
+
+    h4{
+      color: cyan;
+      font-family: Standaris;
+    }
+
+    &__text{
+      display: inline-block;
+      font-family: Alcubierre, "Dolce Vita";
+      color: white;
+    }
+
+  }
+
   &__article {
     background-color: #e24ca92b;
+    background-color: #2c3b4f;
+    background-image: url(https://www.transparenttextures.com/patterns/carbon-fibre-v2.png);
+
+
+
+    h1 {
+      position: absolute;
+      z-index: 800;
+
+      letter-spacing: 3px;
+      font-weight: 400;
+      font-size: 4rem;
+      top: -52px;
+      color: hotpink;
+      font-family: "Thunderstorm";
+    }
 
     &__text-container {
       position: relative;
@@ -83,7 +147,9 @@
       max-width: calc(100vw - 30%);
 
       p {
-        background: #1d8a8a54;
+        //background: #30828254;
+        //background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #141515);
+        margin: 1.1rem;
       }
 
       @include laptop {
@@ -91,10 +157,13 @@
       }
 
       h1 {
+        position: absolute;
+        z-index: 800;
+
         letter-spacing: 3px;
         font-weight: 400;
         font-size: 4rem;
-        top: -70px;
+        top: -52px;
         color: hotpink;
         font-family: "Thunderstorm";
       }
@@ -138,7 +207,15 @@
   margin-bottom: 3rem;
   padding: 1em 0;
 
-  @include tablet{
+  &:before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+  }
+
+  @include tablet {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
   }
@@ -154,20 +231,54 @@
   padding-top: 1em;
   margin-bottom: 3rem;
 
+  &:before{
+    content: "";
+    position: absolute;
+    left: calc(100vw - 56%);
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+  }
+
   @include laptop {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 101%, 0 90%);
   }
 
-  @include desktop {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 101%, 0 90%);
-  }
+  //@include desktop {
+  //  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  //  clip-path: polygon(0 0, 100% 0, 100% 101%, 0 90%);
+  //}
+}
+
+.x-men-heading {
+  left: calc(100vw - 50%);
 }
 
 .joes-01 {
-  margin: 0 calc(100vw - 95%);
+  margin: 0 calc(100vw - 92%);
+  margin-bottom: 3rem;
   padding-top: 1em;
+
+  &:before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+  }
+
+  @include tablet {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  }
+
+  @include desktop {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  }
+
+
 }
 
 .acba-left {

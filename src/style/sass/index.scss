@@ -56,22 +56,28 @@ body {
   width: 100vw;
   height: 110vh;
 
-  position: absolute;
+  //position: absolute;
   overflow: scroll;
   z-index: 10;
 
-  h1 {
-    font-family: Inter;
-  }
+
 
   #title-index {
     position: fixed;
-    top: 25%;
+    display: inline-block;
+    width: 30%;
+    top: 33%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    //top: 25%;
+    font-family: "Dolce Vita";
 
     font-size: 3em;
-    left: 1em;
+
     color: white;
-    background: tomato;
+    background: hotpink;
     z-index: 100;
     opacity: 0;
     transition: 2s opacity ease-in-out;
@@ -84,9 +90,9 @@ body {
     opacity: 0;
   }
 
-  #title-index.title-index-initial {
-    left: 1em;
-  }
+  //#title-index.title-index-initial {
+  //  //left: 1em;
+  //}
 
   .slideLeft {
     animation: 1s ease-in-out slideLeft;

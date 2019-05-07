@@ -4,6 +4,24 @@ var textBoxWidth;
 var textBoxHeight = 0;
 var imgWrapperHeight;
 
+const site = window.location;
+
+function getElemById(id) {
+  return document.getElementById(`${id}`);
+}
+
+function getElemByClass(className) {
+  return document.getElementsByClassName(`${className}`);
+}
+
+const querySelectElem =(el)=> document.querySelector(el);
+
+
+
+
+
+
+
 const projectList = {
   isDevConOpen: false,
   isDomNomsOpen: false,
@@ -14,60 +32,44 @@ const projectList = {
 //Site URLS
 const prevLocation = document.referrer;
 
-const indexURL =
-  window.location.protocol +
-  "//" +
-  window.location.hostname +
-  ":" +
-  window.location.port +
-  "/";
+const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
 const mixesURL =
-  window.location.protocol +
-  "//" +
-  window.location.hostname +
-  ":" +
-  window.location.port +
-  "/about/mixes";
-
+  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
 
 //  Use when Deploying
 // const indexURL = window.location.protocol+'//' +window.location.hostname + '/';
 // const mixesURL = window.location.protocol+'//' +window.location.hostname +'/about/mixes';
 
-
 //LANDING BACKGROUND
-var main = document.getElementById("main");
-var main_bg_img = document.getElementById("main-bg-img");
-var title_index = document.getElementById("title-index");
+const main = getElemById("main");
+var main_bg_img = getElemById("main-bg-img");
+var title_index = getElemById("title-index");
 
 //ABOUT SECTION
-var about = document.getElementById("about");
-const arsenal = document.getElementById("arsenal");
-const projects = document.getElementById("projects");
-const personal = document.getElementById("personal");
+var about = getElemById("about");
+const arsenal = getElemById("arsenal");
+const projects = getElemById("projects");
+const personal = getElemById("personal");
 
-const abilities_container = document.getElementById("abilities-container");
-const abilities_item = document.getElementsByClassName("abilities-item");
+const abilities_container = getElemById("abilities-container");
+const abilities_item = getElemByClass("abilities-item");
 
-const project_item__icon = document.getElementsByClassName(
-  "project-item__icon"
-);
-const project_item__show = document.getElementsByClassName(
-  "project-item__show"
-);
-const project_item__container__text = document.getElementsByClassName(
+const project_item__icon = getElemByClass("project-item__icon");
+const project_item__show = getElemByClass("project-item__show");
+
+const project_item__container__text = getElemByClass(
   "project-item__container__text"
 );
-const project_item__container__img_wrapper = document.getElementsByClassName(
+const project_item__container__img_wrapper = getElemByClass(
   "project-item__container__img-wrapper"
 );
 
-const row_project = document.getElementsByClassName("row-project");
+const row_project = getElemByClass("row-project");
 
-const wu_tang = document.getElementsByClassName("wu-tang");
+const wu_tang = getElemByClass("wu-tang");
 
-const conversation_icon = document.getElementById("conversation-icon");
-const faArrows = document.getElementsByClassName("fa-angle-down");
+const conversation_icon = getElemById("conversation-icon");
+const faArrows = getElemByClass("fa-angle-down");
 
 Object.values(project_item__container__text).forEach(textBox => {
   textBoxWidth = window.getComputedStyle(textBox).getPropertyValue("width");
@@ -80,8 +82,9 @@ Object.values(project_item__container__text).forEach(textBox => {
 
   //  now add the style...
   wu_tang.style = `font-size:${reSized}px`;
-
 });
+
+
 
 Object.values(project_item__container__img_wrapper).forEach(img_wrapper => {
   imgWrapperHeight = window
@@ -90,6 +93,7 @@ Object.values(project_item__container__img_wrapper).forEach(img_wrapper => {
 
   // console.log(imgWrapperHeight, "imgWrapperHeight");
 });
+
 
 //Mixes Section
 function Track(name) {
@@ -103,17 +107,16 @@ const audio02 = new Track(
 );
 
 //==========    Define Handlers    ==========
-const seekBar01 = document.getElementById("seek-bar-01");
-const seekBar02 = document.getElementById("seek-bar-02");
+const seekBar01 = getElemById("seek-bar-01");
+const seekBar02 = getElemById("seek-bar-02");
 const tracks = document.querySelector(".tracks");
 
 //allows nested fa icon to perform pause and play
-const playButton01 = document.getElementById("play-01");
-const playButton02 = document.getElementById("play-02");
+const playButton01 = getElemById("play-01");
+const playButton02 = getElemById("play-02");
 
-const fillBar01 = document.querySelector(".fill-01");
-const fillBar02 = document.querySelector(".fill-02");
+const fillBar01 = querySelectElem(".fill-01");
+const fillBar02 = querySelectElem(".fill-02");
 
 //Elapsed time on mixes targets this dom : playing a track injects elapsed time into this DOM element's pseudo elem.
-const track_01_title = document.getElementsByClassName("track-01-title");
-
+const track_01_title = getElemByClass("track-01-title");

@@ -5,23 +5,23 @@ var about = document.getElementById("about");
 var isAboutVisible = false;
 
 
-console.log(window.location.href, 'window.location.href')
-console.log(indexURL, 'indexURL')
-
-console.log(main_bg_img, 'main_bg_img')
-console.log(title_index, 'title_index')
+// console.log(window.location.href, 'window.location.href')
+// console.log(indexURL, 'indexURL')
+//
+// console.log(main_bg_img, 'main_bg_img')
+// console.log(title_index, 'title_index')
 
 
 function initialLoad() {
 
-  if (window.location.href === indexURL) {
+  if (site.href === indexURL) {
     main_bg_img.classList.add("show");
     title_index.classList.add("fadeIn");
   }
 }
 
 function scrollToProject() {
-  if (window.location.href === indexURL+"#projects") {
+  if (site.href === indexURL+"#projects") {
     setTimeout(() => {
       // alert('from the setTimeOut')
 
@@ -44,10 +44,6 @@ window.onload = function() {
   scrollToProject();
 };
 
-function testToScrollTo() {
-  console.log("i fired");
-  window.location = "#projects";
-}
 
 //  ==========   Onscroll DOWN   ==========
 window.addEventListener("scroll", function() {
@@ -82,7 +78,7 @@ function snesRedirect(id) {
       break;
 
     case "x": // x btn
-      window.location.href = "";
+      window.location.href = "/about/heroes";
       break;
 
     case "b": // b btn

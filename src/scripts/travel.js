@@ -1,15 +1,14 @@
-var tapMenu = document.getElementById("tap-menu");
-var galleryTravel = document.getElementById("gallery-travel");
-var travel = document.getElementById("travel");
+var tapMenu = getElemById('tap-menu');
+var galleryTravel = getElemById("gallery-travel");
+const travel = getElemById("travel");
 
-var gallery_travel = document.querySelector(".gallery-travel");
-console.log(gallery_travel, "gallery_travel");
+const gallery_travel = querySelectElem(".gallery-travel");
 
 //default : hide nav
 gallery_travel.style = "left:-267px";
 
 //state obj for images and text
-var images = [
+const images = [
   {
     id: "1",
     src: "https://i.ibb.co/4g2CVWz/IMG-20190224-170820.jpg",
@@ -114,16 +113,23 @@ var images = [
   }
 ];
 
+
+const HideImage =(el)=> el.classList.add('isHidden');
+const RemoveHide = (el)=> el.classList.remove('isHidden');
+
+const ShowImage =(el)=> el.classList.add('isShowing');
+const RemoveShow = (el)=> el.classList.remove('isShowing');
+
 //                  onClick Gallery Thumbnail  LOGIC
 
 //Set both Images to hidden
-var animateImgA = document.querySelector("#animate-img-a");
-animateImgA.classList.add("isHidden");
+const animateImgA = querySelectElem('#animate-img-a');
+const animateImgB = querySelectElem("#animate-img-b");
+const textTravel = querySelectElem(".text-travel");
 
-var animateImgB = document.querySelector("#animate-img-b");
-animateImgB.classList.add("isHidden");
+HideImage(animateImgA); //default: don't show image
+HideImage(animateImgB); //default: don't show image
 
-var textTravel = document.querySelector(".text-travel");
 
 //attach to all thumbnails,
 const loadImg = id => {
@@ -142,44 +148,45 @@ const loadImg = id => {
   }</h1 <p>${pullImage.location}</p> </header>     <img src=${
     pullImage.src
   } alt=''> </div>`;
+
   let content = `<div class="text-travel__content"><h3>${pullImage.title}</h3>
             <p> ${pullImage.text}
             </p></div> `;
 
   //Stage 1
   if (animateImgA.classList.contains("isHidden")) {
-    document.querySelector(".initial-content").style = "display : none";
-    document.getElementById("animate-img-a").innerHTML = innerHTMLString;
+    querySelectElem(".initial-content").style = "display : none";
+    animateImgA.innerHTML = innerHTMLString;
     textTravel.innerHTML = content;
 
     setTimeout(function() {
-      animateImgB.classList.remove("isShowing");
-      animateImgB.classList.add("isHidden");
-      animateImgA.classList.remove("isHidden");
-      animateImgA.classList.add("isShowing");
+      HideImage(animateImgB);
+      RemoveShow(animateImgB);
+      ShowImage(animateImgA);
+      RemoveHide(animateImgA);
     }, 100);
 
     //Prevent Gap on Bottom
-    document.getElementById("animate-img-a").style = "display: block;";
-    document.getElementById("animate-img-b").style = "display: none;";
+    getElemById("animate-img-a").style = "display: block;";
+    getElemById("animate-img-b").style = "display: none;";
   }
 
   //Stage2:
   if (animateImgA.classList.contains("isShowing")) {
-    document.querySelector(".initial-content").style = "display : none";
-    document.getElementById("animate-img-b").innerHTML = innerHTMLString;
+    querySelectElem(".initial-content").style = "display : none";
+    getElemById("animate-img-b").innerHTML = innerHTMLString;
     textTravel.innerHTML = content;
 
     setTimeout(function() {
-      animateImgA.classList.add("isHidden");
-      animateImgA.classList.remove("isShowing");
-      animateImgB.classList.add("isShowing");
-      animateImgB.classList.remove("isHidden");
+      HideImage(animateImgA);
+      RemoveShow(animateImgA);
+      ShowImage(animateImgB);
+      RemoveHide(animateImgB);
     }, 100);
 
     //Prevent Gap on Bottom
-    document.getElementById("animate-img-b").style = "display: block;";
-    document.getElementById("animate-img-a").style = "display: none;";
+    getElemById("animate-img-b").style = "display: block;";
+    getElemById("animate-img-a").style = "display: none;";
   }
 };
 
