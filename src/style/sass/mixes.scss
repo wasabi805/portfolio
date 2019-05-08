@@ -4,6 +4,7 @@
   color: azure;
   background-color: #00ffff1f;
 
+
   background: url("../../img/sankhadeep-barman-558514-unsplash.jpg") no-repeat
     center fixed;
   background-size: cover;
@@ -27,7 +28,7 @@
     position: relative;
     display: flex;
     //justify-content: space-between;
-    overflow-x: hidden;
+    overflow: hidden;
     flex-wrap: wrap;
     width: 100%;
     text-align: center;

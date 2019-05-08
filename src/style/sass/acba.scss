@@ -1,4 +1,43 @@
 @import "constants/width";
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+
+blockquote {
+  font-family: "Special Elite";
+  background: #132626;
+  border-left: 10px solid #ccc;
+  //margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  width: 85%;
+  display: inline-block;
+  margin: 1.5em 7%;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(http://www.transparenttextures.com/patterns/green-dust-and-scratches.png);
+  opacity: 0.4;
+}
+blockquote p {
+  display: inline;
+}
 
 .acba {
   margin-top: 62px;
@@ -70,7 +109,6 @@
         width: 100%;
         border: 2px solid white;
 
-
         @include tablet {
           height: 100%;
           //width: auto;
@@ -91,44 +129,44 @@
         width: 32%;
       }
 
-      @include desktop{
+      @include desktop {
         height: 60vh;
       }
     }
   }
 
-  &__info{
+  &__info {
     display: inline-block;
     position: relative;
     text-align: justify;
-    width: calc(100vw - 15%);
+    width: calc(100vw - 9%);
+    padding: 1em;
     margin-bottom: 5em;
+    border: 6px double #00ffff2e;
 
-    h1{
+    h1 {
       display: inline-block;
       color: white;
       font-family: "Dolce Vita";
     }
 
-    h4{
+    h4 {
       color: cyan;
+      font-size: 1.7rem;
       font-family: Standaris;
     }
 
-    &__text{
+    &__text {
       display: inline-block;
       font-family: Alcubierre, "Dolce Vita";
       color: white;
     }
-
   }
 
   &__article {
     background-color: #e24ca92b;
     background-color: #2c3b4f;
     background-image: url(https://www.transparenttextures.com/patterns/carbon-fibre-v2.png);
-
-
 
     h1 {
       position: absolute;
@@ -150,15 +188,17 @@
       color: white;
       display: inline-block;
       text-align: justify;
-      background: linear-gradient(to left, rgba(255,0,0,0), rgba(72,181,166,0.380392));
-
+      background: linear-gradient(
+        to left,
+        rgba(255, 0, 0, 0),
+        rgba(72, 181, 166, 0.380392)
+      );
 
       p {
         margin: 1.1rem;
       }
 
-      @include small-iphone-portrait{
-
+      @include small-iphone-portrait {
       }
 
       @include laptop {
@@ -182,10 +222,10 @@
     }
 
     &__image-container {
-     @include tablet{
-     }
+      @include tablet {
+      }
 
-      @include laptop{
+      @include laptop {
         display: inline-block;
         width: 40%;
       }
@@ -205,19 +245,22 @@
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #9100ff);
 }
 
-
 .thanos {
   margin: 0 calc(100vw - 92%);
   margin-bottom: 3rem;
   padding: 1em 0;
 
-  &:before{
-    @include laptop{
+  &:before {
+    @include laptop {
       content: "";
       position: absolute;
       width: 500px;
       height: 500px;
-      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+      background-image: linear-gradient(
+        to left,
+        rgba(255, 0, 0, 0),
+        rgba(72, 181, 166, 0.380392)
+      );
     }
   }
 
@@ -237,71 +280,79 @@
   padding-top: 1em;
   margin-bottom: 3rem;
 
-  &:before{
-    @include laptop{
+  &:before {
+    @include laptop {
       content: "";
       position: absolute;
       left: calc(100vw - 56%);
       width: 500px;
       height: 500px;
-      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+      background-image: linear-gradient(
+        to left,
+        rgba(255, 0, 0, 0),
+        rgba(72, 181, 166, 0.380392)
+      );
     }
   }
 
-  @include tablet{
-    background-color: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+  @include tablet {
+    background-color: linear-gradient(
+      to left,
+      rgba(255, 0, 0, 0),
+      rgba(72, 181, 166, 0.380392)
+    );
   }
 
   @include laptop {
-
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 101%, 0 90%);
   }
-
 }
 
 .fig-headings {
   font-size: 2.5rem;
-  @include tablet{
+  @include tablet {
     font-size: 4rem;
   }
 }
 
-.fig-headings.rhs{
-  @include laptop{
+.fig-headings.rhs {
+  @include laptop {
     left: calc(100vw - 50%);
   }
 }
 
-.fig-headings.lhs{
-
+.fig-headings.lhs {
 }
 
-.gi-joe-heading{
+.gi-joe-heading {
   font-size: 2.5rem;
 
-  @include tablet{
+  @include tablet {
     font-size: 4rem;
   }
 
-  @include laptop{
+  @include laptop {
     left: calc(100vw - 50%);
   }
-};
-
+}
 
 .joes-01 {
   margin: 0 calc(100vw - 92%);
   margin-bottom: 3rem;
   padding-top: 1em;
 
-  &:before{
-    @include laptop{
+  &:before {
+    @include laptop {
       content: "";
       position: absolute;
       width: 500px;
       height: 500px;
-      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(72, 181, 166, 0.380392));
+      background-image: linear-gradient(
+        to left,
+        rgba(255, 0, 0, 0),
+        rgba(72, 181, 166, 0.380392)
+      );
     }
   }
 
@@ -314,8 +365,6 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
   }
-
-
 }
 
 .acba-left {
@@ -324,4 +373,138 @@
 
 .acba-right {
   margin-left: 5px;
+}
+
+.card-container {
+  position: relative;
+  text-align: center;
+  padding: 5rem 0;
+
+  //background-color: white;
+
+  &__card {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 48px;
+    background-color: #2c3b4f;
+    background-image: url(https://www.transparenttextures.com/patterns/carbon-fibre-v2.png);
+    padding: 2rem 0;
+    min-height: 37rem;
+    max-width: 400px;
+
+
+    -webkit-box-shadow: 0 10px 6px -6px #794a74;
+    -moz-box-shadow: 0 10px 6px -6px #794a74;
+    box-shadow: 0 10px 6px -6px #794a74;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to top,
+        rgba(255, 0, 0, 0),
+        rgba(72, 181, 166, 0.380392)
+      );
+    }
+
+    @include tablet {
+      width: 30%;
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: white;
+    background-color: #41696a5c;
+    border-radius: 5px;
+
+    @include desktop {
+      width: 75%;
+      font-size: 1.38rem;
+    }
+  }
+}
+
+.card-container__card.one {
+  //background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.card-container__card.two {
+  //background-color: rgb(171, 20, 21);
+  position: relative;
+}
+
+.card-container__card.three {
+  position: relative;
+  //background-color: rgb(255, 255, 255);
+}
+
+.portrait-wrapper {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  background-size: cover;
+  background-position: -6px 0px;
+  z-index: 1;
+  //box-shadow: 0 8px 6px -6px #794a74;
+  box-shadow: 0 8px 6px -6px #2e7a82;
+  margin-bottom: 2em;
+}
+
+.logo-wrapper {
+  position: relative;
+  margin-bottom: 1em;
+
+  img {
+    width: 60%;
+    box-shadow: 0 8px 6px -6px #72aeb4;
+  }
+}
+
+.portrait-wrapper.boog-nice-pic {
+  background-image: url("../../img/boog-nice.png");
+}
+
+.portrait-wrapper.dan-larsen-pic {
+  background-image: url("../../img/dan-larsen.png");
+}
+
+.portrait-wrapper.shartimus-pic {
+  background-image: url("../../img/shartimu-01.jpg");
+}
+
+.fa-wrapper {
+  i {
+    font-size: 3rem;
+    color: #ee7d7d;
+    margin: 16px;
+  }
+}
+
+.acba__heading.center {
+  font-family: "Dolce Vita";
+  letter-spacing: 3px;
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.acba__sub-heading.center {
+  text-align: center;
+  margin: 0;
 }

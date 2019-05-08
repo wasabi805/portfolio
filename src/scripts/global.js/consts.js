@@ -26,20 +26,21 @@ const projectList = {
 //Site URLS
 const prevLocation = document.referrer;
 
-// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-// const mixesURL =
-//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
+const mixesURL =
+  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
 
 //  Use when Deploying
-const indexURL =
-  window.location.protocol + "//" + site.hostname + "/";
-const mixesURL =
-  window.location.protocol + "//" + site.hostname + "/about/mixes";
+// const indexURL =
+//   window.location.protocol + "//" + site.hostname + "/";
+// const mixesURL =
+//   window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
 const main = getElemById("main");
 var main_bg_img = getElemById("main-bg-img");
 var title_index = getElemById("title-index");
+const scroll_down_container = getElemById("scroll-down-container");
 
 //ABOUT SECTION
 var about = getElemById("about");
