@@ -32,9 +32,7 @@
     position: absolute;
     height: 460px;
     z-index: 100;
-
-
-
+    list-style: none;
 
 
 
@@ -48,12 +46,22 @@
     //<=====  CONTROLLER BUTTONS  =====>
     .btn{
       position: absolute;
-      height: 10%;
-      width: 7%;
-
+      height: 9%;
+      width: 6%;
       transform: scale(1.1);
       border-radius: 50%;
       z-index: 100;
+      background-color: #f7f7f7;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+      background-image: -webkit-linear-gradient(top, #370b82, #e7e7e7);
+      background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+      background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+      background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+      color: #a7a7a7;
+      box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+      border: 1px solid #464646;
+
+
 
       &:hover{
         transform: scale(1.0);
@@ -61,26 +69,36 @@
     }
 
     .y{
-      right: 231px;
-      bottom: 199px;
+      right: 233px;
+      bottom: 202px;
       background-color: red;
     }
 
     .x{
-      right: 158px;
-      bottom: 227px;
-      background-color: blue;
+      right: 161px;
+      bottom: 230px;
+      z-index: 10;
+
+
+      &:after{
+        z-index: 1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+      }
     }
 
     .b{
-      right: 186px;
-      bottom: 142px;
+      right: 189px;
+      bottom: 143px;
       background-color: green;
     }
 
     .a{
-      right: 113px;
-      bottom: 172px;
+      right: 117px;
+      bottom: 173px;
       background-color: yellow;
     }
   }
@@ -275,6 +293,19 @@
 }
 
 
+.test{
+  display: inline-block;
+  height: 199px;
+  width: 200px;
+  position: absolute;
+  background: #948e8e;
+  z-index: 1;
+  border-radius: 50%;
+  transform: translate(200%, 72%);
+}
 
-
+.test2{
+  z-index: 2;
+  position: relative;
+}
 

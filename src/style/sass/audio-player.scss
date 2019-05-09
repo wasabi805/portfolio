@@ -24,17 +24,110 @@
   //border: 1px solid lime;
   border-radius: 3px;
   margin: 6px 0;
+  padding: 1rem;
+
+  &:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -22%);
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
 
   &:after {
+
     position: absolute;
+    border-radius: 5px;
+    font-family: Digital-7;
+    font-size: 1.3rem;
+    color: #263340;
     content: attr(data-value);
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -22%);
     width: 200px;
-    height: 20px;
-    background-color: #1b2947;
+    height: 30px;
+    line-height: 30px;
+    background: linear-gradient(4.25803deg, rgba(76,186,194,0.39) 5.08315%, #47892a 97.54435%);
+    border: 1px solid #21aa21;
     display: inline-block;
+    animation: flicker 50s infinite;
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: 0.8;
+    }
+    5% {
+      opacity: 0.9;
+    }
+    10% {
+      opacity: 0.7;
+    }
+    15% {
+      opacity: 0.90626;
+    }
+    20% {
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0.83891;
+    }
+    30% {
+      opacity: 0.65583;
+    }
+    35% {
+      opacity: 0.67807;
+    }
+    40% {
+      opacity: 0.7;
+    }
+    45% {
+      opacity: 0.84693;
+    }
+    50% {
+      opacity: 0.96019;
+    }
+    55% {
+      opacity: 0.9;
+    }
+    60% {
+      opacity: 0.7;
+    }
+    65% {
+      opacity: 0.71988;
+    }
+    70% {
+      opacity: 0.83455;
+    }
+    75% {
+      opacity: 0.47288;
+    }
+    80% {
+      opacity: 0.71428;
+    }
+    85% {
+      opacity: 0.90419;
+    }
+    90% {
+      opacity: 0.7003;
+    }
+    95% {
+      opacity: 0.66108;
+    }
+    100% {
+      opacity: 0.9387;
+    }
   }
 
   p {
@@ -48,15 +141,35 @@
   #play-01,
   #play-02 {
     display: block;
-    min-width: 80px;
-    height: 80px;
+    min-width: 60px;
+    height: 60px;
     border: 0;
     font-size: 30px;
-    background-color: #b217ff;
     z-index: 1;
 
     color: #ffffff;
     border-radius: 100000px;
+
+    background-color: #f7f7f7;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f7f7f7),
+      to(#e7e7e7)
+    );
+    background-image: -webkit-linear-gradient(top, #0c050e, #e7e7e7);
+    background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+    color: #a7a7a7;
+    box-shadow: 0px 1px 1px #aaa, inset 0px 2px 3px #fff;
+    border: 1px solid #464646;
+
+    @include tablet {
+      min-width: 70px;
+      height: 70px;
+    }
   }
 
   //total track area
@@ -74,11 +187,10 @@
     .fill-01,
     .fill-02 {
       height: 10px;
-
       background: linear-gradient(
-        105.25802520026593deg,
-        rgba(231, 244, 245, 1) 5.083148558758316%,
-        rgba(78, 240, 250, 1) 97.54434589800442%
+        105.25803deg,
+        #124043c2 5.08315%,
+        #33bdc5 97.54435%
       );
       border-radius: 10000000px;
     }
@@ -86,21 +198,32 @@
     .handle {
       width: 10px;
       height: 10px;
-      background-color: #630460;
       border-radius: 10000000px;
 
       //align center of marker w/edge of .fill then increase size of circle
       margin-left: -5px;
       transform: scale(2);
 
+      background-color: #f7f7f7;
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#f7f7f7),
+        to(#e7e7e7)
+      );
+      background-image: -webkit-linear-gradient(top, #0c050e, #e7e7e7);
+      border: 1px solid #737171;
+
       &:hover {
-        background-color: lighten(#630460, 10%);
+        background-color: lighten(#5f335e, 10%);
         transform: scale(2);
         transition: all 0.1s;
       }
     }
 
     &:active {
+      //background-color: #9a8ea769;
       background-color: #9a8ea769;
     }
   }

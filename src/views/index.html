@@ -47,11 +47,6 @@
       <!--DO NOT DELETE THESE!!!!!-->
       <div id="black-bg"></div>
       <div id="main-bg-img">
-        <!--<img-->
-          <!--id="index-bg"-->
-          <!--src="../img/umbrella.jpg"-->
-          <!--alt=""-->
-        <!--/>-->
       </div>
 
       <div class="lds-spinner">
@@ -77,8 +72,6 @@
         <div class="chevron"></div>
         <span class="scroll-text">Scroll down</span>
       </div>
-      
-
     </div>
 
     <!--ABOUT SECTION-->
@@ -124,7 +117,6 @@
 
         <article id="abilities-container">
           <!--Thinking about turning this into an accordion menu later to display a snap shot of the sites before user visits. -->
-
           <!--item-01-->
           <div class="abilities-item">
             <h1 id="projects" class="about-headers">Projects</h1>
@@ -402,15 +394,18 @@
 
           <div id="controller-container">
             <!--Part I -->
-            <img src="../img/SNES_controller-removed-font3-holes.png" alt="" />
+            <div class="test"></div>
+            <div class="test2">
+              <img src="../img/SNES_controller-removed-font3-holes.png" alt="" />
+            </div>
 
             <!--Part II -->
-            <div class="controller-btn-container">
-              <div id="y" class="btn y" onclick="snesRedirect(this.id)"></div>
-              <div id="x" class="btn x" onclick="snesRedirect(this.id)"></div>
-              <div id="b" class="btn b" onclick="snesRedirect(this.id)"></div>
-              <div id="a" class="btn a" onclick="snesRedirect(this.id)"></div>
-            </div>
+            <ul class="controller-btn-container">
+              <li id="y" class="btn y" onclick="snesRedirect(this.id)"></li>
+              <li id="x" class="btn x" onclick="snesRedirect(this.id)"></li>
+              <li id="b" class="btn b" onclick="snesRedirect(this.id)"></li>
+              <li id="a" class="btn a" onclick="snesRedirect(this.id)"></li>
+            </ul>
 
             <!--Part III -->
             <div class="lasers">
