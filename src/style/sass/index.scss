@@ -67,8 +67,6 @@ body {
   overflow: scroll;
   z-index: 10;
 
-
-
   #title-index {
     position: fixed;
     display: inline-block;
@@ -81,7 +79,6 @@ body {
     width: 100%;
     padding: 9px 0px 9px 9px;
 
-
     //top: 25%;
     font-family: "Dolce Vita";
 
@@ -92,12 +89,10 @@ body {
     opacity: 0;
     transition: 2s opacity ease-in-out;
 
-    @include tablet{
+    @include tablet {
       background: #b947c896;
       width: 70%;
     }
-
-
   }
 
   #title-index.fadeIn {
@@ -147,17 +142,12 @@ body {
     background-position: center center;
     background-image: url("../../img/nick-reynolds-788187-unsplash.jpg");
 
-
-
-    @include tablet{
+    @include tablet {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
       background-image: url("../../img/umbrella.jpg");
-
     }
-
-
 
     //img {
     //  width: 100%;
