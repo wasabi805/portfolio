@@ -400,6 +400,7 @@ blockquote p {
   //background-color: white;
 
   &__card {
+    position: relative;
     display: inline-block;
     width: 100%;
     vertical-align: top;
@@ -458,20 +459,8 @@ blockquote p {
   }
 }
 
-.card-container__card.one {
-  //background-color: rgb(255, 255, 255);
-  position: relative;
-}
 
-.card-container__card.two {
-  //background-color: rgb(171, 20, 21);
-  position: relative;
-}
 
-.card-container__card.three {
-  position: relative;
-  //background-color: rgb(255, 255, 255);
-}
 
 .portrait-wrapper {
   display: inline-block;

@@ -1,0 +1,26 @@
+<div class="card-container">
+
+    {{#each acba_cards}}
+
+    <div class="card-container__card ">
+        <div class="portrait-wrapper {{this.card_pic_specific}}"  data-pic={{this.card_pic}} ></div>
+        <div class="logo-wrapper">
+            <img class="card-logo" data-value={{this.card_logo}} src="" alt="" />
+        </div>
+
+        <div class="card-container__text">
+            <p>
+                {{this.context}}
+            </p>
+        </div>
+
+        <div class="fa-wrapper">
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>

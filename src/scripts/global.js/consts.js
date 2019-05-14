@@ -26,15 +26,15 @@ const projectList = {
 //Site URLS
 const prevLocation = document.referrer;
 
-const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-const mixesURL =
-  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
-
-//  Use when Deploying
-// const indexURL =
-//   window.location.protocol + "//" + site.hostname + "/";
+// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
 // const mixesURL =
-//   window.location.protocol + "//" + site.hostname + "/about/mixes";
+//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+//
+//  Use when Deploying
+const indexURL =
+  window.location.protocol + "//" + site.hostname + "/";
+const mixesURL =
+  window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
 const landing = getElemById("landing");
@@ -117,3 +117,9 @@ const fillBar02 = querySelectElem(".fill-02");
 
 //Elapsed time on mixes targets this dom : playing a track injects elapsed time into this DOM element's pseudo elem.
 const track_01_title = getElemByClass("track-01-title");
+
+
+
+//ACBA Section
+const card_logo = getElemByClass("card-logo");
+

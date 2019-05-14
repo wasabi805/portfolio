@@ -96,7 +96,9 @@ app.get("/about/travel", (req, res) => {
 // });
 
 app.get("/about/acba", (req, res) => {
-    res.render('acba');
+    res.render('acba' ,{
+        acba_cards: state.acba_cards
+    });
 });
 
 app.get("/about/food", (req, res) => {
