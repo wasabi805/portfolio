@@ -26,23 +26,24 @@ const projectList = {
 //Site URLS
 const prevLocation = document.referrer;
 
-// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-// const mixesURL =
-//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
+const mixesURL =
+  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
 
 //  Use when Deploying
-const indexURL =
-  window.location.protocol + "//" + site.hostname + "/";
-const mixesURL =
-  window.location.protocol + "//" + site.hostname + "/about/mixes";
+// const indexURL =
+//   window.location.protocol + "//" + site.hostname + "/";
+// const mixesURL =
+//   window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
-const main = getElemById("main");
-var main_bg_img = getElemById("main-bg-img");
+const landing = getElemById("landing");
+var bg_img = getElemById("bg-img");
 var title_index = getElemById("title-index");
 const scroll_down_container = getElemById("scroll-down-container");
 
 //ABOUT SECTION
+const profile_img = getElemById("profile-img");
 var about = getElemById("about");
 const arsenal = getElemById("arsenal");
 const projects = getElemById("projects");
@@ -52,6 +53,8 @@ const abilities_container = getElemById("abilities-container");
 const abilities_item = getElemByClass("abilities-item");
 
 const project_item__icon = getElemByClass("project-item__icon");
+const project_pic = document.querySelectorAll(".project-pic")
+const project_url = getElemByClass("project-url");
 const project_item__show = getElemByClass("project-item__show");
 
 const project_item__container__text = getElemByClass(

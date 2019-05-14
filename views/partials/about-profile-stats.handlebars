@@ -1,0 +1,18 @@
+<article id="bio-container">
+    <div class="stats">
+        <h1 class="about-title">{{name}}</h1>
+
+        <ul>
+            {{#each about_profile_stats}}
+            <li>
+                <span class="highlighter">
+                    {{this.title}}
+                </span> : {{this.value}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="profile-image">
+        <img id="profile-img" data-value={{profile_img}} src="" alt="" />
+    </div>
+</article>

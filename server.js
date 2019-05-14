@@ -2,6 +2,36 @@ const express = require("express");
 var sassMiddleware = require("node-sass-middleware");
 var path = require("path");
 const app = express();
+const exphbs  = require('express-handlebars');
+
+const state = require('./views/state/state.js');
+
+
+//exphbs
+const hbs = exphbs.create({
+    defaultLayout: 'main',
+    layoutsDir : path.join(__dirname , 'views/layouts'),
+    partialsDir: path.join(__dirname , 'views/partials'),
+
+    //create custom helpers, helpers is key property
+    helpers:{
+        test: ()=> 'This is a Test'
+        ,
+        partialsTest : 'I am just a pain old string',
+
+        skillsList: state.skills,
+
+
+    }
+});
+
+
+app.engine("handlebars" , hbs.engine); //hbs.engine (see hbs above)
+//handlebars looks in the views folder as its root dir
+app.set('views', path.join(__dirname, "views"));
+app.set('view engine' , "handlebars" );
+
+
 
 app.use(
   sassMiddleware({
@@ -22,10 +52,32 @@ app.use(express.static("public")); //all other assets like images
 
 //===== ROUTES  ======
 //  (move these into a routes.js file.)
+// app.get("/", (req, res) => {
+//   console.log("index works");
+//   res.sendFile(__dirname + "/src" + "/views" + "/index.html");
+// });
+
 app.get("/", (req, res) => {
-  console.log("index works");
-  res.sendFile(__dirname + "/src" + "/views" + "/index.html");
+    console.log("index works");
+
+    res.render("index",
+
+        {
+            title: 'ProletDev' ,
+            name: 'About',
+            about_profile_stats: state.about_profile_stats,
+            profile_img : state.profile_img,
+            skills: state.skills,
+            projects : state.projects,
+
+            list2: ["tim " , "Ocampo"]
+        });
+
+    // res.sendFile(__dirname + "/src" + "/views" + "/index.html");
 });
+
+
+
 
 app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/src" + "/views" + "/about.html");
@@ -39,8 +91,16 @@ app.get("/about/travel", (req, res) => {
   res.sendFile(__dirname + "/src" + "/views" + "/travel.html");
 });
 
-app.get("/about/heroes", (req, res) => {
-  res.sendFile(__dirname + "/src" + "/views" + "/heroes.html");
+// app.get("/about/heroes", (req, res) => {
+//   res.sendFile(__dirname + "/src" + "/views" + "/heroes.html");
+// });
+
+app.get("/about/acba", (req, res) => {
+    res.render('acba');
+});
+
+app.get("/about/food", (req, res) => {
+    res.render('food');
 });
 
 app.get("/contact", (req, res) => {

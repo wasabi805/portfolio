@@ -1,9 +1,9 @@
 //  ==========   Display Portfolio Animation    ==========
 var skills = document.getElementById("skills");
 
-const conversation_iconHeight = window
-  .getComputedStyle(conversation_icon)
-  .getPropertyValue("height");
+// const conversation_iconHeight = window
+//   .getComputedStyle(conversation_icon)
+//   .getPropertyValue("height");
 
 //checks if any project is visible: if none visible, reduce length of projects line && place skills & arsenal on the same line
 const checkAnyProjectVisible = () => {

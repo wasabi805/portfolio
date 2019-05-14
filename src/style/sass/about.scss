@@ -230,13 +230,15 @@ $highlighter: #7c9548;
       flex-basis: 40%;
       margin: 0;
     }
-  }
 
-  li {
-    padding-left: 6px;
-    margin: 3px;
-    background-color: #0c2f2f;
-    width: 100%;
+    li {
+      padding-left: 6px;
+      margin: 3px;
+      background-color: #0c2f2f;
+      width: 100%;
+
+    }
+
   }
 
   @include tablet {
