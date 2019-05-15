@@ -1,0 +1,21 @@
+<footer class="footer">
+
+    <ul>
+    {{#each navigation.siteLoc}}
+         <li>{{this.name}} </li>
+    {{/each}}
+    </ul>
+
+    <div>
+        {{#each navigation.social}}
+            <i>{{this.site}} </i>
+        {{/each}}
+    </div>
+
+    <ul>
+        <li>{{navigation.author}}</li>
+        <li>{{navigation.copyright}}</li>
+    </ul>
+
+
+</footer>

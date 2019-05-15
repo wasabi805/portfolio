@@ -23,18 +23,33 @@ const projectList = {
   isSbSitOpen: false
 };
 
+const sayHello = ()=>{
+  console.log("hello this works")
+};
+
+//Set Any Image in Handlebars
+const setImages = (domImg=[])=>{
+  if(domImg){
+    Object.values(domImg).forEach((collection)=>{
+      for(var i=0; i<collection.length; i++){
+        collection[i].src = collection[i].dataset.value
+      }
+    })
+  }else console.log('pass in a valid dom img element or come see me.')
+};
+
 //Site URLS
 const prevLocation = document.referrer;
 
-// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-// const mixesURL =
-//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
+const mixesURL =
+  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
 //
 //  Use when Deploying
-const indexURL =
-  window.location.protocol + "//" + site.hostname + "/";
-const mixesURL =
-  window.location.protocol + "//" + site.hostname + "/about/mixes";
+// const indexURL =
+//   window.location.protocol + "//" + site.hostname + "/";
+// const mixesURL =
+//   window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
 const landing = getElemById("landing");
@@ -121,5 +136,7 @@ const track_01_title = getElemByClass("track-01-title");
 
 
 //ACBA Section
+const acba_hero_image = getElemByClass("acba-hero-image");
 const card_logo = getElemByClass("card-logo");
+const figure_image = getElemByClass("figure-image");
 

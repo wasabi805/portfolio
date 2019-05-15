@@ -1,0 +1,60 @@
+{{#each figures}}
+   {{#if card_img_lhs}}
+       <section>
+           <header>
+               <h1 class="fig-headings {{align_header}}">{{header}}</h1>
+           </header>
+           <article class="acba__article {{card_length_and_color_grad}}">
+               <div class="acba__article__image-container ">
+                   <img class="figure-image" data-value={{source_image}} src="" alt=""/>
+               </div>
+               <div class="acba__article__text-container {{align_text}}">
+                   <p>{{context}}</p>
+
+                   <div class="acba__article__text-container__cite">
+                       <cite >"{{citation_web_page_title}}" : <i >{{citation_web_page_header}}</i> , {{citation_publisher}} </cite>
+                       <p style="text-indent: 2px; ">{{citation_url}}</p>
+                   </div>
+
+
+                   <div class="acba__article__text-container__button" >
+                       <a href="https://www.marvel.com/characters/moon-knight-marc-spector">
+                           Click for more {{character}}
+                       </a>
+                   </div>
+               </div>
+           </article>
+       </section>
+
+       {{else}}
+
+       <section>
+           <header>
+               <h1 class="fig-headings {{align_header}}">{{header}}</h1>
+           </header>
+
+           <article class="acba__article {{card_length_and_color_grad}}">
+               <div class="acba__article__text-container {{align_text}}">
+                   <p>{{context}}</p>
+
+                   <div class="acba__article__text-container__cite">
+                       <cite >"{{citation_web_page_title}}" : <i >{{citation_web_page_header}}</i> , {{citation_publisher}} </cite>
+                       <p style="text-indent: 2px; ">{{citation_url}}</p>
+                   </div>
+
+
+                   <div class="acba__article__text-container__button" >
+                       <a href="https://www.marvel.com/characters/moon-knight-marc-spector">
+                           Click for more {{character}}
+                       </a>
+                   </div>
+               </div>
+
+               <div class="acba__article__image-container ">
+                   <img class="figure-image" data-value={{source_image}} src="" alt=""/>
+               </div>
+           </article>
+       </section>
+   {{/if}}
+
+{{/each}}

@@ -4,7 +4,7 @@ var path = require("path");
 const app = express();
 const exphbs  = require('express-handlebars');
 
-const state = require('./views/state/state.js');
+const state = require('./views/_state/state.js');
 
 
 //exphbs
@@ -15,13 +15,9 @@ const hbs = exphbs.create({
 
     //create custom helpers, helpers is key property
     helpers:{
-        test: ()=> 'This is a Test'
-        ,
+        test: ()=> 'This is a Test',
         partialsTest : 'I am just a pain old string',
-
         skillsList: state.skills,
-
-
     }
 });
 
@@ -51,11 +47,7 @@ app.use(express.static("src")); //all other assets like images
 app.use(express.static("public")); //all other assets like images
 
 //===== ROUTES  ======
-//  (move these into a routes.js file.)
-// app.get("/", (req, res) => {
-//   console.log("index works");
-//   res.sendFile(__dirname + "/src" + "/views" + "/index.html");
-// });
+//  TODO (move these into a routes.js file.)
 
 app.get("/", (req, res) => {
     console.log("index works");
@@ -76,9 +68,6 @@ app.get("/", (req, res) => {
     // res.sendFile(__dirname + "/src" + "/views" + "/index.html");
 });
 
-
-
-
 app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/src" + "/views" + "/about.html");
 });
@@ -91,13 +80,15 @@ app.get("/about/travel", (req, res) => {
   res.sendFile(__dirname + "/src" + "/views" + "/travel.html");
 });
 
-// app.get("/about/heroes", (req, res) => {
-//   res.sendFile(__dirname + "/src" + "/views" + "/heroes.html");
-// });
-
 app.get("/about/acba", (req, res) => {
     res.render('acba' ,{
-        acba_cards: state.acba_cards
+        acba_hero_banner: state.acba_hero_banner,
+        acba_hero_context: state.acba_hero_context,
+        acba_card_context: state.acba_card_context,
+        acba_cards: state.acba_cards,
+        figures: state.figures,
+        navigation: state.navigation,
+        footerData: state.footerData,
     });
 });
 

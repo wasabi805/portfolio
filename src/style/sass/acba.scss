@@ -6,8 +6,6 @@ blockquote {
   font-family: "Special Elite";
   background: #132626;
   border-left: 10px solid #08bbbe;
-  //margin: 1.5em 10px;
-  padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 
   width: 85%;
@@ -178,6 +176,7 @@ blockquote p {
       font-family: Alcubierre, "Dolce Vita";
       color: white;
     }
+
   }
 
   &__article {
@@ -205,6 +204,7 @@ blockquote p {
       color: white;
       display: inline-block;
       text-align: justify;
+      padding: 1rem;
       background: linear-gradient(
         to left,
         rgba(255, 0, 0, 0),
@@ -236,6 +236,42 @@ blockquote p {
         color: hotpink;
         font-family: "Thunderstorm";
       }
+
+      &__button{
+
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        margin: 0 35%;
+        padding: 1rem;
+
+
+        a{
+          text-decoration: none;
+          color:white;
+        }
+
+        border: 2px solid #507d24;
+
+        @include desktop{
+          margin: 75px 35%;
+        }
+      }
+
+      &__cite{
+        position: relative;
+        color: #276138;
+        text-align: right;
+        margin: 0;
+        text-indent: 0;
+        font-family: Serif;
+        font-size: 8px;
+
+        p{
+          text-indent: 6px;
+          margin: 0;
+        }
+      }
     }
 
     &__image-container {
@@ -262,17 +298,17 @@ blockquote p {
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #9100ff);
 }
 
-.thanos {
+.short {
   margin: 0 calc(100vw - 92%);
   margin-bottom: 3rem;
-  padding: 1em 0;
+  padding: 1em 0 3em 0;
 
   &:before {
     @include laptop {
       content: "";
       position: absolute;
       width: 500px;
-      height: 500px;
+      height: 580px;
       background-image: linear-gradient(
         to left,
         rgba(255, 0, 0, 0),
@@ -292,10 +328,11 @@ blockquote p {
   }
 }
 
-.x-men {
+.long {
   margin: 0 calc(100vw - 95%);
   padding-top: 1em;
   margin-bottom: 3rem;
+  padding-bottom: 2rem;
 
   &:before {
     @include laptop {
@@ -303,7 +340,7 @@ blockquote p {
       position: absolute;
       left: calc(100vw - 56%);
       width: 500px;
-      height: 500px;
+      height: 800px;
       background-image: linear-gradient(
         to left,
         rgba(255, 0, 0, 0),
@@ -340,6 +377,7 @@ blockquote p {
 }
 
 .fig-headings.lhs {
+
 }
 
 .gi-joe-heading {
@@ -448,6 +486,8 @@ blockquote p {
     background-color: #41696a5c;
     border-radius: 5px;
 
+
+
     @include laptop{
       max-width: 18rem;
     }
@@ -457,10 +497,20 @@ blockquote p {
       font-size: 1.38rem;
     }
   }
+
+  &__text.acba-mt{
+    margin-top: 0;
+  }
+
+  &__text.tg-mt{
+    margin-top: 22px;
+  }
+
+  &__text.sp-mt{
+    margin-top: 1rem;
+  }
+
 }
-
-
-
 
 .portrait-wrapper {
   display: inline-block;
@@ -473,7 +523,7 @@ blockquote p {
   z-index: 1;
   //box-shadow: 0 8px 6px -6px #794a74;
   box-shadow: 0 8px 6px -6px #2e7a82;
-  margin-bottom: 2em;
+
 }
 
 .logo-wrapper {
@@ -482,8 +532,16 @@ blockquote p {
 
   img {
     width: 60%;
-    box-shadow: 0 8px 6px -6px #72aeb4;
+    //box-shadow: 0 8px 6px -6px #72aeb4;
   }
+}
+
+.logo-wrapper.acba{
+  margin-bottom: 2em;
+}
+
+.logo-wrapper.tg{
+
 }
 
 .portrait-wrapper.boog-nice-pic {
@@ -496,6 +554,7 @@ blockquote p {
 }
 
 .portrait-wrapper.shartimus-pic {
+  margin-bottom: 67px;
   background-image: url("../../img/shartimu-01.jpg");
 }
 
@@ -546,3 +605,4 @@ blockquote p {
     width: 50%;
   }
 }
+

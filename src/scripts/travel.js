@@ -7,7 +7,7 @@ const gallery_travel = querySelectElem(".gallery-travel");
 //default : hide nav
 gallery_travel.style = "left:-267px";
 
-//state obj for images and text
+//_state obj for images and text
 const images = [
   {
     id: "1",
