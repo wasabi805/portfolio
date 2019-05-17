@@ -1,0 +1,18 @@
+<div class="gallery-travel__row">
+
+    <div class="gallery-travel__column">
+
+        {{#each whichCol}}
+            <img
+                    id={{id}}
+                    class="gallery-travel_image"
+                    name={{name}}
+                    data-value={{thumb_src}}
+                    src=""
+                    alt=""
+                    onclick="loadImg(this.id)"
+            />
+        {{/each}}
+    </div>
+
+</div>

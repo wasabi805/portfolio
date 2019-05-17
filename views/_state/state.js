@@ -201,7 +201,8 @@ module.exports = state = {
 
   //ACBA Figure Photos
   figures: [
-    { character: "The Avengers",
+    {
+      character: "The Avengers",
       align_header: "rhs",
       header: "Avengers Assemble!",
       card_img_lhs: true,
@@ -215,11 +216,13 @@ module.exports = state = {
         "with a leader/chairperson who charts their collective path in battle and in peace. Almost all of the " +
         "founding members have taken their turn as the team’s leader, with Captain America, Iron Man, and the Wasp " +
         "emerging as arguably the Avengers’ most gifted commanders",
-      citation_web_page_title: "",
-      citation_web_page_header: "",
-      citation_publisher: "",
-      citation_url: "",
-      visit_url: "",
+      citation_web_page_title:
+        "Avengers In Comics Members, Enemies, Powers | Marvel",
+      citation_web_page_header: "Avengers",
+      citation_publisher: "Marvel Comics",
+      citation_url:
+        "https://www.marvel.com/teams-and-groups/avengers/in-comics",
+      visit_url: "https://www.marvel.com/teams-and-groups/avengers/in-comics"
     },
 
     {
@@ -242,8 +245,10 @@ module.exports = state = {
 
       citation_web_page_title: "Thanos In Comics Profile | Marvel",
       citation_web_page_header: "Thanos",
-      citation_publisher: "Marvel",
-      citation_url: "https://www.marvel.com/characters/thanos/in-comics/profile",
+      citation_publisher: "Marvel Comics",
+      citation_url:
+        "https://www.marvel.com/characters/thanos/in-comics/profile",
+      visit_url: "https://www.marvel.com/characters/thanos/in-comics/profile"
     },
 
     {
@@ -259,12 +264,13 @@ module.exports = state = {
       align_text: "acba-right",
       context:
         "Charles Xavier’s team of merry mutants is charged with the mission of protecting a world that hates and fears them for their unusual appearances and abilities." +
-          "Realizing mutants were the next step in human evolution, Professor Charles Xavier gathered gifted teenagers to be his first class of students. His goal to protect and educate the next generation of homo superior, while pursuing a dream of harmony.",
-      citation_web_page_title: "X-Men | Members, Villains, Powers, & More | Marvel",
+        "Realizing mutants were the next step in human evolution, Professor Charles Xavier gathered gifted teenagers to be his first class of students. His goal to protect and educate the next generation of homo superior, while pursuing a dream of harmony.",
+      citation_web_page_title:
+        "X-Men | Members, Villains, Powers, & More | Marvel",
       citation_web_page_header: "Mutant Super Team",
-      citation_publisher: "Marvel",
+      citation_publisher: "Marvel Comics",
       citation_url: "https://www.marvel.com/teams-and-groups/x-men",
-      visit_url: "https://www.marvel.com/teams-and-groups/x-men",
+      visit_url: "https://www.marvel.com/teams-and-groups/x-men"
     },
 
     {
@@ -280,16 +286,16 @@ module.exports = state = {
       align_text: "acba-left",
       context:
         "In 1964, Hasbro created G.I. Joe - the world's first Action Figure. An instant success, " +
-          "he captured the imagination of boys around the world. Over the next 14 years, G.I. Joe evolved and changed. " +
-          "In 1982, G.I. Joe came out in a new 3 3/4\" scale, reimagined as an elite military unit dedicated to defending " +
-          "freedom against the evil Cobra organization. It is this incarnation of G.I. Joe that has evolved over the years into the " +
-          "toy line we know and love today.",
+        "he captured the imagination of boys around the world. Over the next 14 years, G.I. Joe evolved and changed. " +
+        'In 1982, G.I. Joe came out in a new 3 3/4" scale, reimagined as an elite military unit dedicated to defending ' +
+        "freedom against the evil Cobra organization. It is this incarnation of G.I. Joe that has evolved over the years into the " +
+        "toy line we know and love today.",
 
-      citation_web_page_title: "3 3/4\" G.I. Joe Action Figures",
-      citation_web_page_header: "3 3/4\" G.I. Joe Action Figures",
+      citation_web_page_title: '3 3/4" G.I. Joe Action Figures',
+      citation_web_page_header: '3 3/4" G.I. Joe Action Figures',
       citation_publisher: "yojoe.com",
       citation_url: "https://www.yojoe.com/action/",
-      visit_url: "https://www.idwpublishing.com/trending_titles/gi-joe/",
+      visit_url: "https://www.idwpublishing.com/trending_titles/gi-joe/"
     },
 
     {
@@ -304,16 +310,18 @@ module.exports = state = {
 
       align_text: "acba-right",
       context:
-       "Marc Spector became a mercenary and spent several years as a hired gun. Although he ostensibly sought to fight for causes he believed in, Marc was easily persuaded to fight for anyone who paid him enough..." +
-          "During a mission to the Sudan, Marc saw his enemy Bushman assault the town of Selima, seeking information on archaeologist Dr. Peter Alraune's discovery of an Egyptian pharaoh's tomb which might contain gold." +
-          "After Bushman executed the people of the town Selima, Spector attacked him, only to be defeated by Bushman, who deposited the unconscious Spector in the desert and left him to die. " +
-          "Spector dragged himself through the sands to the tomb unearthed by Dr. Alraune and was found by Marlene and her servants. They brought him into the tomb, placing his body at the foot of a statue of the moon god, Khonshu. " +
-          "Marc was pronounced dead, but as Marlene wept over his body, he suddenly arose, alive. Spector believed that Khonshu had restored him to life to serve as the moon's knight of vengeance. ",
-      citation_web_page_title: "Moon Knight (Marc Spector) Powers, Enemies, History | Marvel",
+        "Marc Spector became a mercenary and spent several years as a hired gun. Although he ostensibly sought to fight for causes he believed in, Marc was easily persuaded to fight for anyone who paid him enough..." +
+        "During a mission to the Sudan, Marc saw his enemy Bushman assault the town of Selima, seeking information on archaeologist Dr. Peter Alraune's discovery of an Egyptian pharaoh's tomb which might contain gold." +
+        "After Bushman executed the people of the town Selima, Spector attacked him, only to be defeated by Bushman, who deposited the unconscious Spector in the desert and left him to die. " +
+        "Spector dragged himself through the sands to the tomb unearthed by Dr. Alraune and was found by Marlene and her servants. They brought him into the tomb, placing his body at the foot of a statue of the moon god, Khonshu. " +
+        "Marc was pronounced dead, but as Marlene wept over his body, he suddenly arose, alive. Spector believed that Khonshu had restored him to life to serve as the moon's knight of vengeance. ",
+      citation_web_page_title:
+        "Moon Knight (Marc Spector) Powers, Enemies, History | Marvel",
       citation_web_page_header: "Marc Spector Moon Knight",
       citation_publisher: "Marvel Comics",
-      citation_url: "https://www.marvel.com/characters/moon-knight-marc-spector",
-      visit_url: "https://www.marvel.com/characters/moon-knight-marc-spector",
+      citation_url:
+        "https://www.marvel.com/characters/moon-knight-marc-spector",
+      visit_url: "https://www.marvel.com/characters/moon-knight-marc-spector"
     },
 
     {
@@ -328,11 +336,305 @@ module.exports = state = {
       align_text: "acba-left",
       context:
         "A mercenary of mystery, nothing is really known about the man called Bullseye. Once, he was captured and interrogated in a highly secured U.S. prison, and he related many details about his early life, such as the time his brother set fire to their home in an attempt to kill their father. However, much of this information is suspect, as Bullseye then escaped, taunting his interrogators that much of what he said was false-- especially the fact that it was not his brother who set fire to the house, it was himself. Bullseye proceeded to set fire to the prison, where his father was also held, and he left his father to die once more. (In a previous account of his childhood, he painted a bullseye on the forehead of his abusive father when he was passed out from drinking and shot him.)",
-      citation_web_page_title: "",
-      citation_web_page_header: "",
-      citation_publisher: "",
-      citation_url: "",
-      visit_url: "",
+      citation_web_page_title:
+        "Bullseye (Benjamin Poindexter) Powers, Enemies, & History | Marvel",
+      citation_web_page_header: "BULLSEYE",
+      citation_publisher: "Marvel Comics",
+      citation_url: "https://www.marvel.com/characters/bullseye",
+      visit_url: "https://www.marvel.com/characters/bullseye"
     }
-  ]
+  ],
+
+  //  ==========    ========== TRAVEL  ==========  ==========
+
+  gallery_col: [
+    {
+      id: "1",
+      name: "nasa-entrance",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-01-thumb.jpg",
+      header: "Nasa",
+      src: "https://i.ibb.co/VpBRMBK/IMG-20190224-141013.jpg",
+      location: "Cape Canaveral , FL",
+      context: "",
+    },
+
+    {
+      id: "2",
+      name: "mars-rover-proto",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-02-thumb.jpg",
+      header: "Nasa",
+      location: "Cape Canaveral , FL",
+      src: "https://i.ibb.co/4g2CVWz/IMG-20190224-170820.jpg",
+      context: "Meet the newest concept vehicle designed for navigating the demanding landscape of Mars: the Mars Rover Vehicle Navigator®, or MRVN®. Based on NASA science, the next generation of space explorers could be traveling and working in a high-tech mobile laboratory similar to this rover vehicle. MRVN is an impressive size with its mobile lab, and has massive wheels designed to travel over dunes, rocks and craters. MRVN can often be seen at its permanent home at the visitor complex when it is not on a mission. ",
+
+    },
+    {
+      id: "3",
+      name: "rocket-02",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-03-thumb.jpg",
+      header: "Nasa",
+      location: "Cape Canaveral , FL",
+      src: "https://i.ibb.co/VD4gFTg/IMG-20190224-142143.jpg",
+      context: "",
+
+
+    },
+    {
+      id: "4",
+      name: "rocket-01",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-04-thumb.jpg",
+      header: "Nasa",
+      location: "Cape Canaveral , FL",
+      src: "https://i.ibb.co/k2X6ctX/IMG-20190224-155314.jpg",
+      context: "",
+    },
+    {
+      id: "5",
+      name: "cockpit-01",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-05-thumb.jpg",
+      header: "Nasa",
+      location: "Cape Canaveral , FL",
+      src: "https://i.ibb.co/VqS8Ryz/IMG-20190224-160733.jpg",
+      context: "",
+    },
+    {
+      id: "6",
+      name: "nasa-control-room",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-06-thumb.jpg",
+      header: "Nasa",
+      location: "Cape Canaveral , FL",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-06.jpg",
+      context: "",
+    },
+
+    {
+      id: "7",
+      name: "rocket-portrait",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/nasa-07-thumb.jpg",
+      header: "Nasa",
+      location: "Cape Canaveral , FL",
+      src: "https://i.ibb.co/Lgc9bfF/IMG-20190224-152505.jpg",
+      context: "",
+    },
+
+    {
+      id: "8",
+      name: "magic-kingdom-castle",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/disney-world-01-thumb.jpg",
+      location: "Orlando , FL",
+      header: "Magic Kingdom",
+      src: "https://i.ibb.co/SB3GDvx/IMG-20190222-185550.jpg",
+      context: "",
+    },
+
+    {
+      id: "9",
+      name: "portland-01",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/portland-01-thumb.jpg",
+      header: "",
+      location: "Portland , OR",
+      src: "https://i.ibb.co/P1HGSmn/portland-01.jpg",
+      context: "On the hike with Ron",
+
+    },
+    {
+      id: "10",
+      name: "portland-02",
+      thumb_src: "https://i.ibb.co/dLvn2Tn/portland-02-thumb.jpg",
+      header: "",
+      location: "Portland , OR",
+      src: "https://i.ibb.co/SBvvL4R/portland-02.jpg",
+      context: "On the hike with Ron",
+
+    },
+    {
+      id: "11",
+      name: "portland-03",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/portland-03-thumb.jpg",
+      header: "",
+      location: "Portland , OR",
+      src: "https://i.ibb.co/VxxCX6b/portland-03.jpg",
+      context: "On the hike with Ron",
+
+    },
+    {
+      id: "12",
+      name: "portland-04",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/portland-04-thumb.jpg",
+      header: "",
+      location: "Portland , OR",
+      src: "https://i.ibb.co/WstPPBB/portland-04.jpg",
+      context: "On the hike with Ron",
+
+    },
+    {
+      id: "13",
+      name: "pink-thing",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/mba-01-thumb.jpg",
+      header: "",
+      location: "",
+      src: "https://i.ibb.co/RypCh7w/20171103-104736.jpg",
+      context: "",
+
+    },
+    {
+      id: "14",
+      name: "jellyfish-01",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/mba-02-thumb.jpg",
+      header: "",
+      location: "",
+      src: "https://i.ibb.co/L5qpRcd/20171103-104405.jpg",
+      context: "",
+
+    },
+
+    {
+      id:"15",
+      name: "octopus",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/mba-03-thumb.jpg",
+      header: "",
+      location: "",
+      src: "https://i.ibb.co/4F64f90/20171103-110742.jpg",
+      context: "",
+    },
+
+    {
+      id:"16",
+      name: "",
+      thumb_src: "",
+      header: "",
+      location: "",
+      src: "",
+      context: "",
+    },
+
+    {
+      id:"17",
+      name: "phuket-01",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phuket-01-thumb.jpg",
+      header: "",
+      location: "",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phuket-01.jpg",
+      context: "",
+
+    },
+    {
+      id:"18",
+      name: "phuket-02",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phuket-02-thumb.jpg",
+      header: "Patong Beach",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phuket-02.jpg",
+      context: "",
+    },
+    {
+      id:"19",
+      name: "phuket-03",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phuket-03-thumb.jpg",
+      header: "Patong Beach",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phuket-03.jpg",
+      context: "",
+    },
+    {
+      id:"20",
+      name: "ko-samui-01",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/ko-samui-01-thumb.jpg",
+      header: "Surat Thani",
+      location: "Koh Samui, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/ko-samui-01.jpg",
+      context: "",
+    },
+    {
+      id:"21",
+      name: "ko-samui-02",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/ko-samui-02-thumb.jpg",
+      header: "Surat Thani",
+      location: "Koh Samui, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/ko-samui-02.jpg",
+      context: "",
+    },
+    {
+      id:"22",
+      name: "phi-phi-island-01",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-01-thumb.jpg",
+      header: "The Phi Phi Islands",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-01.jpg",
+      context: "",
+    },
+    {
+      id:"23",
+      name: "phi-phi-island-02",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-02-thumb.jpg",
+      header: "The Phi Phi Islands",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-02.jpg",
+      context: "",
+    },
+    {
+      id:"24",
+      name: "phi-phi-island-05",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-05-thumb.jpg",
+      header: "The Phi Phi Islands",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-05.jpg",
+      context: "",
+    },
+    {
+      id:"25",
+      name: "phi-phi-island-06",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-06-thumb.jpg",
+      header: "The Phi Phi Islands",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-06.jpg",
+      context: "",
+    },
+    {
+      id:"26",
+      name: "ko-samui-03",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/ko-samui-03-thumb.jpg",
+      header: "Surat Thani",
+      location: "Koh Samui, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/ko-samui-03.jpg",
+      context: "",
+    },
+    {
+      id:"27",
+      name: "phi-phi-island-03",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-03-thumb.jpg",
+      header: "The Phi Phi Islands",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-03.jpg",
+      context: "",
+    },
+    {
+      id:"28",
+      name: "phi-phi-island-04",
+      thumb_src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-04-thumb.jpg",
+      header: "The Phi Phi Islands",
+      location: "Phuket, Thailand",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-04.jpg",
+      context: "",
+    },
+    {
+      id:"29",
+      name: "",
+      thumb_src: "",
+      header: "",
+      location: "",
+      src: "",
+      context: "",
+    },
+
+
+  ],
+
+
+
+
+
+
 };
+
+

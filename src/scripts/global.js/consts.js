@@ -41,15 +41,15 @@ const setImages = (domImg=[])=>{
 //Site URLS
 const prevLocation = document.referrer;
 
-const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-const mixesURL =
-  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
-//
-//  Use when Deploying
-// const indexURL =
-//   window.location.protocol + "//" + site.hostname + "/";
+// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
 // const mixesURL =
-//   window.location.protocol + "//" + site.hostname + "/about/mixes";
+//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+// //
+//  Use when Deploying
+const indexURL =
+  window.location.protocol + "//" + site.hostname + "/";
+const mixesURL =
+  window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
 const landing = getElemById("landing");
@@ -134,9 +134,17 @@ const fillBar02 = querySelectElem(".fill-02");
 const track_01_title = getElemByClass("track-01-title");
 
 
+//TRAVEL
+const gallery_travel_image = getElemByClass("gallery-travel_image");
+
+
 
 //ACBA Section
 const acba_hero_image = getElemByClass("acba-hero-image");
 const card_logo = getElemByClass("card-logo");
 const figure_image = getElemByClass("figure-image");
+
+
+
+
 

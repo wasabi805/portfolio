@@ -1,8 +1,12 @@
+
+const env = require('dotenv').config()
 const express = require("express");
 var sassMiddleware = require("node-sass-middleware");
 var path = require("path");
 const app = express();
 const exphbs  = require('express-handlebars');
+
+
 
 const state = require('./views/_state/state.js');
 
@@ -28,7 +32,6 @@ app.set('views', path.join(__dirname, "views"));
 app.set('view engine' , "handlebars" );
 
 
-
 app.use(
   sassMiddleware({
     /* Options */
@@ -48,6 +51,12 @@ app.use(express.static("public")); //all other assets like images
 
 //===== ROUTES  ======
 //  TODO (move these into a routes.js file.)
+
+
+
+app.get("/state", (req , res)=>{
+    res.json(state)
+});
 
 app.get("/", (req, res) => {
     console.log("index works");
@@ -76,8 +85,14 @@ app.get("/about/mixes", (req, res) => {
   res.sendFile(__dirname + "/src" + "/views" + "/mixes.html");
 });
 
+// app.get("/about/travel", (req, res) => {
+//   res.sendFile(__dirname + "/src" + "/views" + "/travel.html");
+// });
+
 app.get("/about/travel", (req, res) => {
-  res.sendFile(__dirname + "/src" + "/views" + "/travel.html");
+    res.render('travel' ,{
+        gallery_col : state.gallery_col,
+    });
 });
 
 app.get("/about/acba", (req, res) => {

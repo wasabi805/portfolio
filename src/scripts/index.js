@@ -109,7 +109,7 @@ function snesRedirect(id) {
       break;
 
     case "x": // x btn
-      window.location.href = "/about/heroes";
+      window.location.href = "/about/acba";
       break;
 
     case "b": // b btn
