@@ -1,4 +1,4 @@
-@import "constants/width";
+@import "common/width";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +17,6 @@ body {
   overflow: auto;
   background-color: black;
 }
-
 
 @font-face {
   font-family: Alcubierre;
@@ -49,7 +48,6 @@ body {
   text-align: center;
   flex-direction: row;
   position: relative;
-  //width: 100%;
 }
 
 .col {
@@ -64,8 +62,6 @@ body {
   width: 100vw;
   height: 110vh;
   text-align: center;
-
-  //position: absolute;
   overflow: scroll;
   z-index: 10;
 
@@ -75,6 +71,14 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 
+  #black-bg{
+    transition:1.75s ease-in-out;
+    position:fixed;
+    background:radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    height:100%;
+    width:100%;
+
+  }
 
   @include tablet {
     background-size: cover;
@@ -82,9 +86,6 @@ body {
     background-position: center center;
     background-image: url("../../img/umbrella.jpg");
   }
-
-
-
 
   #title-index {
     position: fixed;
@@ -97,8 +98,6 @@ body {
     background: #b947c8;
     width: 100%;
     padding: 9px 0px 9px 9px;
-
-    //top: 25%;
     font-family: "Dolce Vita";
 
     font-size: 3em;
@@ -122,10 +121,6 @@ body {
     opacity: 0;
   }
 
-  //#title-index.title-index-initial {
-  //  //left: 1em;
-  //}
-
   .slideLeft {
     animation: 1s ease-in-out slideLeft;
     animation-fill-mode: forwards;
@@ -145,60 +140,34 @@ body {
       left: -520px;
     }
   }
+}
 
-  //-------------------------------
+#bg-img{
+  background-image: url("../../img/nick-reynolds-788187-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
-  //#landing {
-  //  transition: 0.25s ease-in-out;
-  //  position: fixed;
-  //  opacity: 0;
-  //  z-index: 10;
-  //  width: 100%;
-  //  height: 110vh;
-  //
-  //  background-size: cover;
-  //  background-repeat: no-repeat;
-  //  background-position: center center;
-  //  background-image: url("../../img/nick-reynolds-788187-unsplash.jpg");
-  //
-  //  @include tablet {
-  //    background-size: cover;
-  //    background-repeat: no-repeat;
-  //    background-position: center center;
-  //    background-image: url("../../img/umbrella.jpg");
-  //  }
-  //
-  //  h1{
-  //    margin-top: 5rem;
-  //    color: red;
-  //  }
-  //
-  //  //img {
-  //  //  width: 100%;
-  //  //  height: 110vh;
-  //  //}
-  //}
+#bg-img.show {
+  opacity: 1;
+}
 
-  //#bg-img.show {
-  //  opacity: 1;
-  //}
-  //
-  //#black-bg {
-  //  transition: 1.75s ease-in-out;
-  //  position: fixed;
-  //
-  //  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  //  height: 100%;
-  //  width: 100%;
-  //}
-  //
-  //#bg-img.showIndexBg {
-  //  opacity: 1;
-  //}
-  //
-  //#bg-img.hideIndexBg {
-  //  opacity: 0;
-  //}
+#black-bg {
+  transition: 1.75s ease-in-out;
+  position: fixed;
+
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 100%;
+  width: 100%;
+}
+
+#bg-img.showIndexBg {
+  opacity: 1;
+}
+
+#bg-img.hideIndexBg {
+  opacity: 0;
 }
 
 .lead-image {
@@ -234,32 +203,6 @@ body {
 @import "landing/controller";
 @import "acba";
 @import "footer";
+@import "common/common";
 
 
-#bg-img{
-  background-image: url("../../img/nick-reynolds-788187-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#bg-img.show {
-  opacity: 1;
-}
-
-#black-bg {
-  transition: 1.75s ease-in-out;
-  position: fixed;
-
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  height: 100%;
-  width: 100%;
-}
-
-#bg-img.showIndexBg {
-  opacity: 1;
-}
-
-#bg-img.hideIndexBg {
-  opacity: 0;
-}

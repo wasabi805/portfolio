@@ -12,13 +12,16 @@ var isAboutVisible = false;
 // console.log(bg_img, 'bg_img')
 // console.log(title_index, 'title_index')
 
+
 function initialLoad() {
   if (site.href === indexURL) {
     bg_img.classList.add("show");
     title_index.classList.add("fadeIn");
     scroll_down_container.classList.add("fadeIn02");
-
+    black_bg.style = "opacity : .3";
     console.log(scroll_down_container, "what is this?");
+  }else {
+    lds_roller[0].style = "opacity: 1"
   }
 }
 

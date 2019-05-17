@@ -7,7 +7,6 @@ const gallery_travel = querySelectElem(".gallery-travel");
 //default : hide nav
 gallery_travel.style = "left:-267px";
 
-
 setImages([gallery_travel_image]);
 
 //Hide and show CSS classes for images
@@ -20,26 +19,16 @@ const RemoveShow = el => el.classList.remove("isShowing");
 //renders a spinner until image is completed
 function onImageLoadedComplete(imageCollection) {
   //loop through collection
-  for(var i=0; i<imageCollection.length; i++){
-
-    if(imageCollection[i].complete){
-      console.log('im complete')
-    }else{
-      console.log('not completed')
+  for (var i = 0; i < imageCollection.length; i++) {
+    if (imageCollection[i].complete) {
+      console.log("im complete");
+    } else {
+      console.log("not completed");
     }
-
   }
-
-
-
-
 }
 
 onImageLoadedComplete(gallery_travel_image);
-
-
-
-
 
 //                  onClick Gallery Thumbnail  LOGIC
 
@@ -53,35 +42,40 @@ HideImage(animateImgB); //default: don't show image
 
 //attach to all thumbnails,
 const loadImg = id => {
-  console.log('i still function!!' , id);
+  console.log("i still function!!", id);
   // let pullImage;
   let findByClickedId = id;
 
-  const retrieveImg = async (clickId)=>{
-    console.log('The clicked ID is : ', clickId);
+  const retrieveImg = async clickId => {
+    console.log("The clicked ID is : ", clickId);
 
-    const response = await fetch('/state');
+    const response = await fetch("/state");
     let state = await response.json(); //extract JSON from the http response
     // do something with myJson
 
     let StateImages = state.gallery_col; //shorten for logic below
 
-    for(var i=0; i<StateImages.length; i++) {
-      if(StateImages[i].id === clickId){
-        // alert(state.gallery_col[i].name)
-        let header = StateImages[i].header;
-        let location = StateImages[i].location;
-        let src = StateImages[i].src;
+    for (var i = 0; i < StateImages.length; i++) {
+      if (StateImages[i].id === clickId) {
+        var image = StateImages[i];
 
-        innerHTMLString =
-            `<div class="image-wrapper"> <header class="image-wrapper__header"><h1>${header}</h1> 
-                <p>${location}</p> </header>     
+        var header = image.header;
+        var header_pos = image.header_pos;
+        var location = image.location;
+        var src = image.src;
+        var header_style = image.header_style;
+        var sub_header_style = image.sub_header_style;
+        var context_title = image.context_title;
+        var context = image.context;
+        var style = image.style;
+
+        innerHTMLString = `<div class="image-wrapper"> <header class="image-wrapper__header" style="${header_pos}" ><h1 style="${header_style}" >${header}</h1> 
+                <p style="${sub_header_style}">${location}</p> </header>     
                 <img src=${src} alt=''> 
             </div>`;
 
-        let content =
-            `<div class="text-travel__content"><h3>"Show a title"</h3>
-                <p> SHow some text</p>
+        var content = `<div class="text-travel__content" style="${style}"><h3>"${context_title}"</h3>
+                <p> ${context}</p>
             </div> `;
 
         //Stage 1
@@ -124,8 +118,6 @@ const loadImg = id => {
   };
 
   retrieveImg(findByClickedId);
-
-
 
   //creates img DOM element && img TITLE
   // let innerHTMLString = `<div class="image-wrapper"> <header class="image-wrapper__header"><h1>${

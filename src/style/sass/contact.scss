@@ -1,4 +1,4 @@
-@import "constants/width";
+@import "common/width";
 
 #contact {
   display: block;
@@ -60,6 +60,7 @@
     @include small-iphone-landscape {
       width: 67vh;
       display: inline-block;
+
     }
 
     @include tablet {
