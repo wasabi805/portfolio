@@ -1,6 +1,12 @@
 var showHeight = 0;
+var currentScreenWidth = 0;
+var currentScreenHeight = 0;
 
 function repeatOften() {
+
+  currentScreenWidth = screen.width;
+  currentScreenHeight = screen.height;
+
   //About page operations:
   let x = screen.width * 0.01;
 
@@ -72,3 +78,7 @@ function repeatOften() {
 }
 
 requestAnimationFrame(repeatOften);
+
+
+
+

@@ -522,6 +522,8 @@ module.exports = state = {
       header_pos: "top: initial; text-align: right; right: calc(100vw - 90%); bottom: calc(100vh - 79%);",
       header_style: "display: inline-block; font-size: 3rem; width: 25%; color: #e0982b;",
       sub_header_style: "color: #69c1b4",
+      mobile_header_style: "color: #e0982b",
+      mobile_header_pos: "",
       location: "Portland , Oregon",
       src: "https://s3-us-west-1.amazonaws.com/proletdev/portland-keep-it-weird.jpg",
       style: "display: inline-block; right: calc(100vw - 94%); margin: auto; width: calc(100vw - 75%); bottom: 20px; background-color: rgba(0,0,0,0.3);",

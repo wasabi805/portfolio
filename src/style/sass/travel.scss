@@ -13,6 +13,12 @@
     border: 1px solid cyan;
   }
 
+  height: 100vh;
+
+  @include laptop{
+    height: initial;
+  }
+
   //&:before {
   //  content: "";
   //  position: absolute;
@@ -332,10 +338,10 @@
 
     font-size: 13px;
     align-self: center;
-    padding: 2em;
+
     color: white;
     z-index: 100;
-
+    padding: 0 1em;
     text-align: justify;
 
     animation: fadeTravelText 2s ease-in-out;
@@ -354,6 +360,7 @@
       position: absolute;
       //bottom: 40px;
       color: white;
+      padding: 2em;
       //
       //right: 74px;
       z-index: 100;

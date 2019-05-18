@@ -42,12 +42,12 @@ HideImage(animateImgB); //default: don't show image
 
 //attach to all thumbnails,
 const loadImg = id => {
-  console.log("i still function!!", id);
   // let pullImage;
   let findByClickedId = id;
 
   const retrieveImg = async clickId => {
-    console.log("The clicked ID is : ", clickId);
+    // console.log("The clicked ID is : ", clickId);
+    console.log(currentScreenWidth, 'from the btn click')
 
     const response = await fetch("/state");
     let state = await response.json(); //extract JSON from the http response
@@ -57,6 +57,7 @@ const loadImg = id => {
 
     for (var i = 0; i < StateImages.length; i++) {
       if (StateImages[i].id === clickId) {
+
         var image = StateImages[i];
 
         var header = image.header;
@@ -68,13 +69,28 @@ const loadImg = id => {
         var context_title = image.context_title;
         var context = image.context;
         var style = image.style;
+        var font_size;
+        var width;
+        var mobile_header_style = image.mobile_header_style;
+        var mobile_header_pos = image.mobile_header_pos;
+
+
+        //sets the font for mobile and tablet
+        if(currentScreenWidth < 1024){
+          style = "";
+          font_size = 'font-size : 18px;';
+          width = 'width : initial; padding 0 1em';
+          header_style = mobile_header_style;
+          header_pos = 'position: initial;padding:';
+        }
+
 
         innerHTMLString = `<div class="image-wrapper"> <header class="image-wrapper__header" style="${header_pos}" ><h1 style="${header_style}" >${header}</h1> 
                 <p style="${sub_header_style}">${location}</p> </header>     
-                <img src=${src} alt=''> 
+                <img id="current-img-displayed" src=${src} alt=''> 
             </div>`;
 
-        var content = `<div class="text-travel__content" style="${style}"><h3>"${context_title}"</h3>
+        var content = `<div class="text-travel__content" style="${style} ${font_size} ${width} "><h3>"${context_title}"</h3>
                 <p> ${context}</p>
             </div> `;
 
@@ -113,58 +129,14 @@ const loadImg = id => {
           getElemById("animate-img-b").style = "display: block;";
           getElemById("animate-img-a").style = "display: none;";
         }
+
       }
     }
   };
 
+
+
   retrieveImg(findByClickedId);
-
-  //creates img DOM element && img TITLE
-  // let innerHTMLString = `<div class="image-wrapper"> <header class="image-wrapper__header"><h1>${
-  //   pullImage.header
-  // }</h1 <p>${pullImage.location}</p> </header>     <img src=${
-  //   pullImage.src
-  // } alt=''> </div>`;
-
-  // let content = `<div class="text-travel__content"><h3>${pullImage.title}</h3>
-  //           <p> ${pullImage.text}
-  //           </p></div> `;
-
-  //Stage 1
-  // if (animateImgA.classList.contains("isHidden")) {
-  //   querySelectElem(".initial-content").style = "display : none";
-  //   animateImgA.innerHTML = innerHTMLString;
-  //   textTravel.innerHTML = content;
-  //
-  //   setTimeout(function() {
-  //     HideImage(animateImgB);
-  //     RemoveShow(animateImgB);
-  //     ShowImage(animateImgA);
-  //     RemoveHide(animateImgA);
-  //   }, 100);
-  //
-  //   //Prevent Gap on Bottom
-  //   getElemById("animate-img-a").style = "display: block;";
-  //   getElemById("animate-img-b").style = "display: none;";
-  // }
-
-  // //Stage2:
-  // if (animateImgA.classList.contains("isShowing")) {
-  //   querySelectElem(".initial-content").style = "display : none";
-  //   getElemById("animate-img-b").innerHTML = innerHTMLString;
-  //   textTravel.innerHTML = content;
-  //
-  //   setTimeout(function() {
-  //     HideImage(animateImgA);
-  //     RemoveShow(animateImgA);
-  //     ShowImage(animateImgB);
-  //     RemoveHide(animateImgB);
-  //   }, 100);
-  //
-  //   //Prevent Gap on Bottom
-  //   getElemById("animate-img-b").style = "display: block;";
-  //   getElemById("animate-img-a").style = "display: none;";
-  // }
 };
 
 function handleImgClick(id) {
@@ -181,5 +153,5 @@ gallery_travel.addEventListener("mouseover", function() {
 
 gallery_travel.addEventListener("mouseout", function() {
   gallery_travel.style = "left:-267px";
-  document.body.style = "overflow: scroll;";
+  document.body.style = "overflow: initial;";
 });
