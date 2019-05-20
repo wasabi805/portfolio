@@ -4,9 +4,6 @@ const travel = getElemById("travel");
 
 const gallery_travel = querySelectElem(".gallery-travel");
 
-//default : hide nav
-gallery_travel.style = "left:-267px";
-
 setImages([gallery_travel_image]);
 
 //Hide and show CSS classes for images

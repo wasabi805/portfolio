@@ -672,7 +672,7 @@ module.exports = state = {
       header: "The Phi Phi Islands",
       header_style: "color: #e0982b",
       location: "Phuket, Thailand",
-      src: "https://s3-us-west-1.amazonaws.com/proletdev/phi-phi-island-01.jpg",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/Optimized-phi-phi-island-01.jpg",
       text_box_width: "width :18%;",
       text_box_x : "right: 74px;",
       text_box_y : "bottom: 370px;",
