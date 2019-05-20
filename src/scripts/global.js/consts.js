@@ -23,10 +23,6 @@ const projectList = {
   isSbSitOpen: false
 };
 
-const sayHello = ()=>{
-  console.log("hello this works")
-};
-
 //Set Any Image in Handlebars
 const setImages = (domImg=[])=>{
   if(domImg){
