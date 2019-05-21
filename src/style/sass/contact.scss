@@ -7,10 +7,12 @@
   width: 100%;
   //height: 100%;
   text-align: center;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  //background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   top: 60px;
   padding: 0 12px;
   overflow: hidden;
+  animation-name: fadeInOnLoad;
+  animation-duration: 3s;
 
   &:after {
     position: absolute;
@@ -23,6 +25,13 @@
     background-image: url(http://www.transparenttextures.com/patterns/green-dust-and-scratches.png);
     opacity: 0.4;
   }
+
+  @include small-iphone-portrait{
+    background-image: url('../../img/andea-ferrario-1345103-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
 
   @include tablet {
     overflow: scroll;
@@ -57,11 +66,12 @@
   &__image {
     //position: absolute; //landscape
     //width: 60vh;//landscape
-    @include small-iphone-landscape {
-      width: 67vh;
-      display: inline-block;
+    display: none;
 
+    @media only screen and(min-width: 571px) {
+      display: inline-block;
     }
+
 
     @include tablet {
       display: flex; //portrait
@@ -151,13 +161,6 @@
       }
     }
 
-    @include tablet {
-      //position: absolute;
-      //top: 35%;
-      ////background: antiquewhite;
-      //display: inline-block;
-      //margin-left: -136px;
-    }
   }
 
   @media (min-width: 375px) {

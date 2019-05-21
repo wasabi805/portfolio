@@ -60,9 +60,9 @@ app.get("/state", (req , res)=>{
 
 app.get("/", (req, res) => {
     console.log("index works");
+    console.log(state.artistImage)
 
     res.render("index",
-
         {
             title: 'ProletDev' ,
             name: 'About',
@@ -70,10 +70,10 @@ app.get("/", (req, res) => {
             profile_img : state.profile_img,
             skills: state.skills,
             projects : state.projects,
+            artistImage: state.artistImage,
 
             list2: ["tim " , "Ocampo"]
         });
-
     // res.sendFile(__dirname + "/src" + "/views" + "/index.html");
 });
 
@@ -118,5 +118,5 @@ app.get("/contact", (req, res) => {
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`| Server running on port ${port} |`);
 });

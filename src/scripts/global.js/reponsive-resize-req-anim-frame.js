@@ -34,7 +34,7 @@ function repeatOften() {
     }
 
     if (screen.width > 1080) {
-      showHeight = `${x * 60}px`;
+      showHeight = `${x * 50}px`;
     }
 
     if (screen.width > 1440) {

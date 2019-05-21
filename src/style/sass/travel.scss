@@ -15,21 +15,14 @@
 
   height: 100vh;
 
+  animation-name: fadeInOnLoad;
+  animation-duration: 4s;
+
+
   @include laptop{
     height: initial;
   }
 
-  //&:before {
-  //  content: "";
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  height: 100%;
-  //  width: 100%;
-  //  //background-color: #0000008c;
-  //  background-color: rgba(12, 12, 12, 0.55);
-  //  z-index: 0;
-  //}
 
   .initial-content {
     position: relative;
@@ -38,7 +31,7 @@
       content: "";
       position: absolute;
 
-      background: url("https://s3-us-west-1.amazonaws.com/proletdev/steven-roe-1045539-unsplash.jpg");
+      background: url("../../img/Optimized-travel-bg.jpg");
 
       width: 100vw;
       height: 100vh;
@@ -157,6 +150,7 @@
   #animate-img-a.isShowing {
     opacity: 1;
   }
+
 }
 
 .image-wrapper {
@@ -386,3 +380,6 @@
     }
   }
 }
+
+
+

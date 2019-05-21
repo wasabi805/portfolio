@@ -107,6 +107,14 @@ module.exports = state = {
     }
   ],
 
+  artistImage:[
+    {id: 1, name: "gambino" , src: "https://s3-us-west-1.amazonaws.com/proletdev/childish-gambino.png"},
+    {id: 2, name: "kflay" , src: "https://s3-us-west-1.amazonaws.com/proletdev/k-flay.jpg"},
+    {id: 3, name: "logic" , src: "https://s3-us-west-1.amazonaws.com/proletdev/logic.jpeg"},
+  ],
+
+
+
   //  ==========    ========== ACBA  ==========  ==========
 
   acba_hero_banner: [
@@ -202,7 +210,7 @@ module.exports = state = {
   //ACBA Figure Photos
   figures: [
     {
-      character: "The Avengers",
+      character: "Avengers",
       align_header: "rhs",
       header: "Avengers Assemble!",
       card_img_lhs: true,
@@ -252,7 +260,7 @@ module.exports = state = {
     },
 
     {
-      character: "The X-Men",
+      character: "X-Men",
       align_header: "rhs",
       header: "The Uncanny X-Men",
       card_img_lhs: true,
@@ -658,7 +666,7 @@ module.exports = state = {
       header: "Surat Thani",
       header_color: "",
       location: "Koh Samui, Thailand",
-      src: "https://s3-us-west-1.amazonaws.com/proletdev/ko-samui-02.jpg",
+      src: "https://s3-us-west-1.amazonaws.com/proletdev/Optimized-ko-samui-02.jpg",
       text_box_width: "",
       text_box_x : "",
       text_box_y : "",

@@ -63,6 +63,10 @@ blockquote p {
   padding-top: 3rem;
   overflow-x: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  animation-name: fadeInOnLoad;
+  animation-duration: 3s;
+
+
 
   section {
     position: relative;
@@ -241,7 +245,7 @@ blockquote p {
 
         display: inline-block;
         text-align: center;
-        width: 30%;
+        width: 35%;
         margin: 0 35%;
         padding: 1rem;
 
@@ -252,6 +256,11 @@ blockquote p {
         }
 
         border: 2px solid #507d24;
+        background-color: #261e1e54;
+
+        &:hover{
+          transform: scale(1.1);
+        }
 
         @include desktop{
           margin: 75px 35%;

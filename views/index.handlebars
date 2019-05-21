@@ -48,7 +48,7 @@
                         <li>Redux</li>
                         <li>Express</li>
                         <li>Bootstrap</li>
-                        <li style="visibility: hidden">.</li>
+                        <li>Handlebars</li>
                         <li class="arsenal-title"><h5>TOOLS</h5></li>
                         <li>Git</li>
                         <li>Webpack</li>
@@ -63,42 +63,31 @@
             <!--    PERSONAL SECTION-->
 
             <article id="personal">
-                <div class="personal-container">
+                <!--<div class="personal-container">-->
+                <h1 class="personal-headers">Personal</h1>
                     <div class="personal-text">
-                        <h1 class="personal-headers">Personal</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy
-                            text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into
-                            electronic typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of Letraset sheets
-                            containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of
-                            Lorem Ipsum
-                        </p>
-                    </div>
+                        <!--<div style="display: inline-block; width: 70%; float:right ;" class="personal-img-container">-->
+                        <div class="personal-img-container">
 
-                    <div class="personal-img-container">
-                        <div class="personal-img">
-                            <img src="https://s3-us-west-1.amazonaws.com/proletdev/childish-gambino.png" alt="" />
+                            {{>zoom-image whichImages=artistImage}}
+
+                            <h5 style="font-family: 'Dolce Vita'; color: cyan">Favorite Artists</h5>
+
                         </div>
 
-                        <div class="personal-img">
-                            <img
-                                    src="https://s3-us-west-1.amazonaws.com/proletdev/K.Flay-Blood-In-The-Cut.jpg"
-                                    alt=""
-                            />
-                        </div>
 
-                        <div class="personal-img">
-                            <img
-                                    src="https://s3-us-west-1.amazonaws.com/proletdev/runthejewels_cover.jpg"
-                                    alt=""
-                            />
-                        </div>
-                    </div>
+
+                        <p> Hello and welcome to Proletdev. As a UI designer and Fullstack Developer, my objectives
+                            are to provide an engaging experience through artistic and sensible layouts that encourage the user to explore the content .I'm a self taught developer with past experiences in sales, merchandising, and
+                            customer service which comes in handy : I aspire to create content that not only seeks to grab the user's attention but,
+                            to also deliver company ethos & branding expressed through design.<br/><br/>
+                            I also love to make and create which I express through my hobbies. Aside from my projects, this site also contains a few DJ mixes I've made,
+                            photos I've take while traveling, some ACBA photos I've shot, and a few of my favorite recipes around the kitchen. Hope you enjoy and
+                            thanks for stopping by. </p>
+
+
+                        <!--<h3 style="color: white; z-index: 100" >Favorite Artist Corner</h3>-->
+                    <!--</div>-->
                 </div>
 
                 <div id="controller-container">
