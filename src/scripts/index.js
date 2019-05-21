@@ -1,17 +1,7 @@
-// window.location.pathname
-
-
 
 var landingTitle = document.getElementById("title-index");
 var about = document.getElementById("about");
 var isAboutVisible = false;
-
-// console.log(window.location.href, 'window.location.href')
-// console.log(indexURL, 'indexURL')
-//
-// console.log(bg_img, 'bg_img')
-// console.log(title_index, 'title_index')
-
 
 function initialLoad() {
   if (site.href === indexURL) {
@@ -28,17 +18,13 @@ function initialLoad() {
 function scrollToProject() {
   if (site.href === indexURL + "#projects") {
     setTimeout(() => {
-      // alert('from the setTimeOut')
-
       landing.style = "background: black; display: none";
       nav_bar.setAttribute("style", "opacity:1; top:0");
       about.style.position = "relative";
 
-      console.log("hello");
+      console.log("handles scroll position for Projects on nav header");
       projects.scrollIntoView(true);
-      window.scrollBy(0, -80);
-
-      //adds overflow hidden to the <html> to prevent "white" bounce
+      window.scrollBy(0, -140);
     }, 2000);
   }
 }
@@ -54,9 +40,7 @@ function insertProjectId() {
   }
 }
 
-//This is to get around placing src's with Handlebars
-function insertProjectPic(){
-  console.log('Wu Tang')
+function insertProjectPic(){ //This is to get around placing src's with Handlebars
   for(var i =0; i<project_pic.length; i++){
     project_pic[i].src = project_pic[i].dataset.value
   }
@@ -66,7 +50,6 @@ function insertProjectUrl(){
     project_url[i].href = project_url[i].dataset.value
   }
 }
-
 
 window.onload = function() {
   console.log(window.location.href, "window.location.href");

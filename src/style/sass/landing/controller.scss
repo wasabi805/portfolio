@@ -122,6 +122,7 @@
 
 
     .beam-one{
+      font-family: "STYLEWARS 2011";
       position: absolute;
       top: -23px;
       left: 442px;
@@ -131,17 +132,20 @@
       border-left: 1px dotted cyan;
       border-top: 1px dotted cyan;
 
+
       .text-one{
+        color: #4ead4e;
         font-size: 33px;
         top: -23px;
         left: calc(92% + 1vw);
         position: absolute;
-        line-height: 32px;
+        line-height: 1px;
+        padding: 24px;
         height: 32px;
-        width: 103px;
+
         border-radius: 2px;
-        background-color: #494a4a;
-        padding: 3px;
+        background-color: #0c2f2f;
+
 
         p{
           letter-spacing: 3px;
@@ -153,6 +157,7 @@
     //BEAM TWO
 
     .beam-two{
+      font-family: "STYLEWARS 2011";
       position: absolute;
       top: 50px;
       left: 528px;
@@ -163,17 +168,18 @@
       border-top: 1px dotted cyan;
 
       .text-two{
+        color: #4ead4e;
         font-size: 33px;
         top: -23px;
         left: calc(92% + 1vw);
         position: absolute;
-        line-height: 32px;
+        padding: 24px;
+        line-height: 1px;
         height: 32px;
-        width: 105px;
+        width: 145px;
         border-radius: 2px;
-        background-color: #494a4a;
-        padding: 3px;
-        //background-color: lime;
+        background-color: #0c2f2f;
+
 
         p{
           letter-spacing: 3px;
@@ -184,6 +190,7 @@
     //BEAM THREE
 
     .beam-three{
+      font-family: "STYLEWARS 2011";
       position: absolute;
       top: 136px;
       left: 562px;
@@ -194,16 +201,16 @@
 
       .text-three{
         font-size: 33px;
+        color: #4ead4e;
         top: 13px;
         left: calc(92% + 1vw);
         position: absolute;
-        line-height: 32px;
+        padding: 24px;
+        line-height: 1px;
         height: 32px;
-        width: 138px;
+        width: 188px;
         border-radius: 2px;
-        background-color: #494a4a;
-        padding: 3px;
-        //background-color: lime;
+        background-color: #0c2f2f;
 
         p{
           letter-spacing: 3px;
@@ -213,6 +220,7 @@
 
     //BEAM FOUR
     .beam-four{
+      font-family: "STYLEWARS 2011";
       position: absolute;
       top: 230px;
       left: 488px;
@@ -222,17 +230,20 @@
       border-bottom: 1px dotted cyan;
 
       .text-four{
+        font-family: "STYLEWARS 2011";
+        color: #4ead4e;
         font-size: 33px;
         top: 11px;
         left: calc(92% + 1vw);
         position: absolute;
-        line-height: 32px;
+        padding: 24px;
+        line-height: 1px;
         height: 32px;
-        width: 132px;
+        width: 182px;
         border-radius: 2px;
-        background-color: #494a4a;
-        padding: 3px;
-        //background-color: lime;
+        background-color: #0c2f2f;
+
+
 
         p{
           letter-spacing: 3px;

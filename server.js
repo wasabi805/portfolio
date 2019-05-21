@@ -77,9 +77,7 @@ app.get("/", (req, res) => {
     // res.sendFile(__dirname + "/src" + "/views" + "/index.html");
 });
 
-app.get("/about", (req, res) => {
-  res.sendFile(__dirname + "/src" + "/views" + "/about.html");
-});
+
 
 app.get("/about/mixes", (req, res) => {
   res.sendFile(__dirname + "/src" + "/views" + "/mixes.html");

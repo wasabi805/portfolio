@@ -559,12 +559,23 @@ $highlighter: #7c9548;
 }
 
 .personal-img-container {
-  display: block; position: relative; align-items: center;width: 68%;float: right;text-align: center; padding-bottom: 1rem
+  display: block;
+  position: relative;
+  align-items: center;
+
+  text-align: center; padding-bottom: 1rem;
+
+
+  @include laptop{
+    width: 68%;
+    float: right;
+  }
 }
 
 .personal-img {
   //margin: 6px;
   width: 30%; margin: 0 2px; padding: 0;
+  display: inline-block;
 
   img {
     position: relative;
@@ -575,11 +586,16 @@ $highlighter: #7c9548;
 
 
   @include tablet {
-    display: inline-block;
+
     width: 30%;
     //padding: 8px;
     //margin: 10px;
   }
+
+  @include laptop{
+  }
+
+
 }
 
 .hideAbout {

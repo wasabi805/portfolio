@@ -37,14 +37,14 @@ const setImages = (domImg = []) => {
 //Site URLS
 const prevLocation = document.referrer;
 
-// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-// const mixesURL =
-//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
-//
-//  Use when Deploying
-const indexURL = window.location.protocol + "//" + site.hostname + "/";
+const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
 const mixesURL =
-  window.location.protocol + "//" + site.hostname + "/about/mixes";
+  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+
+//  Use when Deploying
+// const indexURL = window.location.protocol + "//" + site.hostname + "/";
+// const mixesURL =
+//   window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
 var landing = getElemById("landing");
@@ -111,9 +111,7 @@ function Track(name) {
 }
 
 const audio01 = new Track("HopPopMarch2019");
-const audio02 = new Track(
-  "05_Silk_City_and_Dua_Lipa-Electricity_Xplicid_and_Mikol_Angelo_Remix_Extended"
-);
+const audio02 = new Track("");
 
 //==========    Define Handlers    ==========
 const seekBar01 = getElemById("seek-bar-01");
