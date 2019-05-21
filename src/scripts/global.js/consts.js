@@ -24,35 +24,34 @@ const projectList = {
 };
 
 //Set Any Image in Handlebars
-const setImages = (domImg=[])=>{
-  if(domImg){
-    Object.values(domImg).forEach((collection)=>{
-      for(var i=0; i<collection.length; i++){
-        collection[i].src = collection[i].dataset.value
+const setImages = (domImg = []) => {
+  if (domImg) {
+    Object.values(domImg).forEach(collection => {
+      for (var i = 0; i < collection.length; i++) {
+        collection[i].src = collection[i].dataset.value;
       }
-    })
-  }else console.log('pass in a valid dom img element or come see me.')
+    });
+  } else console.log("pass in a valid dom img element or come see me.");
 };
 
 //Site URLS
 const prevLocation = document.referrer;
 
-const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
-const mixesURL =
-  site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
+// const indexURL = site.protocol + "//" + site.hostname + ":" + site.port + "/";
+// const mixesURL =
+//   site.protocol + "//" + site.hostname + ":" + site.port + "/about/mixes";
 //
 //  Use when Deploying
-// const indexURL =
-//   window.location.protocol + "//" + site.hostname + "/";
-// const mixesURL =
-//   window.location.protocol + "//" + site.hostname + "/about/mixes";
+const indexURL = window.location.protocol + "//" + site.hostname + "/";
+const mixesURL =
+  window.location.protocol + "//" + site.hostname + "/about/mixes";
 
 //LANDING BACKGROUND
 var landing = getElemById("landing");
 var bg_img = getElemById("bg-img");
 var black_bg = getElemById("black-bg");
 var title_index = getElemById("title-index");
-var lds_roller = getElemByClass("lds-roller")//loading spinner
+var lds_roller = getElemByClass("lds-roller"); //loading spinner
 var scroll_down_container = getElemById("scroll-down-container");
 
 //ABOUT SECTION
@@ -66,7 +65,7 @@ const abilities_container = getElemById("abilities-container");
 const abilities_item = getElemByClass("abilities-item");
 
 const project_item__icon = getElemByClass("project-item__icon");
-const project_pic = document.querySelectorAll(".project-pic")
+const project_pic = document.querySelectorAll(".project-pic");
 const project_url = getElemByClass("project-url");
 const project_item__show = getElemByClass("project-item__show");
 
@@ -131,17 +130,10 @@ const fillBar02 = querySelectElem(".fill-02");
 //Elapsed time on mixes targets this dom : playing a track injects elapsed time into this DOM element's pseudo elem.
 const track_01_title = getElemByClass("track-01-title");
 
-
 //TRAVEL
 const gallery_travel_image = getElemByClass("gallery-travel_image");
-
 
 //ACBA Section
 const acba_hero_image = getElemByClass("acba-hero-image");
 const card_logo = getElemByClass("card-logo");
 const figure_image = getElemByClass("figure-image");
-
-
-
-
-
